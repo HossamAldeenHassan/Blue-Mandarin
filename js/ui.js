@@ -184,7 +184,80 @@ function navigateTo(viewId) {
   activeView = viewId;
 }
 
-navItems.forEach(item => item.addEventListener('click', () => navigateTo(item.dataset.view)));
+// Use pointerdown instead of click: fires immediately on touch with zero 300ms delay.
+// pointerdown fires before the browser decides if it's a tap, double-tap, or scroll.
+navItems.forEach(item => {
+  item.addEventListener('pointerdown', e => {
+    // Only respond to primary pointer (finger or left mouse button)
+    if (e.isPrimary === false) return;
+    e.preventDefault();           // block ghost click + double-tap zoom
+    navigateTo(item.dataset.view);
+  });
+  // Keep click as fallback for keyboard / assistive tech
+  item.addEventListener('click', e => {
+    if (e.pointerType) return;    // already handled by pointerdown
+    navigateTo(item.dataset.view);
+  });
+});
+
+// ===========================================================
+// 4B. switchPage() — smart routing for Stories and Grammar
+// ===========================================================
+/**
+ * switchPage(pageId) — the single entry-point for all navigation.
+ * Handles both view switching AND sub-panel activation for
+ * the read view (stories / grammar).
+ *
+ * pageId values: 'home' | 'learn' | 'stories' | 'grammar' | 'shelly' | 'profile'
+ *
+ * Stories and Grammar both live inside view-read. Calling switchPage
+ * navigates there AND activates the correct panel AND triggers rendering
+ * with real data from the KnowledgeGraph (if available).
+ */
+function switchPage(pageId) {
+  const VIEW_MAP = {
+    home:    'home',
+    learn:   'learn',
+    stories: 'read',
+    grammar: 'read',
+    shelly:  'shelly',
+    profile: 'profile',
+  };
+
+  const viewId = VIEW_MAP[pageId] ?? pageId;
+
+  // Navigate to the parent view first
+  if (viewId !== activeView) navigateTo(viewId);
+
+  // Sub-panel switching for read view
+  if (pageId === 'stories' || pageId === 'grammar') {
+    const tab = pageId === 'stories' ? 'stories' : 'grammar';
+
+    // Activate the correct read-tab
+    document.querySelectorAll('.read-tab').forEach(t => {
+      const on = t.dataset.readTab === tab;
+      t.classList.toggle('active', on);
+    });
+    // Activate the correct read-panel
+    document.querySelectorAll('.read-panel').forEach(p => {
+      p.classList.toggle('active', p.id === `read-panel-${tab}`);
+    });
+
+    if (pageId === 'stories') {
+      // Render stories with KG data (already loaded in init)
+      const stories = KG?.stories?.all ?? [];
+      const storyList = document.getElementById('story-list');
+      if (stories.length && storyList && !storyList.querySelector('.story-card')) {
+        renderStoryList(stories);
+        console.log('[BM] switchPage: renderStoryList called →', stories.length, 'stories');
+      }
+    } else {
+      // Grammar — use smart re-render guard already in GrammarViewer
+      GrammarViewer.render();
+      console.log('[BM] switchPage: GrammarViewer.render() called');
+    }
+  }
+}
 
 // ===========================================================
 // 5. RIPPLE EFFECT
@@ -925,12 +998,26 @@ async function openLesson(lessonId) {
   await LessonDetail.open(lessonId, 1);
 }
 
-// Wire up static lesson cards
+// Wire static lesson cards — pointerdown for instant mobile response
+function _wireTap(el, handler) {
+  let _tapped = false;
+  el.addEventListener('pointerdown', e => {
+    if (!e.isPrimary) return;
+    e.preventDefault();
+    _tapped = true;
+    handler();
+  });
+  el.addEventListener('click', e => {
+    if (_tapped) { _tapped = false; return; }   // already handled
+    handler();
+  });
+}
+
 document.querySelectorAll('.lesson-card[data-lesson-id]').forEach(card => {
-  card.addEventListener('click', () => openLesson(+card.dataset.lessonId));
+  _wireTap(card, () => openLesson(+card.dataset.lessonId));
 });
 document.querySelectorAll('.path-node[data-lesson-id]').forEach(node => {
-  node.addEventListener('click', () => openLesson(+node.dataset.lessonId));
+  _wireTap(node, () => openLesson(+node.dataset.lessonId));
 });
 
 // FC.open standalone (called from LessonDetail "▶ Cards")
@@ -1069,14 +1156,21 @@ document.getElementById('daily-banner').addEventListener('click', async () => {
 // ===========================================================
 // 13A. READING CENTER — Tab Switcher
 // ===========================================================
+// Tabs use pointerdown for instant mobile response
 document.querySelectorAll('.read-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
+  let _tabTapped = false;
+  tab.addEventListener('pointerdown', e => {
+    if (!e.isPrimary) return;
+    e.preventDefault();
+    _tabTapped = true;
     const id = tab.dataset.readTab;
-    document.querySelectorAll('.read-tab').forEach(t => t.classList.toggle('active', t === tab));
-    document.querySelectorAll('.read-panel').forEach(p =>
-      p.classList.toggle('active', p.id === `read-panel-${id}`));
-    // Lazily render grammar when its tab is first clicked
-    if (id === 'grammar') GrammarViewer.render();
+    // Route through switchPage for guaranteed rendering
+    switchPage(id === 'grammar' ? 'grammar' : 'stories');
+  });
+  tab.addEventListener('click', e => {
+    if (_tabTapped) { _tabTapped = false; return; }
+    const id = tab.dataset.readTab;
+    switchPage(id === 'grammar' ? 'grammar' : 'stories');
   });
 });
 
@@ -1353,7 +1447,7 @@ const GrammarViewer = {
     // Only skip re-render if the list already has real content (not skeletons)
     const list = document.getElementById('grammar-list');
     if (this._rendered && list && list.querySelector('.grammar-card')) return;
-    const list    = document.getElementById('grammar-list');
+    // (list already declared above — removed duplicate declaration)
     const grammar = KG?.grammar?.all ?? await Data.getGrammar();
     if (!Array.isArray(grammar) || !grammar.length) {
       list.innerHTML = '<p style="color:var(--text-3);padding:14px">Grammar data not loaded yet.</p>';
@@ -1558,26 +1652,22 @@ document.addEventListener('keydown', e => {
 document.getElementById('notif-btn').addEventListener('click', () => toast('🔔 لا توجد إشعارات جديدة'));
 
 // ===========================================================
-// 18. PWA INSTALL PROMPT
+// 18. PWA INSTALL — BLOCKED (install via browser menu only)
 // ===========================================================
-let deferredInstall = null;
-const installWrap = document.getElementById('install-wrap');
-
+// The beforeinstallprompt event is intentionally NOT handled.
+// This prevents the app from showing an install banner that
+// covers the navigation bar. Users can install via the browser's
+// "Add to Home Screen" option in the menu.
 window.addEventListener('beforeinstallprompt', e => {
+  // Prevent the mini-infobar and automatic prompts completely
   e.preventDefault();
-  deferredInstall = e;
-  setTimeout(() => installWrap.classList.add('show'), 3500);
+  // Do NOT store deferredInstall — we never call .prompt()
 });
-document.getElementById('install-btn').addEventListener('click', async () => {
-  installWrap.classList.remove('show');
-  if (!deferredInstall) return;
-  await deferredInstall.prompt();
-  const { outcome } = await deferredInstall.userChoice;
-  if (outcome === 'accepted') toast('🎉 تم تثبيت Blue Mandarin!');
-  deferredInstall = null;
+// Still listen for appinstalled to show a welcome toast
+window.addEventListener('appinstalled', () => {
+  toast('✅ تم تثبيت Blue Mandarin — أهلاً بك! ❄️');
 });
-document.getElementById('install-x').addEventListener('click', () => installWrap.classList.remove('show'));
-window.addEventListener('appinstalled', () => { installWrap.classList.remove('show'); toast('✅ تم تثبيت التطبيق!'); });
+console.log('PWA Prompt Blocked 🛑 | Navigation Initialized 📱');
 
 // ===========================================================
 // 19. DEEP LINK SUPPORT
@@ -1764,6 +1854,30 @@ async function init() {
 }
 
 /**
+ * _triggerLessonStart(lid) — called by lc-start-btn pointerdown/click.
+ * Opens the curriculum guided lesson if available, otherwise the vocab quiz.
+ */
+function _triggerLessonStart(lid) {
+  const CE = window.BM?.Curriculum;
+  if (CE) {
+    CE.loadCurriculum().then(cur => {
+      if (!cur) { openLessonTest(lid); return; }
+      for (const unit of cur.units) {
+        const lesson = unit.lessons.find((_, i) => {
+          const globalIdx = cur.units.slice(0, cur.units.indexOf(unit))
+            .reduce((s, u) => s + u.lessons.length, 0) + unit.lessons.indexOf(_);
+          return globalIdx + 1 === lid;
+        });
+        if (lesson) { CE.openLesson(unit.id, lesson.id); return; }
+      }
+      openLessonTest(lid);
+    });
+  } else {
+    openLessonTest(lid);
+  }
+}
+
+/**
  * renderLessonGrid — driven by LESSON_PLAN (from lessons.json + vocab.json).
  * Each card shows:
  *   · Real Arabic title from lessons.json
@@ -1828,43 +1942,33 @@ function renderLessonGrid(lessonsMeta) {
       </div>`;
   }).join('');
 
-  // Wire click handlers — both card and button open LessonDetail
+  // Wire touch handlers — both card and button open LessonDetail
+  // Use _wireTap for instant pointerdown response on mobile
   grid.querySelectorAll('.lesson-card[data-lesson-id]').forEach(card => {
+    _wireTap(card, () => {
+      // Don't double-fire if the inner start button was tapped
+      // (start button has its own handler below)
+    });
+    // Also keep a click handler that checks for button target
     card.addEventListener('click', e => {
-      // Prevent double-fire when clicking the inner button
-      if (e.target.classList.contains('lc-start-btn')) return;
+      if (e.target.closest('.lc-start-btn')) return;
       openLesson(+card.dataset.lessonId);
     });
   });
   grid.querySelectorAll('.lc-start-btn').forEach(btn => {
-    btn.addEventListener('click', e => {
+    // pointerdown: instant tap response, no 300ms delay
+    btn.addEventListener('pointerdown', e => {
+      if (!e.isPrimary) return;
+      e.preventDefault();
       e.stopPropagation();
       const lid = +btn.dataset.lessonId;
-      // "Start" launches a lesson-specific vocabulary quiz,
-      // not the general 100-question final exam
-      // If curriculum engine is available, open the guided lesson
-    // Otherwise fall back to vocab quiz (openLessonTest)
-    const CE = window.BM?.Curriculum;
-    if (CE) {
-      // Map lesson card number to curriculum lesson IDs
-      CE.loadCurriculum().then(cur => {
-        if (!cur) { openLessonTest(lid); return; }
-        // Find which unit/lesson matches this lesson card number
-        for (const unit of cur.units) {
-          const lesson = unit.lessons.find((_, i) => {
-            // Heuristic: lesson card 1-15 maps to unit lessons by sequence
-            const globalIdx = cur.units.slice(0, cur.units.indexOf(unit))
-              .reduce((s, u) => s + u.lessons.length, 0) + unit.lessons.indexOf(_);
-            return globalIdx + 1 === lid;
-          });
-          if (lesson) { CE.openLesson(unit.id, lesson.id); return; }
-        }
-        // No curriculum lesson found — fall back to vocab quiz
-        openLessonTest(lid);
-      });
-    } else {
-      openLessonTest(lid);
-    }
+      _triggerLessonStart(lid);
+    });
+    btn.addEventListener('click', e => {
+      if (e.pointerType) { e.stopPropagation(); return; } // handled by pointerdown
+      e.stopPropagation();
+      const lid = +btn.dataset.lessonId;
+      _triggerLessonStart(lid);
     });
   });
 }
@@ -1953,16 +2057,16 @@ function renderStoryList(stories) {
   });
 }
 
-// Trigger grammar render when navigating to Read view (both grammar + stories)
-document.querySelector('.nav-item[data-view="read"]')?.addEventListener('click', () => {
-  // Always re-check if stories need rendering (they might have loaded after first nav)
-  const storyList = document.getElementById('story-list');
-  if (storyList && !storyList.querySelector('.story-card') && window.BM?.KnowledgeGraph?.stories?.all?.length) {
-    renderStoryList(window.BM.KnowledgeGraph.stories.all);
-  }
-  // Render grammar if grammar tab is active
-  const grammarTab = document.querySelector('[data-read-tab="grammar"]');
-  if (grammarTab?.classList.contains('active')) GrammarViewer.render();
+// When القصص nav tab is tapped → always show stories (not grammar)
+// This makes the nav tab consistently open stories as the landing panel.
+document.querySelector('.nav-item[data-view="read"]')?.addEventListener('pointerdown', e => {
+  if (!e.isPrimary) return;
+  e.preventDefault();
+  switchPage('stories');        // navigate + activate stories panel + render
+});
+document.querySelector('.nav-item[data-view="read"]')?.addEventListener('click', e => {
+  if (e.pointerType) return;    // already handled by pointerdown
+  switchPage('stories');
 });
 
 // Auto-start
