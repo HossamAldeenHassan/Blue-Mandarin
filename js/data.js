@@ -86,7 +86,11 @@ const DataManager = (() => {
   function _fetch(url) {
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), TOMS);
-    return fetch(url, { cache: 'no-cache', signal: ctrl.signal })
+    // Cache-buster: appended to every JSON fetch so browsers/SWs never
+    // serve stale data after a JSON file update. This is the v param.
+    const sep = url.includes('?') ? '&' : '?';
+    const bust = `${sep}_v=${Math.floor(Date.now() / 60000)}`; // 1-min granularity
+    return fetch(url + bust, { cache: 'no-cache', signal: ctrl.signal })
       .finally(() => clearTimeout(t));
   }
 

@@ -1,90 +1,37 @@
 {
   "name": "Blue Mandarin — HSK 1",
   "short_name": "Blue Mandarin",
-  "description": "Your immersive HSK 1 Mandarin learning journey. Winter-themed, AI-powered, offline-ready.",
-  "start_url": "/index.html",
-  "scope": "/",
+  "description": "رحلة تعلّم الصينية — HSK 1. تصميم شتوي، ذكاء اصطناعي، يعمل بدون إنترنت.",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait",
   "theme_color": "#040C18",
   "background_color": "#040C18",
-  "lang": "en",
-  "dir": "ltr",
-  "categories": ["education", "lifestyle"],
-  "icons": [
-    {
-      "src": "./icons/icon-72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "./icons/icon-384.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": [
+    "education",
+    "lifestyle"
   ],
-  "screenshots": [
-    {
-      "src": "./screenshots/home.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Home Dashboard"
-    }
-  ],
+  "_note_icons": "Add icon PNG files to /icons/ folder and restore the icons array. Removed to stop 404 errors.",
   "shortcuts": [
     {
-      "name": "Daily Challenge",
-      "short_name": "Challenge",
-      "description": "Jump straight into today's daily challenge",
-      "url": "/index.html?view=learn&mode=daily",
-      "icons": [{ "src": "./icons/icon-96.png", "sizes": "96x96" }]
+      "name": "التحدي اليومي",
+      "short_name": "تحدي",
+      "description": "ابدأ التحدي اليومي مباشرة",
+      "url": "./index.html?view=learn&mode=daily"
     },
     {
-      "name": "Chat with Shelly",
-      "short_name": "Shelly",
-      "description": "Ask your AI tutor anything",
-      "url": "/index.html?view=shelly",
-      "icons": [{ "src": "./icons/icon-96.png", "sizes": "96x96" }]
+      "name": "محادثة مع شيلي",
+      "short_name": "شيلي",
+      "description": "اسأل المعلم الذكي",
+      "url": "./index.html?view=shelly"
     }
   ],
   "prefer_related_applications": false,

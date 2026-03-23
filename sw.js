@@ -1,23 +1,23 @@
 /**
  * ================================================================
- *  BLUE MANDARIN — Service Worker  (sw.js)  v2.0
+ *  BLUE MANDARIN — Service Worker  (sw.js)  v3.0
  *
- *  Updated for modular architecture:
- *    · SHELL_CACHE now includes css/style.css + js/ui.js
- *    · DATA_PATHS updated to match new data/hsk1/ folder
- *    · Cache version bumped (bm-v1.2.0) to evict old caches
- *    · Gemini API bypass unchanged (POST passthrough)
- *    · GitHub Raw URLs for data/hsk1/ treated as network-first
+ *  v3.0 changes:
+ *    · Cache version bumped to bm-v1.3.0 → forces eviction of ALL
+ *      old caches (v1.0.0, v1.1.0, v1.2.0) on activate
+ *    · Icon paths REMOVED from SHELL_ASSETS (no icon files yet)
+ *    · activate: clients.claim() called immediately for instant takeover
+ *    · isDataRequest() now matches data/hsk1/ correctly
+ *    · Gemini API bypass unchanged
  * ================================================================
  */
 
-const CACHE_VERSION = 'bm-v1.2.0';
+const CACHE_VERSION = 'bm-v1.3.0';          // ← bumped from v1.2.0
 const SHELL_CACHE   = `${CACHE_VERSION}-shell`;
 const DATA_CACHE    = `${CACHE_VERSION}-data`;
 const DYNAMIC_CACHE = `${CACHE_VERSION}-dynamic`;
 
-// ── App shell: pre-cached on install ────────────────────────────
-// Every file the app needs to render offline without a network hit.
+// App shell pre-cache — NO icon paths (files don't exist yet)
 const SHELL_ASSETS = [
   './',
   './index.html',
@@ -26,18 +26,17 @@ const SHELL_ASSETS = [
   './js/data.js',
   './js/progress.js',
   './js/shelly.js',
+  './js/curriculum.js',
   './js/ui.js',
 ];
 
-// ── HSK data paths: network-first, cached for offline ───────────
-// Match both local (data/hsk1/) and GitHub Raw URLs.
+// Data file patterns — network-first
 const DATA_PATH_PATTERNS = [
   /\/data\/hsk1\//,
   /raw\.githubusercontent\.com.*\/data\/hsk1\//,
-  /raw\.githubusercontent\.com.*hsk1/,
 ];
 
-// ── Bypass rules ─────────────────────────────────────────────────
+// Hosts that must NEVER be intercepted (POST/AI APIs)
 const BYPASS_HOSTNAMES = new Set([
   'generativelanguage.googleapis.com',
   'firebaseapp.com',
@@ -47,7 +46,7 @@ const BYPASS_HOSTNAMES = new Set([
 function shouldBypass(request) {
   try {
     const url = new URL(request.url);
-    if (request.method !== 'GET')          return true;
+    if (request.method !== 'GET')           return true;
     if (BYPASS_HOSTNAMES.has(url.hostname)) return true;
     if (!['http:', 'https:'].includes(url.protocol)) return true;
     return false;
@@ -55,76 +54,72 @@ function shouldBypass(request) {
 }
 
 function isDataRequest(url) {
-  return DATA_PATH_PATTERNS.some(p => p.test(url.pathname + url.hostname));
+  const full = url.pathname + url.hostname;
+  return DATA_PATH_PATTERNS.some(p => p.test(full));
 }
 
-// ================================================================
-//  INSTALL
-// ================================================================
+// ── INSTALL ──────────────────────────────────────────────────────
 self.addEventListener('install', event => {
-  console.log('[SW v2.0] Installing…');
+  console.log('[SW v3.0] Installing…');
   event.waitUntil(
     caches.open(SHELL_CACHE)
       .then(cache => cache.addAll(SHELL_ASSETS))
-      .then(() => { console.log('[SW] Shell cached ✓'); return self.skipWaiting(); })
-      .catch(e  => console.warn('[SW] Pre-cache failed (non-fatal):', e.message))
+      .then(() => {
+        console.log('[SW v3.0] Shell cached ✓ — calling skipWaiting()');
+        return self.skipWaiting();   // take over immediately
+      })
+      .catch(e => console.warn('[SW v3.0] Pre-cache failed (non-fatal):', e.message))
   );
 });
 
-// ================================================================
-//  ACTIVATE — evict old cache versions
-// ================================================================
+// ── ACTIVATE — evict ALL old caches, claim clients immediately ────
 self.addEventListener('activate', event => {
-  console.log('[SW v2.0] Activating…');
+  console.log('[SW v3.0] Activating — evicting old caches…');
   const valid = new Set([SHELL_CACHE, DATA_CACHE, DYNAMIC_CACHE]);
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
         keys.filter(k => !valid.has(k)).map(k => {
-          console.log('[SW] Evicting old cache:', k);
+          console.log('[SW v3.0] Evicting:', k);
           return caches.delete(k);
         })
       ))
-      .then(() => { console.log('[SW] Active. Claiming clients.'); return self.clients.claim(); })
+      .then(() => {
+        console.log('[SW v3.0] Active. Claiming all clients immediately.');
+        return self.clients.claim();   // take over open tabs without reload
+      })
   );
 });
 
-// ================================================================
-//  FETCH — route every request
-// ================================================================
+// ── FETCH ─────────────────────────────────────────────────────────
 self.addEventListener('fetch', event => {
   const { request } = event;
-
-  // ① AI APIs + non-GET → pass through untouched
   if (shouldBypass(request)) return;
 
   const url = new URL(request.url);
 
-  // ② Google Fonts → stale-while-revalidate
+  // Google Fonts → stale-while-revalidate
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
     event.respondWith(staleWhileRevalidate(request, DYNAMIC_CACHE));
     return;
   }
 
-  // ③ HSK JSON data (local or GitHub Raw) → network-first
+  // HSK JSON data → network-first
   if (isDataRequest(url)) {
     event.respondWith(networkFirst(request, DATA_CACHE));
     return;
   }
 
-  // ④ Same-origin shell assets → cache-first
+  // Same-origin shell → cache-first
   if (url.origin === self.location.origin) {
     event.respondWith(cacheFirst(request, SHELL_CACHE));
     return;
   }
 
-  // ⑤ Everything else → cache-first with dynamic cache
   event.respondWith(cacheFirst(request, DYNAMIC_CACHE));
 });
 
-// ================================================================
-//  BACKGROUND SYNC — flush progress queue
-// ================================================================
+// ── BACKGROUND SYNC ───────────────────────────────────────────────
 self.addEventListener('sync', event => {
   if (event.tag === 'sync-progress') {
     event.waitUntil(
@@ -135,19 +130,15 @@ self.addEventListener('sync', event => {
   }
 });
 
-// ================================================================
-//  PUSH NOTIFICATIONS
-// ================================================================
+// ── PUSH NOTIFICATIONS ────────────────────────────────────────────
 self.addEventListener('push', event => {
   const p = event.data?.json() ?? {};
   event.waitUntil(
     self.registration.showNotification(p.title ?? '❄️ Blue Mandarin — وقت الدراسة!', {
-      body:    p.body ?? '⏰ وقت الممارسة يا حسام! 加油🔥',
-      icon:    './icons/icon-192.png',
-      badge:   './icons/icon-96.png',
-      tag:     'daily-reminder',
+      body: p.body ?? '⏰ وقت الممارسة يا حسام! 加油🔥',
+      tag: 'daily-reminder',
       vibrate: [200, 100, 200],
-      data:    { url: p.url ?? './' },
+      data: { url: p.url ?? './' },
       actions: [
         { action: 'start',   title: '📖 ابدأ الدرس' },
         { action: 'dismiss', title: 'لاحقاً' },
@@ -169,9 +160,7 @@ self.addEventListener('notificationclick', event => {
   );
 });
 
-// ================================================================
-//  STRATEGY HELPERS
-// ================================================================
+// ── CACHING STRATEGIES ────────────────────────────────────────────
 async function cacheFirst(request, cacheName) {
   const cache  = await caches.open(cacheName);
   const cached = await cache.match(request);

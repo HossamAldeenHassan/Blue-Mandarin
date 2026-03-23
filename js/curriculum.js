@@ -40,7 +40,8 @@ const CurriculumEngine = (() => {
   async function loadCurriculum() {
     if (_curriculum) return _curriculum;
     try {
-      const res = await fetch('./data/hsk1/curriculum.json', { cache: 'no-cache' });
+      const bust = `?_v=${Math.floor(Date.now() / 60000)}`;
+      const res = await fetch('./data/hsk1/curriculum.json' + bust, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       _curriculum = await res.json();
       console.log('[CE] curriculum.json loaded:', _curriculum.units.length, 'units');

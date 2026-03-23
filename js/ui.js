@@ -9,9 +9,18 @@
 'use strict';
 
 /* ===========================================================
-   APP CONTROLLER — index.html
+   APP CONTROLLER — ui.js  v1.3.0
    Phase 3 shell + engine, wired to BM modules.
    =========================================================== */
+
+// ── Boot diagnostics ─────────────────────────────────────────
+// These logs appear in console immediately so you can verify:
+// 1) The script executed, 2) Key DOM containers exist
+console.log('DOM Fully Loaded ❄️');
+console.log('Target Container Found:', !!document.getElementById('lessons-grid'));
+console.log('Story List Found:',       !!document.getElementById('story-list'));
+console.log('Grammar List Found:',     !!document.getElementById('grammar-list'));
+console.log('Home Path Found:',        !!document.getElementById('home-path-container'));
 
 // ── BM module guard ───────────────────────────────────────────
 // Silently check — only warn if modules actually failed to load.
@@ -766,9 +775,21 @@ const LessonDetail = {
     }
 
     // Apply chunk slice from LESSON_PLAN
-    const plan  = LESSON_PLAN.find(l => l.n === lessonId);
-    const part  = plan?.parts?.find(p => p.part === (partNumber ?? 1));
-    const words = part ? allWords.slice(part.start, part.end) : allWords;
+    const plan     = LESSON_PLAN.find(l => l.n === lessonId);
+    const part     = plan?.parts?.find(p => p.part === (partNumber ?? 1));
+    const rawSlice = part ? allWords.slice(part.start, part.end) : allWords;
+
+    // ── Sort by word type for pedagogical grouping (NOT alphabetically) ──
+    const TYPE_ORDER = {
+      'تحية':10,'ضمير':20,'اسم':30,'فعل':40,'صفة':50,
+      'ظرف':60,'رقم':70,'وحدة عد':80,'أداة':90,'حرف جر':100,
+      'فعل مساعد':110,'لاحقة':120,'حرف':130,
+    };
+    const words = [...rawSlice].sort((a, b) => {
+      const oa = TYPE_ORDER[a.type] ?? 999;
+      const ob = TYPE_ORDER[b.type] ?? 999;
+      return oa !== ob ? oa - ob : a.pinyin.localeCompare(b.pinyin);
+    });
 
     // "Show All" toggle banner (only for chunked lessons)
     const showAllBanner = (plan?.parts?.length ?? 1) > 1 ? `
@@ -782,14 +803,29 @@ const LessonDetail = {
         </button>
       </div>` : '';
 
+    const TYPE_LABELS = {
+      'تحية':'تحيات 👋','ضمير':'ضمائر 🗣️','اسم':'أسماء 📦','فعل':'أفعال ⚡',
+      'صفة':'صفات ✨','ظرف':'ظروف 🔗','رقم':'أرقام 🔢','وحدة عد':'وحدات عد 📏',
+      'أداة':'أدوات 🔧','حرف جر':'حروف جر 📍','فعل مساعد':'أفعال مساعدة 🤝',
+    };
     const renderWords = (list) => {
-      grid.innerHTML = showAllBanner + list.map(w => `
+      let lastType = null;
+      let cardsHtml = '';
+      list.forEach(w => {
+        if (w.type !== lastType) {
+          const label = TYPE_LABELS[w.type] ?? w.type;
+          cardsHtml += `<div class="ld-type-header" style="grid-column:1/-1">${label}</div>`;
+          lastType = w.type;
+        }
+        cardsHtml += `
         <div class="ld-word-card rip" data-word-cn="${w.cn}">
           <div class="ld-word-cn">${w.cn}</div>
           <div class="ld-word-py">${w.pinyin}</div>
           <div class="ld-word-ar">${w.ar}</div>
           <span class="ld-word-type">${w.type}</span>
-        </div>`).join('');
+        </div>`;
+      });
+      grid.innerHTML = showAllBanner + cardsHtml;
 
       // Tap → single-word flashcard
       grid.querySelectorAll('.ld-word-card').forEach(card => {
@@ -1039,6 +1075,8 @@ document.querySelectorAll('.read-tab').forEach(tab => {
     document.querySelectorAll('.read-tab').forEach(t => t.classList.toggle('active', t === tab));
     document.querySelectorAll('.read-panel').forEach(p =>
       p.classList.toggle('active', p.id === `read-panel-${id}`));
+    // Lazily render grammar when its tab is first clicked
+    if (id === 'grammar') GrammarViewer.render();
   });
 });
 
@@ -1312,7 +1350,9 @@ const GrammarViewer = {
   _rendered: false,
 
   async render() {
-    if (this._rendered) return;
+    // Only skip re-render if the list already has real content (not skeletons)
+    const list = document.getElementById('grammar-list');
+    if (this._rendered && list && list.querySelector('.grammar-card')) return;
     const list    = document.getElementById('grammar-list');
     const grammar = KG?.grammar?.all ?? await Data.getGrammar();
     if (!Array.isArray(grammar) || !grammar.length) {
@@ -1698,8 +1738,17 @@ async function init() {
   // 4. Render the lesson grid dynamically from real topics
   renderLessonGrid(allData.lessons);
 
+  // 4b. Sync home-path nodes with stored progress
+  renderHomePath();
+
   // 5. Render the story list in the Reading Center
-  renderStoryList(allData.stories);
+  //    allData.stories is the flat array built by DataManager.T.stories
+  if (Array.isArray(allData.stories) && allData.stories.length) {
+    renderStoryList(allData.stories);
+    console.log('[BM] Stories rendered:', allData.stories.length);
+  } else {
+    console.warn('[BM] No stories data to render');
+  }
 
   // 6. Grammar renders lazily when user opens the Grammar tab (avoid paint block)
   document.querySelector('[data-read-tab="grammar"]')?.addEventListener('click', () => {
@@ -1793,7 +1842,29 @@ function renderLessonGrid(lessonsMeta) {
       const lid = +btn.dataset.lessonId;
       // "Start" launches a lesson-specific vocabulary quiz,
       // not the general 100-question final exam
+      // If curriculum engine is available, open the guided lesson
+    // Otherwise fall back to vocab quiz (openLessonTest)
+    const CE = window.BM?.Curriculum;
+    if (CE) {
+      // Map lesson card number to curriculum lesson IDs
+      CE.loadCurriculum().then(cur => {
+        if (!cur) { openLessonTest(lid); return; }
+        // Find which unit/lesson matches this lesson card number
+        for (const unit of cur.units) {
+          const lesson = unit.lessons.find((_, i) => {
+            // Heuristic: lesson card 1-15 maps to unit lessons by sequence
+            const globalIdx = cur.units.slice(0, cur.units.indexOf(unit))
+              .reduce((s, u) => s + u.lessons.length, 0) + unit.lessons.indexOf(_);
+            return globalIdx + 1 === lid;
+          });
+          if (lesson) { CE.openLesson(unit.id, lesson.id); return; }
+        }
+        // No curriculum lesson found — fall back to vocab quiz
+        openLessonTest(lid);
+      });
+    } else {
       openLessonTest(lid);
+    }
     });
   });
 }
@@ -1882,8 +1953,14 @@ function renderStoryList(stories) {
   });
 }
 
-// Trigger grammar render when the grammar tab becomes visible via nav
+// Trigger grammar render when navigating to Read view (both grammar + stories)
 document.querySelector('.nav-item[data-view="read"]')?.addEventListener('click', () => {
+  // Always re-check if stories need rendering (they might have loaded after first nav)
+  const storyList = document.getElementById('story-list');
+  if (storyList && !storyList.querySelector('.story-card') && window.BM?.KnowledgeGraph?.stories?.all?.length) {
+    renderStoryList(window.BM.KnowledgeGraph.stories.all);
+  }
+  // Render grammar if grammar tab is active
   const grammarTab = document.querySelector('[data-read-tab="grammar"]');
   if (grammarTab?.classList.contains('active')) GrammarViewer.render();
 });
