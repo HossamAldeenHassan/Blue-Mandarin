@@ -1,0 +1,3095 @@
+{
+  "1": {
+    "lessonId": 1,
+    "title_ar": "التحيات والتعارف",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l1_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "正在",
+        "pinyin": "zhèngzài",
+        "options": [
+          "لاحقة الاكتمال",
+          "وداعاً",
+          "يفعل الآن",
+          "هم"
+        ],
+        "answer": "يفعل الآن",
+        "explanation_ar": "正在 (zhèngzài) = يفعل الآن"
+      },
+      {
+        "id": "l1_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "国外",
+        "pinyin": "guó wài",
+        "options": [
+          "أنت (تعظيم)",
+          "اسم الشخص",
+          "الخارج",
+          "يتكلم"
+        ],
+        "answer": "الخارج",
+        "explanation_ar": "国外 (guó wài) = الخارج"
+      },
+      {
+        "id": "l1_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "别人",
+        "pinyin": "biérén",
+        "options": [
+          "شخص",
+          "دولة",
+          "الخارج",
+          "الآخرون"
+        ],
+        "answer": "الآخرون",
+        "explanation_ar": "别人 (biérén) = الآخرون"
+      },
+      {
+        "id": "l1_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "们",
+        "pinyin": "men",
+        "options": [
+          "هؤلاء",
+          "لاحقة الجمع",
+          "لا مشكلة",
+          "لا"
+        ],
+        "answer": "لاحقة الجمع",
+        "explanation_ar": "们 (men) = لاحقة الجمع"
+      },
+      {
+        "id": "l1_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "没关系",
+        "pinyin": "méi guānxi",
+        "options": [
+          "لا بأس",
+          "شخص",
+          "معاً",
+          "يُخبر"
+        ],
+        "answer": "لا بأس",
+        "explanation_ar": "没关系 (méi guānxi) = لا بأس"
+      },
+      {
+        "id": "l1_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "了",
+        "shown_pinyin": "le",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: le"
+      },
+      {
+        "id": "l1_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "还有",
+        "shown_pinyin": "hái yǒu",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: hái yǒu"
+      },
+      {
+        "id": "l1_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "国家",
+        "shown_pinyin": "guójiā",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: guójiā"
+      },
+      {
+        "id": "l1_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "一块儿",
+        "shown_pinyin": "yíkuàir",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: yíkuàir"
+      },
+      {
+        "id": "l1_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我们一起去吧！",
+        "target_ar": "هيا بنا نذهب معاً!",
+        "target_pinyin": "Wǒmen yìqǐ qù ba!",
+        "tiles": [
+          "吧",
+          "起",
+          "去",
+          "们",
+          "我",
+          "一",
+          "！"
+        ]
+      },
+      {
+        "id": "l1_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "别客气，请坐！",
+        "target_ar": "لا تتكلف، تفضل بالجلوس!",
+        "target_pinyin": "Bié kèqi, qǐng zuò!",
+        "tiles": [
+          "别",
+          "请",
+          "坐",
+          "客",
+          "！",
+          "，",
+          "气"
+        ]
+      },
+      {
+        "id": "l1_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "跟",
+        "audio_pinyin": "gēn",
+        "options_cn": [
+          "就",
+          "子",
+          "们",
+          "跟"
+        ],
+        "answer_cn": "跟",
+        "explanation_ar": "سمعتَ: 跟 (gēn) = مع"
+      },
+      {
+        "id": "l1_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "是不是",
+        "audio_pinyin": "shì bu shì",
+        "options_cn": [
+          "是不是",
+          "没关系",
+          "一块儿",
+          "很"
+        ],
+        "answer_cn": "是不是",
+        "explanation_ar": "سمعتَ: 是不是 (shì bu shì) = هل هذا صحيح؟"
+      },
+      {
+        "id": "l1_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "不客气",
+        "audio_pinyin": "bú kèqi",
+        "options_cn": [
+          "中国",
+          "吗",
+          "不客气",
+          "有的"
+        ],
+        "answer_cn": "不客气",
+        "explanation_ar": "سمعتَ: 不客气 (bú kèqi) = عفواً"
+      },
+      {
+        "id": "l1_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "中国",
+        "audio_pinyin": "Zhōngguó",
+        "options_cn": [
+          "不客气",
+          "谁",
+          "中国",
+          "那些"
+        ],
+        "answer_cn": "中国",
+        "explanation_ar": "سمعتَ: 中国 (Zhōngguó) = الصين"
+      }
+    ]
+  },
+  "2": {
+    "lessonId": 2,
+    "title_ar": "الأسرة والمنزل",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l2_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "男朋友",
+        "pinyin": "nánpéngyou",
+        "options": [
+          "في البيت",
+          "يملك / يوجد",
+          "منزل",
+          "صديق (شريك)"
+        ],
+        "answer": "صديق (شريك)",
+        "explanation_ar": "男朋友 (nánpéngyou) = صديق (شريك)"
+      },
+      {
+        "id": "l2_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "楼",
+        "pinyin": "lóu",
+        "options": [
+          "طابق / بناية",
+          "سنة (عمر)",
+          "أفراد العائلة",
+          "غرفة"
+        ],
+        "answer": "طابق / بناية",
+        "explanation_ar": "楼 (lóu) = طابق / بناية"
+      },
+      {
+        "id": "l2_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "爷爷",
+        "pinyin": "yéye",
+        "options": [
+          "أب",
+          "يسكن",
+          "باب",
+          "جد"
+        ],
+        "answer": "جد",
+        "explanation_ar": "爷爷 (yéye) = جد"
+      },
+      {
+        "id": "l2_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "女朋友",
+        "pinyin": "nǚpéngyou",
+        "options": [
+          "طفل",
+          "رجل",
+          "صديقة",
+          "ذكر"
+        ],
+        "answer": "صديقة",
+        "explanation_ar": "女朋友 (nǚpéngyou) = صديقة"
+      },
+      {
+        "id": "l2_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "小孩儿",
+        "pinyin": "xiǎoháir",
+        "options": [
+          "في البيت",
+          "طفل صغير",
+          "باب",
+          "أب"
+        ],
+        "answer": "طفل صغير",
+        "explanation_ar": "小孩儿 (xiǎoháir) = طفل صغير"
+      },
+      {
+        "id": "l2_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "房间",
+        "shown_pinyin": "zàijiā",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: fángjiān"
+      },
+      {
+        "id": "l2_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "家",
+        "shown_pinyin": "jiā",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: jiā"
+      },
+      {
+        "id": "l2_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "小朋友",
+        "shown_pinyin": "xiǎopéngyǒu",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: xiǎopéngyǒu"
+      },
+      {
+        "id": "l2_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "孩子",
+        "shown_pinyin": "jiějie",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: háizi"
+      },
+      {
+        "id": "l2_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我爸爸是老师。",
+        "target_ar": "والدي معلم.",
+        "target_pinyin": "Wǒ bàba shì lǎoshī.",
+        "tiles": [
+          "是",
+          "师",
+          "爸",
+          "爸",
+          "我",
+          "。",
+          "老"
+        ]
+      },
+      {
+        "id": "l2_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "这是我的床。",
+        "target_ar": "هذا سريري.",
+        "target_pinyin": "Zhè shì wǒ de chuáng.",
+        "tiles": [
+          "是",
+          "的",
+          "。",
+          "床",
+          "我",
+          "这"
+        ]
+      },
+      {
+        "id": "l2_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "女儿",
+        "audio_pinyin": "nǚér",
+        "options_cn": [
+          "妹妹",
+          "有",
+          "房子",
+          "女儿"
+        ],
+        "answer_cn": "女儿",
+        "explanation_ar": "سمعتَ: 女儿 (nǚér) = ابنة"
+      },
+      {
+        "id": "l2_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "奶奶",
+        "audio_pinyin": "nǎinai",
+        "options_cn": [
+          "奶奶",
+          "家",
+          "家人",
+          "爷爷"
+        ],
+        "answer_cn": "奶奶",
+        "explanation_ar": "سمعتَ: 奶奶 (nǎinai) = جدة"
+      },
+      {
+        "id": "l2_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "有",
+        "audio_pinyin": "yǒu",
+        "options_cn": [
+          "有",
+          "老人",
+          "楼",
+          "桌子"
+        ],
+        "answer_cn": "有",
+        "explanation_ar": "سمعتَ: 有 (yǒu) = يملك / يوجد"
+      },
+      {
+        "id": "l2_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "在家",
+        "audio_pinyin": "zàijiā",
+        "options_cn": [
+          "孩子",
+          "住",
+          "在家",
+          "岁"
+        ],
+        "answer_cn": "在家",
+        "explanation_ar": "سمعتَ: 在家 (zàijiā) = في البيت"
+      }
+    ]
+  },
+  "3": {
+    "lessonId": 3,
+    "title_ar": "الأرقام والكميات",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l3_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "几",
+        "pinyin": "jǐ",
+        "options": [
+          "مرة (وحدة عد)",
+          "قليل",
+          "كم؟ (صغير)",
+          "قليلاً"
+        ],
+        "answer": "كم؟ (صغير)",
+        "explanation_ar": "几 (jǐ) = كم؟ (صغير)"
+      },
+      {
+        "id": "l3_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "八",
+        "pinyin": "bā",
+        "options": [
+          "مرة (وحدة عد)",
+          "صفر",
+          "كم؟",
+          "ثمانية"
+        ],
+        "answer": "ثمانية",
+        "explanation_ar": "八 (bā) = ثمانية"
+      },
+      {
+        "id": "l3_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "少",
+        "pinyin": "shǎo",
+        "options": [
+          "وحدة عد للغرف",
+          "صفر",
+          "اثنان (مع وحدة عد)",
+          "قليل"
+        ],
+        "answer": "قليل",
+        "explanation_ar": "少 (shǎo) = قليل"
+      },
+      {
+        "id": "l3_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "三",
+        "pinyin": "sān",
+        "options": [
+          "مئة",
+          "قليلاً",
+          "ثلاثة",
+          "تسعة"
+        ],
+        "answer": "ثلاثة",
+        "explanation_ar": "三 (sān) = ثلاثة"
+      },
+      {
+        "id": "l3_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "多少",
+        "pinyin": "duōshao",
+        "options": [
+          "قليل",
+          "كم؟",
+          "ستة",
+          "كثير"
+        ],
+        "answer": "كم؟",
+        "explanation_ar": "多少 (duōshao) = كم؟"
+      },
+      {
+        "id": "l3_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "一半",
+        "shown_pinyin": "líng",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: yíbàn"
+      },
+      {
+        "id": "l3_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "五",
+        "shown_pinyin": "wǔ",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: wǔ"
+      },
+      {
+        "id": "l3_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "一点儿",
+        "shown_pinyin": "yìdiǎnr",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: yìdiǎnr"
+      },
+      {
+        "id": "l3_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "杯",
+        "shown_pinyin": "shǎo",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: bēi"
+      },
+      {
+        "id": "l3_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我有八个苹果。",
+        "target_ar": "لدي ثماني تفاحات.",
+        "target_pinyin": "Wǒ yǒu bā gè píngguǒ.",
+        "tiles": [
+          "有",
+          "八",
+          "个",
+          "果",
+          "苹",
+          "。",
+          "我"
+        ]
+      },
+      {
+        "id": "l3_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "一百个学生。",
+        "target_ar": "مئة طالب.",
+        "target_pinyin": "Yì bǎi gè xuésheng.",
+        "tiles": [
+          "个",
+          "一",
+          "。",
+          "生",
+          "学",
+          "百"
+        ]
+      },
+      {
+        "id": "l3_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "百",
+        "audio_pinyin": "bǎi",
+        "options_cn": [
+          "杯",
+          "两",
+          "百",
+          "多"
+        ],
+        "answer_cn": "百",
+        "explanation_ar": "سمعتَ: 百 (bǎi) = مئة"
+      },
+      {
+        "id": "l3_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "十",
+        "audio_pinyin": "shí",
+        "options_cn": [
+          "十",
+          "二",
+          "零",
+          "个"
+        ],
+        "answer_cn": "十",
+        "explanation_ar": "سمعتَ: 十 (shí) = عشرة"
+      },
+      {
+        "id": "l3_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "七",
+        "audio_pinyin": "qī",
+        "options_cn": [
+          "个",
+          "多",
+          "七",
+          "次"
+        ],
+        "answer_cn": "七",
+        "explanation_ar": "سمعتَ: 七 (qī) = سبعة"
+      },
+      {
+        "id": "l3_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "四",
+        "audio_pinyin": "sì",
+        "options_cn": [
+          "百",
+          "一点儿",
+          "几",
+          "四"
+        ],
+        "answer_cn": "四",
+        "explanation_ar": "سمعتَ: 四 (sì) = أربعة"
+      }
+    ]
+  },
+  "4": {
+    "lessonId": 4,
+    "title_ar": "الوقت والجدول",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l4_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "现在",
+        "pinyin": "xiànzài",
+        "options": [
+          "فوراً",
+          "تاريخ",
+          "الآن",
+          "سنة"
+        ],
+        "answer": "الآن",
+        "explanation_ar": "现在 (xiànzài) = الآن"
+      },
+      {
+        "id": "l4_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "小时",
+        "pinyin": "xiǎoshí",
+        "options": [
+          "ساعة (مدة)",
+          "الظهر",
+          "مدة",
+          "يمر"
+        ],
+        "answer": "ساعة (مدة)",
+        "explanation_ar": "小时 (xiǎoshí) = ساعة (مدة)"
+      },
+      {
+        "id": "l4_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "后天",
+        "pinyin": "hòutiān",
+        "options": [
+          "عادةً",
+          "النهار",
+          "بعد الظهر",
+          "بعد غد"
+        ],
+        "answer": "بعد غد",
+        "explanation_ar": "后天 (hòutiān) = بعد غد"
+      },
+      {
+        "id": "l4_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "半天",
+        "pinyin": "bàntiān",
+        "options": [
+          "ساعة (مدة)",
+          "يوم (تاريخ)",
+          "نصف يوم",
+          "أول أمس"
+        ],
+        "answer": "نصف يوم",
+        "explanation_ar": "半天 (bàntiān) = نصف يوم"
+      },
+      {
+        "id": "l4_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "昨天",
+        "pinyin": "zuótiān",
+        "options": [
+          "بالأمس",
+          "عيد الميلاد",
+          "السنة الماضية",
+          "بعد غد"
+        ],
+        "answer": "بالأمس",
+        "explanation_ar": "昨天 (zuótiān) = بالأمس"
+      },
+      {
+        "id": "l4_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "常常",
+        "shown_pinyin": "chángcháng",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: chángcháng"
+      },
+      {
+        "id": "l4_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "今年",
+        "shown_pinyin": "zhōngwǔ",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: jīnnián"
+      },
+      {
+        "id": "l4_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "常",
+        "shown_pinyin": "cháng",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: cháng"
+      },
+      {
+        "id": "l4_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "一会儿",
+        "shown_pinyin": "yíhuìr",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: yíhuìr"
+      },
+      {
+        "id": "l4_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "白天我在工作。",
+        "target_ar": "أنا أعمل في النهار.",
+        "target_pinyin": "Báitiān wǒ zài gōngzuò.",
+        "tiles": [
+          "工",
+          "。",
+          "在",
+          "天",
+          "作",
+          "白",
+          "我"
+        ]
+      },
+      {
+        "id": "l4_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "半个苹果。",
+        "target_ar": "نصف تفاحة.",
+        "target_pinyin": "Bàn gè píngguǒ.",
+        "tiles": [
+          "半",
+          "果",
+          "苹",
+          "个",
+          "。"
+        ]
+      },
+      {
+        "id": "l4_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "明天",
+        "audio_pinyin": "míngtiān",
+        "options_cn": [
+          "明天",
+          "马上",
+          "早",
+          "最后"
+        ],
+        "answer_cn": "明天",
+        "explanation_ar": "سمعتَ: 明天 (míngtiān) = غداً"
+      },
+      {
+        "id": "l4_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "时间",
+        "audio_pinyin": "shíjiān",
+        "options_cn": [
+          "半天",
+          "时间",
+          "年",
+          "常常"
+        ],
+        "answer_cn": "时间",
+        "explanation_ar": "سمعتَ: 时间 (shíjiān) = مدة"
+      },
+      {
+        "id": "l4_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "分",
+        "audio_pinyin": "fēn",
+        "options_cn": [
+          "号",
+          "白天",
+          "分",
+          "上午"
+        ],
+        "answer_cn": "分",
+        "explanation_ar": "سمعتَ: 分 (fēn) = دقيقة"
+      },
+      {
+        "id": "l4_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "星期日",
+        "audio_pinyin": "xīngqīrì",
+        "options_cn": [
+          "星期",
+          "晚",
+          "白天",
+          "星期日"
+        ],
+        "answer_cn": "星期日",
+        "explanation_ar": "سمعتَ: 星期日 (xīngqīrì) = الأحد"
+      }
+    ]
+  },
+  "5": {
+    "lessonId": 5,
+    "title_ar": "الطقس والطبيعة",
+    "total_questions": 11,
+    "questions": [
+      {
+        "id": "l5_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "雨",
+        "pinyin": "yǔ",
+        "options": [
+          "جبل",
+          "ريح",
+          "مطر",
+          "بارد"
+        ],
+        "answer": "مطر",
+        "explanation_ar": "雨 (yǔ) = مطر"
+      },
+      {
+        "id": "l5_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "风",
+        "pinyin": "fēng",
+        "options": [
+          "بارد",
+          "ريح",
+          "حار",
+          "شجرة"
+        ],
+        "answer": "ريح",
+        "explanation_ar": "风 (fēng) = ريح"
+      },
+      {
+        "id": "l5_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "天气",
+        "pinyin": "tiānqì",
+        "options": [
+          "يمطر",
+          "الطقس",
+          "زهرة",
+          "حار"
+        ],
+        "answer": "الطقس",
+        "explanation_ar": "天气 (tiānqì) = الطقس"
+      },
+      {
+        "id": "l5_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "冷",
+        "pinyin": "lěng",
+        "options": [
+          "حار",
+          "بارد",
+          "الطقس",
+          "مطر"
+        ],
+        "answer": "بارد",
+        "explanation_ar": "冷 (lěng) = بارد"
+      },
+      {
+        "id": "l5_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "山",
+        "pinyin": "shān",
+        "options": [
+          "زهرة",
+          "الطقس",
+          "شجرة",
+          "جبل"
+        ],
+        "answer": "جبل",
+        "explanation_ar": "山 (shān) = جبل"
+      },
+      {
+        "id": "l5_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "花",
+        "shown_pinyin": "shān",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: huā"
+      },
+      {
+        "id": "l5_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "热",
+        "shown_pinyin": "rè",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: rè"
+      },
+      {
+        "id": "l5_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "下雨",
+        "shown_pinyin": "shù",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: xià yǔ"
+      },
+      {
+        "id": "l5_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "树",
+        "shown_pinyin": "rè",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: shù"
+      },
+      {
+        "id": "l5_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "今天有风。",
+        "target_ar": "اليوم هناك ريح.",
+        "target_pinyin": "Jīntiān yǒu fēng.",
+        "tiles": [
+          "。",
+          "风",
+          "有",
+          "今",
+          "天"
+        ]
+      },
+      {
+        "id": "l5_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我喜欢花。",
+        "target_ar": "أنا أحب الزهور.",
+        "target_pinyin": "Wǒ xǐhuan huā.",
+        "tiles": [
+          "。",
+          "我",
+          "喜",
+          "欢",
+          "花"
+        ]
+      }
+    ]
+  },
+  "6": {
+    "lessonId": 6,
+    "title_ar": "الألوان والمظهر",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l6_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "小",
+        "pinyin": "xiǎo",
+        "options": [
+          "صغير",
+          "غير كبير",
+          "طويل / عالٍ",
+          "سريع"
+        ],
+        "answer": "صغير",
+        "explanation_ar": "小 (xiǎo) = صغير"
+      },
+      {
+        "id": "l6_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "干",
+        "pinyin": "gān",
+        "options": [
+          "مسنّ",
+          "سريع",
+          "جميل المنظر",
+          "جاف"
+        ],
+        "answer": "جاف",
+        "explanation_ar": "干 (gān) = جاف"
+      },
+      {
+        "id": "l6_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "干净",
+        "pinyin": "gānjìng",
+        "options": [
+          "جاف",
+          "أبيض",
+          "نظيف",
+          "صغير"
+        ],
+        "answer": "نظيف",
+        "explanation_ar": "干净 (gānjìng) = نظيف"
+      },
+      {
+        "id": "l6_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "老",
+        "pinyin": "lǎo",
+        "options": [
+          "مسنّ",
+          "نظيف",
+          "غير كبير",
+          "طويل / عالٍ"
+        ],
+        "answer": "مسنّ",
+        "explanation_ar": "老 (lǎo) = مسنّ"
+      },
+      {
+        "id": "l6_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "坏",
+        "pinyin": "huài",
+        "options": [
+          "سيء",
+          "بطيء",
+          "صغير",
+          "غير كبير"
+        ],
+        "answer": "سيء",
+        "explanation_ar": "坏 (huài) = سيء"
+      },
+      {
+        "id": "l6_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "高",
+        "shown_pinyin": "gānjìng",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: gāo"
+      },
+      {
+        "id": "l6_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "慢",
+        "shown_pinyin": "xiǎo",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: màn"
+      },
+      {
+        "id": "l6_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "重",
+        "shown_pinyin": "huài",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: zhòng"
+      },
+      {
+        "id": "l6_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "白",
+        "shown_pinyin": "bái",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: bái"
+      },
+      {
+        "id": "l6_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "雪是白色的。",
+        "target_ar": "الثلج أبيض اللون.",
+        "target_pinyin": "Xuě shì báisè de.",
+        "tiles": [
+          "。",
+          "雪",
+          "白",
+          "的",
+          "色",
+          "是"
+        ]
+      },
+      {
+        "id": "l6_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "这个苹果不大。",
+        "target_ar": "هذه التفاحة ليست كبيرة.",
+        "target_pinyin": "Zhège píngguǒ bú dà.",
+        "tiles": [
+          "个",
+          "这",
+          "大",
+          "果",
+          "苹",
+          "。",
+          "不"
+        ]
+      },
+      {
+        "id": "l6_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "快",
+        "audio_pinyin": "kuài",
+        "options_cn": [
+          "快",
+          "干",
+          "重",
+          "非常"
+        ],
+        "answer_cn": "快",
+        "explanation_ar": "سمعتَ: 快 (kuài) = سريع"
+      },
+      {
+        "id": "l6_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "大",
+        "audio_pinyin": "dà",
+        "options_cn": [
+          "大",
+          "新",
+          "重",
+          "坏"
+        ],
+        "answer_cn": "大",
+        "explanation_ar": "سمعتَ: 大 (dà) = كبير"
+      },
+      {
+        "id": "l6_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "不大",
+        "audio_pinyin": "bú dà",
+        "options_cn": [
+          "小",
+          "不大",
+          "重",
+          "新"
+        ],
+        "answer_cn": "不大",
+        "explanation_ar": "سمعتَ: 不大 (bú dà) = غير كبير"
+      },
+      {
+        "id": "l6_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "新",
+        "audio_pinyin": "xīn",
+        "options_cn": [
+          "干",
+          "老",
+          "新",
+          "坏"
+        ],
+        "answer_cn": "新",
+        "explanation_ar": "سمعتَ: 新 (xīn) = جديد"
+      }
+    ]
+  },
+  "7": {
+    "lessonId": 7,
+    "title_ar": "الطعام والشراب",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l7_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "午饭",
+        "pinyin": "wǔfàn",
+        "options": [
+          "العشاء",
+          "خبز محشي",
+          "الغداء",
+          "شاي"
+        ],
+        "answer": "الغداء",
+        "explanation_ar": "午饭 (wǔfàn) = الغداء"
+      },
+      {
+        "id": "l7_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "好吃",
+        "pinyin": "hǎochī",
+        "options": [
+          "حليب",
+          "كوب",
+          "لذيذ",
+          "لحم"
+        ],
+        "answer": "لذيذ",
+        "explanation_ar": "好吃 (hǎochī) = لذيذ"
+      },
+      {
+        "id": "l7_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "饭",
+        "pinyin": "fàn",
+        "options": [
+          "طعام",
+          "الفطور",
+          "يأكل",
+          "حليب"
+        ],
+        "answer": "طعام",
+        "explanation_ar": "饭 (fàn) = طعام"
+      },
+      {
+        "id": "l7_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "饿",
+        "pinyin": "è",
+        "options": [
+          "جائع",
+          "حليب",
+          "ماء",
+          "يتناول الطعام"
+        ],
+        "answer": "جائع",
+        "explanation_ar": "饿 (è) = جائع"
+      },
+      {
+        "id": "l7_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "吃",
+        "pinyin": "chī",
+        "options": [
+          "مطعم",
+          "يأكل",
+          "الغداء",
+          "لذيذ"
+        ],
+        "answer": "يأكل",
+        "explanation_ar": "吃 (chī) = يأكل"
+      },
+      {
+        "id": "l7_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "包子",
+        "shown_pinyin": "nǎi",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: bāozi"
+      },
+      {
+        "id": "l7_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "杯子",
+        "shown_pinyin": "bēizi",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: bēizi"
+      },
+      {
+        "id": "l7_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "晚饭",
+        "shown_pinyin": "fàn",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: wǎnfàn"
+      },
+      {
+        "id": "l7_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "奶",
+        "shown_pinyin": "hē",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: nǎi"
+      },
+      {
+        "id": "l7_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我吃包子。",
+        "target_ar": "آكل خبزاً محشياً.",
+        "target_pinyin": "Wǒ chī bāozi.",
+        "tiles": [
+          "吃",
+          "。",
+          "子",
+          "我",
+          "包"
+        ]
+      },
+      {
+        "id": "l7_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "这是你的杯子。",
+        "target_ar": "هذا كوبك.",
+        "target_pinyin": "Zhè shì nǐ de bēizi.",
+        "tiles": [
+          "你",
+          "子",
+          "这",
+          "杯",
+          "。",
+          "的",
+          "是"
+        ]
+      },
+      {
+        "id": "l7_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "早饭",
+        "audio_pinyin": "zǎofàn",
+        "options_cn": [
+          "喝",
+          "早饭",
+          "面包",
+          "肉"
+        ],
+        "answer_cn": "早饭",
+        "explanation_ar": "سمعتَ: 早饭 (zǎofàn) = الفطور"
+      },
+      {
+        "id": "l7_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "米饭",
+        "audio_pinyin": "mǐfàn",
+        "options_cn": [
+          "面包",
+          "饿",
+          "面条儿",
+          "米饭"
+        ],
+        "answer_cn": "米饭",
+        "explanation_ar": "سمعتَ: 米饭 (mǐfàn) = أرز مطبوخ"
+      },
+      {
+        "id": "l7_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "牛奶",
+        "audio_pinyin": "niúnǎi",
+        "options_cn": [
+          "牛奶",
+          "鸡蛋",
+          "奶",
+          "包子"
+        ],
+        "answer_cn": "牛奶",
+        "explanation_ar": "سمعتَ: 牛奶 (niúnǎi) = حليب البقرة"
+      },
+      {
+        "id": "l7_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "面条儿",
+        "audio_pinyin": "miàntiáor",
+        "options_cn": [
+          "晚饭",
+          "水",
+          "面条儿",
+          "饭"
+        ],
+        "answer_cn": "面条儿",
+        "explanation_ar": "سمعتَ: 面条儿 (miàntiáor) = مكرونة"
+      }
+    ]
+  },
+  "8": {
+    "lessonId": 8,
+    "title_ar": "التسوق والمال",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l8_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "试",
+        "pinyin": "shì",
+        "options": [
+          "يُجرِّب",
+          "يلبس",
+          "ملابس",
+          "يوان (عملة)"
+        ],
+        "answer": "يُجرِّب",
+        "explanation_ar": "试 (shì) = يُجرِّب"
+      },
+      {
+        "id": "l8_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "衣服",
+        "pinyin": "yīfu",
+        "options": [
+          "ملابس",
+          "محفظة",
+          "يشتري",
+          "يُوصل"
+        ],
+        "answer": "ملابس",
+        "explanation_ar": "衣服 (yīfu) = ملابس"
+      },
+      {
+        "id": "l8_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "包",
+        "pinyin": "bāo",
+        "options": [
+          "يُوصل",
+          "مال",
+          "حقيبة",
+          "غالٍ"
+        ],
+        "answer": "حقيبة",
+        "explanation_ar": "包 (bāo) = حقيبة"
+      },
+      {
+        "id": "l8_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "商店",
+        "pinyin": "shāngdiàn",
+        "options": [
+          "مول",
+          "ماو (0.1 يوان)",
+          "شيء",
+          "متجر"
+        ],
+        "answer": "متجر",
+        "explanation_ar": "商店 (shāngdiàn) = متجر"
+      },
+      {
+        "id": "l8_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "块",
+        "pinyin": "kuài",
+        "options": [
+          "حقيبة",
+          "يُعيد",
+          "يوان (عملة)",
+          "ماو (0.1 يوان)"
+        ],
+        "answer": "يوان (عملة)",
+        "explanation_ar": "块 (kuài) = يوان (عملة)"
+      },
+      {
+        "id": "l8_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "钱包",
+        "shown_pinyin": "qiánbāo",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: qiánbāo"
+      },
+      {
+        "id": "l8_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "找到",
+        "shown_pinyin": "zhǎodào",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: zhǎodào"
+      },
+      {
+        "id": "l8_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "买",
+        "shown_pinyin": "qián",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: mǎi"
+      },
+      {
+        "id": "l8_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "东西",
+        "shown_pinyin": "mǎi",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: dōngxi"
+      },
+      {
+        "id": "l8_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "这是我的包。",
+        "target_ar": "هذه حقيبتي.",
+        "target_pinyin": "Zhè shì wǒ de bāo.",
+        "tiles": [
+          "我",
+          "是",
+          "的",
+          "这",
+          "。",
+          "包"
+        ]
+      },
+      {
+        "id": "l8_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "她穿红衣服。",
+        "target_ar": "هي تلبس ملابس حمراء.",
+        "target_pinyin": "Tā chuān hóng yīfu.",
+        "tiles": [
+          "衣",
+          "红",
+          "穿",
+          "。",
+          "服",
+          "她"
+        ]
+      },
+      {
+        "id": "l8_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "毛",
+        "audio_pinyin": "máo",
+        "options_cn": [
+          "买",
+          "东西",
+          "毛",
+          "试"
+        ],
+        "answer_cn": "毛",
+        "explanation_ar": "سمعتَ: 毛 (máo) = ماو (0.1 يوان)"
+      },
+      {
+        "id": "l8_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "找",
+        "audio_pinyin": "zhǎo",
+        "options_cn": [
+          "找",
+          "贵",
+          "穿",
+          "商场"
+        ],
+        "answer_cn": "找",
+        "explanation_ar": "سمعتَ: 找 (zhǎo) = يبحث عن"
+      },
+      {
+        "id": "l8_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "元",
+        "audio_pinyin": "yuán",
+        "options_cn": [
+          "钱包",
+          "找",
+          "东西",
+          "元"
+        ],
+        "answer_cn": "元",
+        "explanation_ar": "سمعتَ: 元 (yuán) = يوان"
+      },
+      {
+        "id": "l8_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "贵",
+        "audio_pinyin": "guì",
+        "options_cn": [
+          "还",
+          "贵",
+          "送",
+          "商店"
+        ],
+        "answer_cn": "贵",
+        "explanation_ar": "سمعتَ: 贵 (guì) = غالٍ"
+      }
+    ]
+  },
+  "9": {
+    "lessonId": 9,
+    "title_ar": "الاتجاهات والمكان",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l9_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "南边",
+        "pinyin": "nánbian",
+        "options": [
+          "في نفس الوقت",
+          "جهة الجنوب",
+          "حمام",
+          "بعيد"
+        ],
+        "answer": "جهة الجنوب",
+        "explanation_ar": "南边 (nánbian) = جهة الجنوب"
+      },
+      {
+        "id": "l9_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "后边",
+        "pinyin": "hòubian",
+        "options": [
+          "أين؟",
+          "الجهة العلوية",
+          "خلف",
+          "داخل"
+        ],
+        "answer": "خلف",
+        "explanation_ar": "后边 (hòubian) = خلف"
+      },
+      {
+        "id": "l9_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "这里",
+        "pinyin": "zhèlǐ",
+        "options": [
+          "هنا",
+          "يجلس (للأسفل)",
+          "أين؟",
+          "طريق"
+        ],
+        "answer": "هنا",
+        "explanation_ar": "这里 (zhèlǐ) = هنا"
+      },
+      {
+        "id": "l9_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "外",
+        "pinyin": "wài",
+        "options": [
+          "الجهة الخارجية",
+          "شمال",
+          "خارج",
+          "جهة الغرب"
+        ],
+        "answer": "خارج",
+        "explanation_ar": "外 (wài) = خارج"
+      },
+      {
+        "id": "l9_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "右",
+        "pinyin": "yòu",
+        "options": [
+          "يمين",
+          "فوق",
+          "جنوب",
+          "هنا"
+        ],
+        "answer": "يمين",
+        "explanation_ar": "右 (yòu) = يمين"
+      },
+      {
+        "id": "l9_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "路口",
+        "shown_pinyin": "qián",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: lùkǒu"
+      },
+      {
+        "id": "l9_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "下边",
+        "shown_pinyin": "xiàbian",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: xiàbian"
+      },
+      {
+        "id": "l9_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "外边",
+        "shown_pinyin": "wàibian",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: wàibian"
+      },
+      {
+        "id": "l9_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "前边",
+        "shown_pinyin": "lóu shàng",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: qiánbian"
+      },
+      {
+        "id": "l9_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "图书馆在北边。",
+        "target_ar": "المكتبة في الجهة الشمالية.",
+        "target_pinyin": "Túshūguǎn zài běibian.",
+        "tiles": [
+          "图",
+          "北",
+          "。",
+          "馆",
+          "书",
+          "边",
+          "在"
+        ]
+      },
+      {
+        "id": "l9_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "书在地上。",
+        "target_ar": "الكتاب على الأرض.",
+        "target_pinyin": "Shū zài dìshang.",
+        "tiles": [
+          "书",
+          "。",
+          "在",
+          "地",
+          "上"
+        ]
+      },
+      {
+        "id": "l9_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "前",
+        "audio_pinyin": "qián",
+        "options_cn": [
+          "前",
+          "前边",
+          "哪儿",
+          "这边"
+        ],
+        "answer_cn": "前",
+        "explanation_ar": "سمعتَ: 前 (qián) = أمام / قبل"
+      },
+      {
+        "id": "l9_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "坐下",
+        "audio_pinyin": "zuòxia",
+        "options_cn": [
+          "东",
+          "坐下",
+          "这里",
+          "楼上"
+        ],
+        "answer_cn": "坐下",
+        "explanation_ar": "سمعتَ: 坐下 (zuòxia) = يجلس (للأسفل)"
+      },
+      {
+        "id": "l9_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "洗手间",
+        "audio_pinyin": "xǐshǒujiān",
+        "options_cn": [
+          "中间",
+          "外边",
+          "洗手间",
+          "中"
+        ],
+        "answer_cn": "洗手间",
+        "explanation_ar": "سمعتَ: 洗手间 (xǐshǒujiān) = حمام"
+      },
+      {
+        "id": "l9_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "这儿",
+        "audio_pinyin": "zhèr",
+        "options_cn": [
+          "中",
+          "路口",
+          "这儿",
+          "前边"
+        ],
+        "answer_cn": "这儿",
+        "explanation_ar": "سمعتَ: 这儿 (zhèr) = هنا"
+      }
+    ]
+  },
+  "10": {
+    "lessonId": 10,
+    "title_ar": "المواصلات والسفر",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l10_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "回去",
+        "pinyin": "huí qù",
+        "options": [
+          "يقوم للأعلى",
+          "يدخل",
+          "يعود هناك",
+          "يذهب"
+        ],
+        "answer": "يعود هناك",
+        "explanation_ar": "回去 (huí qù) = يعود هناك"
+      },
+      {
+        "id": "l10_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "回",
+        "pinyin": "huí",
+        "options": [
+          "يخرج إلى هناك",
+          "يعود",
+          "يذهب",
+          "محطة"
+        ],
+        "answer": "يعود",
+        "explanation_ar": "回 (huí) = يعود"
+      },
+      {
+        "id": "l10_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "进来",
+        "pinyin": "jìn lái",
+        "options": [
+          "يدخل هنا",
+          "يأخذ التاكسي",
+          "داخل المركبة",
+          "يجلس"
+        ],
+        "answer": "يدخل هنا",
+        "explanation_ar": "进来 (jìn lái) = يدخل هنا"
+      },
+      {
+        "id": "l10_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "等",
+        "pinyin": "děng",
+        "options": [
+          "يخرج",
+          "ينتظر",
+          "يعود للبيت",
+          "يخرج إلى هناك"
+        ],
+        "answer": "ينتظر",
+        "explanation_ar": "等 (děng) = ينتظر"
+      },
+      {
+        "id": "l10_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "火车",
+        "pinyin": "huǒchē",
+        "options": [
+          "قطار",
+          "يقود السيارة",
+          "محطة",
+          "يقوم للأعلى"
+        ],
+        "answer": "قطار",
+        "explanation_ar": "火车 (huǒchē) = قطار"
+      },
+      {
+        "id": "l10_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "北京",
+        "shown_pinyin": "zuò",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: Běijīng"
+      },
+      {
+        "id": "l10_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "从",
+        "shown_pinyin": "cóng",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: cóng"
+      },
+      {
+        "id": "l10_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "去",
+        "shown_pinyin": "qù",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: qù"
+      },
+      {
+        "id": "l10_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "车",
+        "shown_pinyin": "chē",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: chē"
+      },
+      {
+        "id": "l10_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我去北京。",
+        "target_ar": "أنا ذاهب إلى بكين.",
+        "target_pinyin": "Wǒ qù Běijīng.",
+        "tiles": [
+          "。",
+          "我",
+          "京",
+          "北",
+          "去"
+        ]
+      },
+      {
+        "id": "l10_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "他的车是新的。",
+        "target_ar": "سيارته جديدة.",
+        "target_pinyin": "Tā de chē shì xīn de.",
+        "tiles": [
+          "新",
+          "车",
+          "是",
+          "他",
+          "的",
+          "。",
+          "的"
+        ]
+      },
+      {
+        "id": "l10_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "起来",
+        "audio_pinyin": "qǐ lái",
+        "options_cn": [
+          "来",
+          "去",
+          "起来",
+          "票"
+        ],
+        "answer_cn": "起来",
+        "explanation_ar": "سمعتَ: 起来 (qǐ lái) = يقوم للأعلى"
+      },
+      {
+        "id": "l10_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "回来",
+        "audio_pinyin": "huí lái",
+        "options_cn": [
+          "汽车",
+          "回来",
+          "车站",
+          "火车"
+        ],
+        "answer_cn": "回来",
+        "explanation_ar": "سمعتَ: 回来 (huí lái) = يعود هنا"
+      },
+      {
+        "id": "l10_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "打车",
+        "audio_pinyin": "dǎ chē",
+        "options_cn": [
+          "走",
+          "打车",
+          "出去",
+          "票"
+        ],
+        "answer_cn": "打车",
+        "explanation_ar": "سمعتَ: 打车 (dǎ chē) = يأخذ التاكسي"
+      },
+      {
+        "id": "l10_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "进",
+        "audio_pinyin": "jìn",
+        "options_cn": [
+          "打车",
+          "回来",
+          "车站",
+          "进"
+        ],
+        "answer_cn": "进",
+        "explanation_ar": "سمعتَ: 进 (jìn) = يدخل"
+      }
+    ]
+  },
+  "11": {
+    "lessonId": 11,
+    "title_ar": "التعليم والتعلم",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l11_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "听写",
+        "pinyin": "tīngxiě",
+        "options": [
+          "إملاء",
+          "طالب متوسطة",
+          "يتعلم",
+          "طالبة أنثى"
+        ],
+        "answer": "إملاء",
+        "explanation_ar": "听写 (tīngxiě) = إملاء"
+      },
+      {
+        "id": "l11_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "写",
+        "pinyin": "xiě",
+        "options": [
+          "يتذكر",
+          "دفتر",
+          "كهرباء",
+          "يكتب"
+        ],
+        "answer": "يكتب",
+        "explanation_ar": "写 (xiě) = يكتب"
+      },
+      {
+        "id": "l11_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "学院",
+        "pinyin": "xuéyuàn",
+        "options": [
+          "كلية",
+          "يتصل هاتفياً",
+          "يتعلم",
+          "يسمع"
+        ],
+        "answer": "كلية",
+        "explanation_ar": "学院 (xuéyuàn) = كلية"
+      },
+      {
+        "id": "l11_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "听到",
+        "pinyin": "tīngdào",
+        "options": [
+          "يسمع",
+          "مبنى الدراسة",
+          "اللغة الصينية",
+          "إملاء"
+        ],
+        "answer": "يسمع",
+        "explanation_ar": "听到 (tīngdào) = يسمع"
+      },
+      {
+        "id": "l11_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "看",
+        "pinyin": "kàn",
+        "options": [
+          "يشاهد / يقرأ",
+          "كتاب",
+          "كهرباء",
+          "درس"
+        ],
+        "answer": "يشاهد / يقرأ",
+        "explanation_ar": "看 (kàn) = يشاهد / يقرأ"
+      },
+      {
+        "id": "l11_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "上课",
+        "shown_pinyin": "shàng kè",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: shàng kè"
+      },
+      {
+        "id": "l11_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "电脑",
+        "shown_pinyin": "diànnǎo",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: diànnǎo"
+      },
+      {
+        "id": "l11_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "上学",
+        "shown_pinyin": "nánshēng",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: shàng xué"
+      },
+      {
+        "id": "l11_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "下课",
+        "shown_pinyin": "kàn",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: xià kè"
+      },
+      {
+        "id": "l11_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我在三班学习。",
+        "target_ar": "أنا أدرس في الصف الثالث.",
+        "target_pinyin": "Wǒ zài sān bān xuéxí.",
+        "tiles": [
+          "三",
+          "。",
+          "在",
+          "我",
+          "学",
+          "班",
+          "习"
+        ]
+      },
+      {
+        "id": "l11_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "这是我的本子。",
+        "target_ar": "هذا دفتر ملاحظاتي.",
+        "target_pinyin": "Zhè shì wǒ de běnzi.",
+        "tiles": [
+          "本",
+          "的",
+          "是",
+          "这",
+          "子",
+          "。",
+          "我"
+        ]
+      },
+      {
+        "id": "l11_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "看到",
+        "audio_pinyin": "kàndào",
+        "options_cn": [
+          "中学",
+          "看到",
+          "忘记",
+          "听"
+        ],
+        "answer_cn": "看到",
+        "explanation_ar": "سمعتَ: 看到 (kàndào) = يرى (نتيجة)"
+      },
+      {
+        "id": "l11_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "学习",
+        "audio_pinyin": "xuéxí",
+        "options_cn": [
+          "学习",
+          "汉字",
+          "书店",
+          "课"
+        ],
+        "answer_cn": "学习",
+        "explanation_ar": "سمعتَ: 学习 (xuéxí) = يدرس"
+      },
+      {
+        "id": "l11_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "课文",
+        "audio_pinyin": "kèwén",
+        "options_cn": [
+          "学生",
+          "课文",
+          "会",
+          "大学"
+        ],
+        "answer_cn": "课文",
+        "explanation_ar": "سمعتَ: 课文 (kèwén) = نص الدرس"
+      },
+      {
+        "id": "l11_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "教学楼",
+        "audio_pinyin": "jiàoxuélóu",
+        "options_cn": [
+          "看到",
+          "上学",
+          "教学楼",
+          "中学生"
+        ],
+        "answer_cn": "教学楼",
+        "explanation_ar": "سمعتَ: 教学楼 (jiàoxuélóu) = مبنى الدراسة"
+      }
+    ]
+  },
+  "12": {
+    "lessonId": 12,
+    "title_ar": "العمل والمهن",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l12_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "请假",
+        "pinyin": "qǐng jià",
+        "options": [
+          "يأخذ إجازة",
+          "أمر",
+          "معلم",
+          "ماذا يعمل؟"
+        ],
+        "answer": "يأخذ إجازة",
+        "explanation_ar": "请假 (qǐng jià) = يأخذ إجازة"
+      },
+      {
+        "id": "l12_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "能",
+        "pinyin": "néng",
+        "options": [
+          "يفتح",
+          "يستطيع",
+          "مشغول",
+          "يعمل"
+        ],
+        "answer": "يستطيع",
+        "explanation_ar": "能 (néng) = يستطيع"
+      },
+      {
+        "id": "l12_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "医生",
+        "pinyin": "yīshēng",
+        "options": [
+          "معلم",
+          "أمر",
+          "طبيب",
+          "يستطيع"
+        ],
+        "answer": "طبيب",
+        "explanation_ar": "医生 (yīshēng) = طبيب"
+      },
+      {
+        "id": "l12_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "干",
+        "pinyin": "gàn",
+        "options": [
+          "يعمل",
+          "يستخدم",
+          "طبيب",
+          "يصنع / يفعل"
+        ],
+        "answer": "يعمل",
+        "explanation_ar": "干 (gàn) = يعمل"
+      },
+      {
+        "id": "l12_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "上班",
+        "pinyin": "shàng bān",
+        "options": [
+          "يذهب للعمل",
+          "يُحضِّر",
+          "عامل",
+          "يساعد"
+        ],
+        "answer": "يذهب للعمل",
+        "explanation_ar": "上班 (shàng bān) = يذهب للعمل"
+      },
+      {
+        "id": "l12_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "放",
+        "shown_pinyin": "fàng",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: fàng"
+      },
+      {
+        "id": "l12_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "工人",
+        "shown_pinyin": "ná",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: gōngrén"
+      },
+      {
+        "id": "l12_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "忙",
+        "shown_pinyin": "guān",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: máng"
+      },
+      {
+        "id": "l12_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "帮",
+        "shown_pinyin": "ná",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: bāng"
+      },
+      {
+        "id": "l12_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "你能帮我吗？",
+        "target_ar": "هل تستطيع مساعدتي؟",
+        "target_pinyin": "Nǐ néng bāng wǒ ma?",
+        "tiles": [
+          "帮",
+          "你",
+          "能",
+          "？",
+          "我",
+          "吗"
+        ]
+      },
+      {
+        "id": "l12_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "谢谢你帮忙。",
+        "target_ar": "شكراً لمساعدتك.",
+        "target_pinyin": "Xièxie nǐ bāngmáng.",
+        "tiles": [
+          "你",
+          "忙",
+          "谢",
+          "帮",
+          "谢",
+          "。"
+        ]
+      },
+      {
+        "id": "l12_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "认真",
+        "audio_pinyin": "rènzhēn",
+        "options_cn": [
+          "认真",
+          "帮忙",
+          "工作",
+          "下班"
+        ],
+        "answer_cn": "认真",
+        "explanation_ar": "سمعتَ: 认真 (rènzhēn) = جاد"
+      },
+      {
+        "id": "l12_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "教",
+        "audio_pinyin": "jiāo",
+        "options_cn": [
+          "上班",
+          "教",
+          "用",
+          "关上"
+        ],
+        "answer_cn": "教",
+        "explanation_ar": "سمعتَ: 教 (jiāo) = يُعلِّم"
+      },
+      {
+        "id": "l12_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "不用",
+        "audio_pinyin": "búyòng",
+        "options_cn": [
+          "能",
+          "放",
+          "不用",
+          "忙"
+        ],
+        "answer_cn": "不用",
+        "explanation_ar": "سمعتَ: 不用 (búyòng) = لا داعي"
+      },
+      {
+        "id": "l12_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "用",
+        "audio_pinyin": "yòng",
+        "options_cn": [
+          "打开",
+          "开",
+          "老师",
+          "用"
+        ],
+        "answer_cn": "用",
+        "explanation_ar": "سمعتَ: 用 (yòng) = يستخدم"
+      }
+    ]
+  },
+  "13": {
+    "lessonId": 13,
+    "title_ar": "الهوايات والترفيه",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l13_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "好玩儿",
+        "pinyin": "hǎowánr",
+        "options": [
+          "يتحرك",
+          "صديق إنترنت",
+          "فيلم",
+          "ممتع"
+        ],
+        "answer": "ممتع",
+        "explanation_ar": "好玩儿 (hǎowánr) = ممتع"
+      },
+      {
+        "id": "l13_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "打球",
+        "pinyin": "dǎ qiú",
+        "options": [
+          "يضرب / يلعب",
+          "جهاز التلفاز",
+          "يلعب كرة",
+          "يركض"
+        ],
+        "answer": "يلعب كرة",
+        "explanation_ar": "打球 (dǎ qiú) = يلعب كرة"
+      },
+      {
+        "id": "l13_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "唱歌",
+        "pinyin": "chàng gē",
+        "options": [
+          "يُغني أغنية",
+          "حركة",
+          "أغنية",
+          "يُغني"
+        ],
+        "answer": "يُغني أغنية",
+        "explanation_ar": "唱歌 (chàng gē) = يُغني أغنية"
+      },
+      {
+        "id": "l13_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "跑",
+        "pinyin": "pǎo",
+        "options": [
+          "يلعب كرة",
+          "يركض",
+          "فيلم",
+          "يتصفح الإنترنت"
+        ],
+        "answer": "يركض",
+        "explanation_ar": "跑 (pǎo) = يركض"
+      },
+      {
+        "id": "l13_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "电影院",
+        "pinyin": "diànyǐngyuàn",
+        "options": [
+          "تلفاز",
+          "سينما",
+          "صديق إنترنت",
+          "يُغني أغنية"
+        ],
+        "answer": "سينما",
+        "explanation_ar": "电影院 (diànyǐngyuàn) = سينما"
+      },
+      {
+        "id": "l13_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "动作",
+        "shown_pinyin": "wǎng shang",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: dòngzuò"
+      },
+      {
+        "id": "l13_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "动",
+        "shown_pinyin": "dòng",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: dòng"
+      },
+      {
+        "id": "l13_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "歌",
+        "shown_pinyin": "gē",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: gē"
+      },
+      {
+        "id": "l13_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "电视机",
+        "shown_pinyin": "dòng",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: diànshìjī"
+      },
+      {
+        "id": "l13_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "她唱得很好听。",
+        "target_ar": "هي تغني بصوت جميل جداً.",
+        "target_pinyin": "Tā chàng de hěn hǎotīng.",
+        "tiles": [
+          "听",
+          "好",
+          "唱",
+          "。",
+          "她",
+          "得",
+          "很"
+        ]
+      },
+      {
+        "id": "l13_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我喜欢唱歌。",
+        "target_ar": "أحب الغناء.",
+        "target_pinyin": "Wǒ xǐhuan chànggē.",
+        "tiles": [
+          "。",
+          "喜",
+          "歌",
+          "欢",
+          "唱",
+          "我"
+        ]
+      },
+      {
+        "id": "l13_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "上网",
+        "audio_pinyin": "shàng wǎng",
+        "options_cn": [
+          "开玩笑",
+          "好玩儿",
+          "上网",
+          "电影院"
+        ],
+        "answer_cn": "上网",
+        "explanation_ar": "سمعتَ: 上网 (shàng wǎng) = يتصفح الإنترنت"
+      },
+      {
+        "id": "l13_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "唱",
+        "audio_pinyin": "chàng",
+        "options_cn": [
+          "唱",
+          "球",
+          "打球",
+          "电影院"
+        ],
+        "answer_cn": "唱",
+        "explanation_ar": "سمعتَ: 唱 (chàng) = يُغني"
+      },
+      {
+        "id": "l13_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "电视",
+        "audio_pinyin": "diànshì",
+        "options_cn": [
+          "网友",
+          "网上",
+          "动作",
+          "电视"
+        ],
+        "answer_cn": "电视",
+        "explanation_ar": "سمعتَ: 电视 (diànshì) = تلفاز"
+      },
+      {
+        "id": "l13_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "球",
+        "audio_pinyin": "qiú",
+        "options_cn": [
+          "爱好",
+          "球",
+          "电影院",
+          "唱"
+        ],
+        "answer_cn": "球",
+        "explanation_ar": "سمعتَ: 球 (qiú) = كرة"
+      }
+    ]
+  },
+  "14": {
+    "lessonId": 14,
+    "title_ar": "الصحة والجسم",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l14_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "手",
+        "pinyin": "shǒu",
+        "options": [
+          "جسم",
+          "متعب",
+          "يد",
+          "ينام"
+        ],
+        "answer": "يد",
+        "explanation_ar": "手 (shǒu) = يد"
+      },
+      {
+        "id": "l14_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "起床",
+        "pinyin": "qǐ chuáng",
+        "options": [
+          "يستيقظ",
+          "فم / وحدة عد عائلة",
+          "جسم",
+          "يذهب للنوم"
+        ],
+        "answer": "يستيقظ",
+        "explanation_ar": "起床 (qǐ chuáng) = يستيقظ"
+      },
+      {
+        "id": "l14_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "生病",
+        "pinyin": "shēng bìng",
+        "options": [
+          "يمرض",
+          "فم / وحدة عد عائلة",
+          "متعب",
+          "يغسل"
+        ],
+        "answer": "يمرض",
+        "explanation_ar": "生病 (shēng bìng) = يمرض"
+      },
+      {
+        "id": "l14_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "渴",
+        "pinyin": "kě",
+        "options": [
+          "على الجسم",
+          "مريض",
+          "عطشان",
+          "فم / وحدة عد عائلة"
+        ],
+        "answer": "عطشان",
+        "explanation_ar": "渴 (kě) = عطشان"
+      },
+      {
+        "id": "l14_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "身体",
+        "pinyin": "shēntǐ",
+        "options": [
+          "مريض",
+          "ينام",
+          "جسم",
+          "يذهب للنوم"
+        ],
+        "answer": "جسم",
+        "explanation_ar": "身体 (shēntǐ) = جسم"
+      },
+      {
+        "id": "l14_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "口",
+        "shown_pinyin": "kǒu",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: kǒu"
+      },
+      {
+        "id": "l14_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "洗",
+        "shown_pinyin": "shǒu",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: xǐ"
+      },
+      {
+        "id": "l14_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "看病",
+        "shown_pinyin": "shuì jiào",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: kàn bìng"
+      },
+      {
+        "id": "l14_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "病人",
+        "shown_pinyin": "kǒu",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: bìngrén"
+      },
+      {
+        "id": "l14_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "他生病了。",
+        "target_ar": "هو مريض.",
+        "target_pinyin": "Tā shēng bìng le.",
+        "tiles": [
+          "病",
+          "。",
+          "他",
+          "了",
+          "生"
+        ]
+      },
+      {
+        "id": "l14_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我去医院看病。",
+        "target_ar": "أذهب إلى المستشفى لزيارة الطبيب.",
+        "target_pinyin": "Wǒ qù yīyuàn kàn bìng.",
+        "tiles": [
+          "。",
+          "病",
+          "医",
+          "院",
+          "我",
+          "去",
+          "看"
+        ]
+      },
+      {
+        "id": "l14_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "病",
+        "audio_pinyin": "bìng",
+        "options_cn": [
+          "看病",
+          "洗",
+          "渴",
+          "病"
+        ],
+        "answer_cn": "病",
+        "explanation_ar": "سمعتَ: 病 (bìng) = مرض"
+      },
+      {
+        "id": "l14_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "睡",
+        "audio_pinyin": "shuì",
+        "options_cn": [
+          "休息",
+          "睡",
+          "病人",
+          "医院"
+        ],
+        "answer_cn": "睡",
+        "explanation_ar": "سمعتَ: 睡 (shuì) = ينام"
+      },
+      {
+        "id": "l14_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "睡觉",
+        "audio_pinyin": "shuì jiào",
+        "options_cn": [
+          "睡",
+          "睡觉",
+          "起床",
+          "累"
+        ],
+        "answer_cn": "睡觉",
+        "explanation_ar": "سمعتَ: 睡觉 (shuì jiào) = يذهب للنوم"
+      },
+      {
+        "id": "l14_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "休息",
+        "audio_pinyin": "xiūxi",
+        "options_cn": [
+          "休息",
+          "睡觉",
+          "生病",
+          "病人"
+        ],
+        "answer_cn": "休息",
+        "explanation_ar": "سمعتَ: 休息 (xiūxi) = يستريح"
+      }
+    ]
+  },
+  "15": {
+    "lessonId": 15,
+    "title_ar": "العواطف والآراء",
+    "total_questions": 15,
+    "questions": [
+      {
+        "id": "l15_mcq_0",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "明白",
+        "pinyin": "míngbai",
+        "options": [
+          "مهم",
+          "خاطئ",
+          "سعيد",
+          "يفهم"
+        ],
+        "answer": "يفهم",
+        "explanation_ar": "明白 (míngbai) = يفهم"
+      },
+      {
+        "id": "l15_mcq_1",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "比",
+        "pinyin": "bǐ",
+        "options": [
+          "فعلاً",
+          "صحيح",
+          "مقارنةً بـ",
+          "يفهم"
+        ],
+        "answer": "مقارنةً بـ",
+        "explanation_ar": "比 (bǐ) = مقارنةً بـ"
+      },
+      {
+        "id": "l15_mcq_2",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "喜欢",
+        "pinyin": "xǐhuan",
+        "options": [
+          "فعلاً",
+          "يشعر / يعتقد",
+          "يُحب / يُفضّل",
+          "سعيد"
+        ],
+        "answer": "يُحب / يُفضّل",
+        "explanation_ar": "喜欢 (xǐhuan) = يُحب / يُفضّل"
+      },
+      {
+        "id": "l15_mcq_3",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "高兴",
+        "pinyin": "gāoxìng",
+        "options": [
+          "صعب",
+          "مفيد",
+          "سعيد",
+          "خطأ"
+        ],
+        "answer": "سعيد",
+        "explanation_ar": "高兴 (gāoxìng) = سعيد"
+      },
+      {
+        "id": "l15_mcq_4",
+        "type": "mcq",
+        "prompt_ar": "ماذا تعني هذه الكلمة؟",
+        "cn": "行",
+        "pinyin": "xíng",
+        "options": [
+          "يُحب",
+          "خطأ",
+          "مهم",
+          "مقبول"
+        ],
+        "answer": "مقبول",
+        "explanation_ar": "行 (xíng) = مقبول"
+      },
+      {
+        "id": "l15_tf_0",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "真",
+        "shown_pinyin": "ài",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: zhēn"
+      },
+      {
+        "id": "l15_tf_1",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "觉得",
+        "shown_pinyin": "juéde",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: juéde"
+      },
+      {
+        "id": "l15_tf_2",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "知道",
+        "shown_pinyin": "bǐ",
+        "answer": false,
+        "explanation_ar": "النطق الصحيح: zhīdào"
+      },
+      {
+        "id": "l15_tf_3",
+        "type": "truefalse",
+        "prompt_ar": "هل هذا النطق صحيح لهذه الكلمة؟",
+        "cn": "差",
+        "shown_pinyin": "chà",
+        "answer": true,
+        "explanation_ar": "النطق الصحيح: chà"
+      },
+      {
+        "id": "l15_build_0",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我爱你。",
+        "target_ar": "أنا أحبك.",
+        "target_pinyin": "Wǒ ài nǐ.",
+        "tiles": [
+          "爱",
+          "我",
+          "你",
+          "。"
+        ]
+      },
+      {
+        "id": "l15_build_1",
+        "type": "build",
+        "prompt_ar": "رتّب الجملة الصحيحة:",
+        "target_cn": "我比你高。",
+        "target_ar": "أنا أطول منك.",
+        "target_pinyin": "Wǒ bǐ nǐ gāo.",
+        "tiles": [
+          "。",
+          "你",
+          "比",
+          "高",
+          "我"
+        ]
+      },
+      {
+        "id": "l15_listen_0",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "生气",
+        "audio_pinyin": "shēng qì",
+        "options_cn": [
+          "有名",
+          "生气",
+          "真",
+          "差"
+        ],
+        "answer_cn": "生气",
+        "explanation_ar": "سمعتَ: 生气 (shēng qì) = يغضب"
+      },
+      {
+        "id": "l15_listen_1",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "对",
+        "audio_pinyin": "duì",
+        "options_cn": [
+          "重要",
+          "对",
+          "真的",
+          "比"
+        ],
+        "answer_cn": "对",
+        "explanation_ar": "سمعتَ: 对 (duì) = صحيح"
+      },
+      {
+        "id": "l15_listen_2",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "最好",
+        "audio_pinyin": "zuìhǎo",
+        "options_cn": [
+          "比",
+          "最好",
+          "要",
+          "想"
+        ],
+        "answer_cn": "最好",
+        "explanation_ar": "سمعتَ: 最好 (zuìhǎo) = الأفضل"
+      },
+      {
+        "id": "l15_listen_3",
+        "type": "listen",
+        "prompt_ar": "استمع إلى الكلمة ثم اختر الحرف الصحيح:",
+        "audio_cn": "有用",
+        "audio_pinyin": "yǒuyòng",
+        "options_cn": [
+          "最好",
+          "要",
+          "行",
+          "有用"
+        ],
+        "answer_cn": "有用",
+        "explanation_ar": "سمعتَ: 有用 (yǒuyòng) = مفيد"
+      }
+    ]
+  }
+}

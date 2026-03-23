@@ -188,15 +188,18 @@ function navigateTo(viewId) {
 // pointerdown fires before the browser decides if it's a tap, double-tap, or scroll.
 navItems.forEach(item => {
   item.addEventListener('pointerdown', e => {
-    // Only respond to primary pointer (finger or left mouse button)
     if (e.isPrimary === false) return;
-    e.preventDefault();           // block ghost click + double-tap zoom
-    navigateTo(item.dataset.view);
+    e.preventDefault();
+    const v = item.dataset.view;
+    // 'الكلمات' (learn) tab → open full 500-word VocabPage overlay
+    if (v === 'learn') { window.BM?.VocabPage?.open(); return; }
+    navigateTo(v);
   });
-  // Keep click as fallback for keyboard / assistive tech
   item.addEventListener('click', e => {
-    if (e.pointerType) return;    // already handled by pointerdown
-    navigateTo(item.dataset.view);
+    if (e.pointerType) return;
+    const v = item.dataset.view;
+    if (v === 'learn') { window.BM?.VocabPage?.open(); return; }
+    navigateTo(v);
   });
 });
 
@@ -379,10 +382,20 @@ const FC = {
     const w = this.words[this.idx];
     Progress.markWordSeen(w.id);
 
-    document.getElementById('fc-cn').textContent          = w.cn;
-    document.getElementById('fc-pinyin').textContent      = w.pinyin;
-    document.getElementById('fc-arabic').textContent      = w.ar   ?? '';   // Arabic translation
-    document.getElementById('fc-meaning').textContent     = w.type ?? '';   // word type on back
+    // Apply tonal colour to character and pinyin
+    const _T    = window.BM?.Tones;
+    const _tone = _T ? _T.getTone(w.pinyin) : 0;
+    const cnEl  = document.getElementById('fc-cn');
+    cnEl.textContent = w.cn;
+    // Apply tone class for colour (removes old ones first)
+    cnEl.className = ['fc-cn', _T ? _T.getCls(_tone) : ''].join(' ').trim();
+    // Pinyin with tone colour wrapping
+    const pyEl = document.getElementById('fc-pinyin');
+    pyEl.innerHTML = _T ? _T.wrapCompoundPinyin(w.pinyin) : w.pinyin;
+    // Respect global pinyin visibility toggle
+    pyEl.style.display = (_T && !_T.isPinyinVisible()) ? 'none' : '';
+    document.getElementById('fc-arabic').textContent      = w.ar   ?? '';
+    document.getElementById('fc-meaning').textContent     = w.type ?? '';
     document.getElementById('fc-cat-label').textContent   = w.category;
     document.getElementById('fc-counter').textContent = `${this.idx + 1} / ${this.words.length}`;
 
@@ -1622,14 +1635,18 @@ document.addEventListener('touchstart', e => {
   swipeY = e.changedTouches[0].screenY;
 }, { passive: true });
 document.addEventListener('touchend', e => {
-  const dx = e.changedTouches[0].screenX - swipeX;
-  const dy = e.changedTouches[0].screenY - swipeY;
-  if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 55) {
-    // Don't swipe if an overlay is open
+  const dx    = e.changedTouches[0].screenX - swipeX;
+  const dy    = e.changedTouches[0].screenY - swipeY;
+  const absDx = Math.abs(dx);
+  const absDy = Math.abs(dy);
+  // 65px threshold + 3:1 horizontal-to-vertical ratio = intentional horizontal swipe only
+  if (absDx > absDy * 1.5 && absDx > 65) {
     if (document.querySelector('.overlay.open')) return;
     const idx = VIEW_ORDER.indexOf(activeView);
-    if (dx < 0 && idx < VIEW_ORDER.length - 1) navigateTo(VIEW_ORDER[idx + 1]);
-    if (dx > 0 && idx > 0)                      navigateTo(VIEW_ORDER[idx - 1]);
+    // Natural swipe: finger slides RIGHT → reveal next tab (forward)
+    //               finger slides LEFT  → reveal prev tab (back)
+    if (dx > 0 && idx < VIEW_ORDER.length - 1) navigateTo(VIEW_ORDER[idx + 1]);
+    if (dx < 0 && idx > 0)                      navigateTo(VIEW_ORDER[idx - 1]);
   }
 }, { passive: true });
 
@@ -1851,6 +1868,15 @@ async function init() {
 
   // 8. Final UI refresh with real stats
   refreshUI();
+
+  // 9. Pre-warm TTS voices (browsers load voices asynchronously)
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.getVoices();
+    window.speechSynthesis.onvoiceschanged = () => {};
+  }
+
+  console.log('%c❄ Blue Mandarin v1.5.0 — Hossam Aldeen Hassan 2026',
+    'color:#64B5F6;font-size:12px;font-weight:bold');
 }
 
 /**
@@ -1931,14 +1957,23 @@ function renderLessonGrid(lessonsMeta) {
           ${partsBadge}${doneBadge}
         </div>
         <div class="lc-bar"><div class="lc-bar-fill" style="width:${seenPct}%"></div></div>
-        <button class="lc-start-btn" data-lesson-id="${lesson.n}"
-          style="margin-top:9px;width:100%;padding:8px 0;border-radius:var(--r-sm);
-          font-size:12px;font-weight:800;letter-spacing:0.04em;cursor:pointer;
-          background:${isDone?'rgba(38,217,127,0.10)':'rgba(30,144,255,0.12)'};
-          border:1px solid ${isDone?'rgba(38,217,127,0.28)':'rgba(100,181,246,0.22)'};
-          color:${isDone?'var(--jade)':'var(--accent)'};">
-          ${isDone ? '↩ مراجعة' : isLocked ? '🔒 مقفل' : '▶ ابدأ'}
-        </button>
+        <div style="display:flex;gap:6px;margin-top:9px">
+          <button class="lc-start-btn" data-lesson-id="${lesson.n}"
+            style="flex:1;padding:8px 0;border-radius:var(--r-sm);
+            font-size:12px;font-weight:800;letter-spacing:0.04em;cursor:pointer;
+            touch-action:manipulation;
+            background:${isDone?'rgba(38,217,127,0.10)':'rgba(30,144,255,0.12)'};
+            border:1px solid ${isDone?'rgba(38,217,127,0.28)':'rgba(100,181,246,0.22)'};
+            color:${isDone?'var(--jade)':'var(--accent)'};">
+            ${isDone ? '↩ مراجعة' : isLocked ? '🔒 مقفل' : '▶ ابدأ'}
+          </button>
+          <button class="lc-challenge-btn rip" data-lesson-id="${lesson.n}"
+            title="تحدي الدرس"
+            style="padding:8px 10px;border-radius:var(--r-sm);font-size:14px;
+            cursor:pointer;touch-action:manipulation;flex-shrink:0;
+            background:rgba(255,202,64,0.10);border:1px solid rgba(255,202,64,0.28);
+            color:var(--gold);">⚡</button>
+        </div>
       </div>`;
   }).join('');
 
@@ -1951,10 +1986,19 @@ function renderLessonGrid(lessonsMeta) {
     });
     // Also keep a click handler that checks for button target
     card.addEventListener('click', e => {
-      if (e.target.closest('.lc-start-btn')) return;
+      if (e.target.closest('.lc-start-btn') || e.target.closest('.lc-challenge-btn')) return;
       openLesson(+card.dataset.lessonId);
     });
   });
+  // ⚡ Challenge buttons → ChallengeEngine.open()
+  grid.querySelectorAll('.lc-challenge-btn').forEach(btn => {
+    btn.addEventListener('pointerdown', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      window.BM?.ChallengeEngine?.open(+btn.dataset.lessonId);
+    });
+  });
+
   grid.querySelectorAll('.lc-start-btn').forEach(btn => {
     // pointerdown: instant tap response, no 300ms delay
     btn.addEventListener('pointerdown', e => {
@@ -2076,6 +2120,7 @@ if (document.readyState === "loading") {
   init();
 }
 
-console.log('%c❄  Blue Mandarin PWA — Phase 3 Active · Phase 4 Ready', 'color:#64B5F6;font-size:13px;font-weight:bold;');
-console.log('%cFlashcards ✓  MCQ Test ✓  Shelly AI ✓  localStorage ✓  SW Bypass ✓  BM.reinit() ✓', 'color:#26D97F;font-size:10px;');
-console.log('%cPhase 4: call window.BM.reinit() or window.BM.reinit(true) for a hard reset.', 'color:#FFCA40;font-size:10px;');
+console.log('%c❄ Blue Mandarin v1.5.0 | Hossam Aldeen Hassan 2026 | HSK 1 Platform',
+  'color:#64B5F6;font-size:12px;font-weight:bold;');
+console.log('%cTones ✓  VocabPage ✓  Challenges ✓  TTS ✓  4-Type Quizzes ✓  Swipe Fixed ✓',
+  'color:#26D97F;font-size:10px;');

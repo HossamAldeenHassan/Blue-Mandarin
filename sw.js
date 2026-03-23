@@ -25,6 +25,9 @@ const SHELL_ASSETS = [
   './js/progress.js',
   './js/shelly.js',
   './js/curriculum.js',
+  './js/tones.js',
+  './js/vocab.js',
+  './js/challenges.js',
   './js/ui.js',
 ];
 
