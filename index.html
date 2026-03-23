@@ -28,7 +28,7 @@
 
 <canvas id="snow-canvas" aria-hidden="true"></canvas>
 
-<div id="app" role="application" data-bm-version="1.5.0">
+<div id="app" role="application" data-bm-version="1.7.0">
 
   <!-- SVG gradient definitions -->
   <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
@@ -260,7 +260,38 @@
           <div class="settings-row rip" role="button" tabindex="0"><div class="sr-icon u-violet">🤖</div><div class="sr-text"><div class="sr-title">Shelly AI Settings</div><div class="sr-sub">Gemini model · Style</div></div><span class="sr-chev">›</span></div>
         </div>
       </div>
-      <div class="app-footer">Blue Mandarin v1.5.0 · HSK 1 (v3.0) ❄️<br><span>蓝色普通话</span></div>
+      <!-- Final Exam CTA -->
+      <div class="settings-block">
+        <div class="settings-grp-lbl">الاختبار النهائي</div>
+        <div class="settings-list">
+          <div class="settings-row rip" role="button" tabindex="0" id="final-exam-row">
+            <div class="sr-icon u-gold">📝</div>
+            <div class="sr-text">
+              <div class="sr-title">الاختبار النهائي — HSK 1</div>
+              <div class="sr-sub">100 سؤال · جميع الدروس</div>
+            </div>
+            <span class="sr-chev">›</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- About / Branding -->
+      <div class="settings-block">
+        <div class="settings-grp-lbl">عن التطبيق</div>
+        <div class="about-card">
+          <div class="about-logo">❄️</div>
+          <div class="about-name">Blue Mandarin</div>
+          <div class="about-version">v1.7.0 · HSK 1 (v3.0)</div>
+          <div class="about-zh">蓝色普通话</div>
+          <div class="about-author">Hossam Aldeen Hassan © 2026</div>
+          <div class="about-desc">منصة تعليم الصينية HSK 1 — 500 كلمة · 15 درساً · اختبارات تفاعلية</div>
+        </div>
+      </div>
+
+      <div class="app-footer">Blue Mandarin v1.7.0 · HSK 1 (v3.0) ❄️<br>
+        <span>蓝色普通话</span><br>
+        <span style="font-size:10px;opacity:0.6">Hossam Aldeen Hassan © 2026</span>
+      </div>
     </section>
 
     <!-- READING CENTER VIEW -->
@@ -293,6 +324,66 @@
       </div>
     </section>
 
+    <!-- TRANSLATOR VIEW -->
+    <section id="view-translate" class="view translate-view" aria-label="المترجم">
+      <div class="view-title">🔤 المترجم</div>
+      <div class="view-subtitle">نطق · بينيين · تحليل الحروف</div>
+
+      <!-- Input -->
+      <div class="tr-input-section">
+        <label class="tr-label">أدخل النص الصيني:</label>
+        <textarea id="tr-input" class="tr-textarea" placeholder="输入中文文本..." maxlength="80">你好</textarea>
+        <div class="tr-char-count-row"><span id="tr-char-count">2</span>/80</div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="tr-btn-row">
+        <button id="tr-speak-btn" class="tr-btn tr-btn-speak rip">🔊 استمع</button>
+        <button id="tr-pinyin-btn" class="tr-btn tr-btn-pinyin rip">📝 إظهار البينيين</button>
+        <button id="tr-reset-btn" class="tr-btn tr-btn-reset rip">🔄 إعادة</button>
+      </div>
+
+      <!-- Pinyin display -->
+      <div class="tr-section">
+        <div class="tr-section-title">البينيين:</div>
+        <div id="tr-pinyin-display" class="tr-pinyin-display">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- Character analysis -->
+      <div class="tr-section">
+        <div class="tr-section-title">تحليل الحروف (اضغط للاستماع):</div>
+        <div id="tr-analysis" class="tr-analysis-grid">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- Tone reference -->
+      <div class="tr-section tr-tone-ref">
+        <div class="tr-section-title">النغمات الأربع:</div>
+        <div class="tr-tone-grid">
+          <div class="tr-tone-item t1"><div class="tr-tone-mark">ā</div><div class="tr-tone-name">الأولى</div><div class="tr-tone-desc">مستوية</div></div>
+          <div class="tr-tone-item t2"><div class="tr-tone-mark">á</div><div class="tr-tone-name">الثانية</div><div class="tr-tone-desc">صاعدة</div></div>
+          <div class="tr-tone-item t3"><div class="tr-tone-mark">ǎ</div><div class="tr-tone-name">الثالثة</div><div class="tr-tone-desc">منحنية</div></div>
+          <div class="tr-tone-item t4"><div class="tr-tone-mark">à</div><div class="tr-tone-name">الرابعة</div><div class="tr-tone-desc">هابطة</div></div>
+        </div>
+      </div>
+
+      <!-- Quick examples -->
+      <div class="tr-section">
+        <div class="tr-section-title">أمثلة سريعة:</div>
+        <div class="tr-examples-grid">
+          <button class="tr-example-btn rip" data-text="你好">你好 (مرحباً)</button>
+          <button class="tr-example-btn rip" data-text="谢谢">谢谢 (شكراً)</button>
+          <button class="tr-example-btn rip" data-text="再见">再见 (وداعاً)</button>
+          <button class="tr-example-btn rip" data-text="我爱学习">我爱学习 (أحب التعلم)</button>
+          <button class="tr-example-btn rip" data-text="我是埃及人">我是埃及人 (أنا مصري)</button>
+          <button class="tr-example-btn rip" data-text="你好吗">你好吗 (كيف حالك؟)</button>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ════════ BOTTOM NAVIGATION ════════ -->
@@ -316,6 +407,10 @@
     <button class="nav-item rip" data-view="profile" aria-label="حسابي"   aria-selected="false">
       <div class="nav-pill"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
       <span class="nav-label">حسابي</span>
+    </button>
+    <button class="nav-item rip" data-view="translate" aria-label="المترجم" aria-selected="false">
+      <div class="nav-pill"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0 1 6.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg></div>
+      <span class="nav-label">مترجم</span>
     </button>
   </nav>
 
@@ -495,10 +590,28 @@
      4. ui.js        — App controller (DOM, engines, init)
      Use document-relative paths (./js/) for all environments.
 ════════════════════════════════════════════════════════ -->
+<!-- ════════ LESSON INTRO OVERLAY ════════ -->
+<div id="overlay-lesson-intro" class="overlay" role="dialog" aria-label="مقدمة الدرس" aria-modal="true">
+  <div class="overlay-header">
+    <button class="overlay-close rip" id="li-close" aria-label="Close">✕</button>
+    <div style="flex:1">
+      <div class="overlay-title" id="li-title">مقدمة الدرس</div>
+      <div class="overlay-sub"   id="li-sub"></div>
+    </div>
+  </div>
+  <div class="li-body" id="li-body">
+    <!-- intro content injected by JS -->
+  </div>
+  <div class="li-footer">
+    <button class="cta-btn cta-primary rip" id="li-start-btn">ابدأ التدريب ▶</button>
+  </div>
+</div>
+
 <script src="./js/data.js"></script>
 <script src="./js/progress.js"></script>
 <script src="./js/shelly.js"></script>
 <script src="./js/curriculum.js"></script>
+<script src="./js/translator.js"></script>
 <script src="./js/tones.js"></script>
 <script src="./js/vocab.js"></script>
 <script src="./js/challenges.js"></script>

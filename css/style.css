@@ -1345,3 +1345,210 @@
 
 /* Challenge ⚡ button on lesson cards */
 .lc-challenge-btn { touch-action:manipulation; }
+
+/* ================================================================
+   TRANSLATOR VIEW  (v1.7.0)
+================================================================ */
+.translate-view {
+  padding: 14px 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tr-label {
+  font-size: 11px;font-weight: 700;color: var(--text-3);
+  text-transform: uppercase;letter-spacing: 0.5px;
+  direction: rtl;margin-bottom: 4px;display: block;
+}
+.tr-textarea {
+  width: 100%;min-height: 64px;max-height: 90px;
+  padding: 10px;
+  background: var(--bg-elevated);border: 1.5px solid var(--frost-border);
+  border-radius: var(--r-md);color: var(--text-1);font-size: 16px;
+  font-family: 'Noto Sans SC', sans-serif;resize: vertical;
+  outline: none;transition: border-color var(--t-fast);
+}
+.tr-textarea:focus { border-color: var(--accent); }
+.tr-char-count-row {
+  font-size: 11px;color: var(--text-4);text-align: right;margin-top: 2px;
+}
+.tr-btn-row {
+  display: grid;grid-template-columns: 1fr 1.4fr 0.8fr;gap: 8px;
+}
+.tr-btn {
+  padding: 10px 8px;border-radius: var(--r-md);font-size: 12px;font-weight: 700;
+  cursor: pointer;touch-action: manipulation;
+  display: flex;align-items: center;justify-content: center;gap: 4px;
+  transition: all var(--t-fast);
+}
+.tr-btn-speak {
+  background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
+  color: white;border: none;
+}
+.tr-btn-speak:active { opacity: 0.82; }
+.tr-btn-pinyin {
+  background: rgba(100,181,246,0.12);border: 1.5px solid rgba(100,181,246,0.3);
+  color: var(--accent);
+}
+.tr-btn-reset {
+  background: var(--frost-dim);border: 1.5px solid var(--frost-border);
+  color: var(--text-3);
+}
+.tr-section {
+  background: var(--bg-elevated);border: 1px solid var(--frost-border);
+  border-radius: var(--r-lg);padding: 12px;
+}
+.tr-section-title {
+  font-size: 10.5px;font-weight: 800;letter-spacing: 0.1em;
+  color: var(--accent);text-transform: uppercase;margin-bottom: 8px;
+  direction: rtl;
+}
+.tr-pinyin-display {
+  font-size: 18px;font-weight: 700;line-height: 1.8;
+  word-break: break-all;min-height: 36px;
+}
+.tr-analysis-grid {
+  display: flex;flex-wrap: wrap;gap: 8px;min-height: 54px;
+}
+.tr-char-card {
+  background: var(--bg-surface);border: 2px solid;border-radius: var(--r-md);
+  padding: 8px 10px;text-align: center;cursor: pointer;
+  touch-action: manipulation;transition: all var(--t-fast);
+  display: flex;flex-direction: column;align-items: center;gap: 2px;
+}
+.tr-char-card:active { transform: scale(0.92); }
+.tr-char-cn {
+  font-family: 'Noto Sans SC', sans-serif;font-size: 28px;font-weight: 900;
+}
+.tr-char-py { font-size: 12px;font-weight: 700; }
+
+/* Tone reference in translator */
+.tr-tone-ref { background: var(--bg-elevated); }
+.tr-tone-grid {
+  display: grid;grid-template-columns: repeat(4, 1fr);gap: 6px;
+}
+.tr-tone-item {
+  background: var(--bg-surface);border: 1.5px solid var(--frost-border);
+  border-radius: var(--r-sm);padding: 8px 4px;text-align: center;
+}
+.tr-tone-mark { font-size: 22px;font-weight: 900;line-height: 1; }
+.tr-tone-name { font-size: 10px;font-weight: 700;color: var(--text-3);margin-top: 2px; }
+.tr-tone-desc { font-size: 9px;color: var(--text-4); }
+
+/* Tone colours for translator items */
+.tr-tone-item.t1 .tr-tone-mark { color: var(--tone1); }
+.tr-tone-item.t2 .tr-tone-mark { color: var(--tone2); }
+.tr-tone-item.t3 .tr-tone-mark { color: var(--tone3); }
+.tr-tone-item.t4 .tr-tone-mark { color: var(--tone4); }
+
+/* Examples grid */
+.tr-examples-grid {
+  display: grid;grid-template-columns: 1fr 1fr;gap: 7px;
+}
+.tr-example-btn {
+  padding: 9px 8px;background: var(--bg-surface);
+  border: 1.5px solid var(--frost-border);border-radius: var(--r-sm);
+  font-size: 12px;font-weight: 600;color: var(--text-2);
+  cursor: pointer;touch-action: manipulation;transition: all var(--t-fast);
+  font-family: 'Noto Sans SC', 'Exo 2', sans-serif;
+}
+.tr-example-btn:active {
+  background: rgba(100,181,246,0.12);border-color: var(--accent);color: var(--accent);
+}
+
+/* ================================================================
+   GLOBAL TTS BUTTON  (used in dialogue, sentences, story)
+================================================================ */
+.tts-btn {
+  flex-shrink: 0;
+  width: 32px;height: 32px;
+  border-radius: 50%;
+  background: rgba(30,144,255,0.10);
+  border: 1px solid rgba(100,181,246,0.25);
+  color: var(--accent);
+  font-size: 14px;
+  cursor: pointer;touch-action: manipulation;
+  display: flex;align-items: center;justify-content: center;
+  transition: all var(--t-fast);
+  flex-shrink: 0;
+}
+.tts-btn:active { background: rgba(30,144,255,0.25);transform: scale(0.88); }
+
+/* Story paragraph TTS placement */
+.sr-tts { position: absolute;top: 8px;right: 8px; }
+.sr-paragraph { position: relative; }
+
+/* Dialogue line with TTS */
+.ld-line {
+  display: flex;align-items: flex-start;gap: 8px;
+  padding: 10px 0;border-bottom: 1px solid var(--frost-border);
+}
+.ld-line-body { flex: 1; }
+
+/* Sentence with TTS */
+.ld-sent-top {
+  display: flex;align-items: flex-start;gap: 10px;
+}
+.ld-sent-col { flex: 1; }
+
+/* ================================================================
+   LESSON INTRO OVERLAY  (مقدمة الدرس)
+================================================================ */
+.li-body {
+  flex: 1;overflow-y: auto;padding: 18px;
+  display: flex;flex-direction: column;gap: 14px;
+  -webkit-overflow-scrolling: touch;
+}
+.li-hook {
+  background: rgba(30,144,255,0.06);border: 1px solid var(--frost-border);
+  border-radius: var(--r-md);padding: 12px;
+  font-size: 13px;color: var(--text-2);line-height: 1.7;
+  direction: rtl;text-align: right;
+}
+.li-body-text {
+  font-size: 14px;color: var(--text-1);line-height: 1.8;
+  direction: rtl;text-align: right;
+}
+.li-body-text strong { color: var(--accent); }
+.li-footer {
+  padding: 12px 16px calc(12px + var(--safe-b));
+  background: rgba(5,11,22,0.92);border-top: 1px solid var(--frost-border);
+  flex-shrink: 0;
+}
+
+/* ================================================================
+   CHALLENGE TILES WITH PINYIN  (v1.7.0)
+================================================================ */
+.ch-tile {
+  display: flex;flex-direction: column;align-items: center;gap: 2px;
+  padding: 8px 12px;min-width: 44px;
+}
+.ch-tile-py {
+  font-size: 10px;font-weight: 700;line-height: 1;
+}
+.ch-tile-cn {
+  font-family: 'Noto Sans SC', sans-serif;font-size: 20px;font-weight: 900;line-height: 1;
+}
+.ch-tile.placed .ch-tile-py { color: var(--accent); }
+
+/* ================================================================
+   PROFILE — About card & Final Exam
+================================================================ */
+.about-card {
+  background: linear-gradient(138deg, #0A2646, #0E3260);
+  border: 1px solid var(--frost-border);border-radius: var(--r-xl);
+  padding: 20px;text-align: center;display: flex;flex-direction: column;
+  align-items: center;gap: 6px;
+}
+.about-logo  { font-size: 40px; }
+.about-name  { font-size: 20px;font-weight: 900;color: var(--text-1); }
+.about-version { font-size: 12px;color: var(--accent); }
+.about-zh    { font-family: 'Noto Sans SC',sans-serif;font-size: 18px;font-weight: 700;color: var(--blue-300); }
+.about-author {
+  font-size: 13px;font-weight: 700;color: var(--gold);
+  background: rgba(255,202,64,0.10);border: 1px solid rgba(255,202,64,0.25);
+  border-radius: var(--r-full);padding: 4px 14px;
+}
+.about-desc {
+  font-size: 11.5px;color: var(--text-3);direction: rtl;line-height: 1.5;margin-top: 4px;
+}

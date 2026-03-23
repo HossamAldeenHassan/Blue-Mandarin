@@ -57,6 +57,27 @@ const Data     = window.BM?.DataManager     ?? _noop;
 const Progress = window.BM?.ProgressManager ?? _noop;
 const Shelly   = window.BM?.ShellyAI       ?? _noop;
 
+// ── Global TTS helper (sentences, dialogues, stories) ──────────
+let _ttsActivBtn = null;
+function _speakZh(text, btn) {
+  window.speechSynthesis.cancel();
+  if (_ttsActivBtn) { _ttsActivBtn.textContent = '🔊'; _ttsActivBtn = null; }
+  const utt  = new SpeechSynthesisUtterance(text);
+  utt.lang   = 'zh-CN';
+  utt.rate   = 0.82;
+  utt.pitch  = 1.0;
+  utt.volume = 1.0;
+  const voices = window.speechSynthesis.getVoices();
+  const zh = voices.find(v => v.lang === 'zh-CN' || v.lang.startsWith('zh'));
+  if (zh) utt.voice = zh;
+  if (btn) {
+    _ttsActivBtn = btn;
+    utt.onstart = () => { btn.textContent = '...'; };
+    utt.onend   = () => { btn.textContent = '🔊'; _ttsActivBtn = null; };
+  }
+  window.speechSynthesis.speak(utt);
+}
+
 // ===========================================================
 // 1. SERVICE WORKER REGISTRATION
 // ===========================================================
@@ -191,14 +212,15 @@ navItems.forEach(item => {
     if (e.isPrimary === false) return;
     e.preventDefault();
     const v = item.dataset.view;
-    // 'الكلمات' (learn) tab → open full 500-word VocabPage overlay
-    if (v === 'learn') { window.BM?.VocabPage?.open(); return; }
+    if (v === 'learn')     { window.BM?.VocabPage?.open(); return; }
+    if (v === 'translate') { navigateTo(v); setTimeout(() => window.BM?.TranslatorTool?.init(), 50); return; }
     navigateTo(v);
   });
   item.addEventListener('click', e => {
     if (e.pointerType) return;
     const v = item.dataset.view;
-    if (v === 'learn') { window.BM?.VocabPage?.open(); return; }
+    if (v === 'learn')     { window.BM?.VocabPage?.open(); return; }
+    if (v === 'translate') { navigateTo(v); setTimeout(() => window.BM?.TranslatorTool?.init(), 50); return; }
     navigateTo(v);
   });
 });
@@ -947,12 +969,20 @@ const LessonDetail = {
         ${(dlg.lines ?? []).map(line => `
           <div class="ld-line sp-${line.sp}">
             <div class="ld-speaker">${speakers[line.sp] ?? 'Speaker'}</div>
-            <div class="ld-line-zh">${line.zh}</div>
-            <div class="ld-line-py">${line.py}</div>
-            <div class="ld-line-ar">${line.ar}</div>
+            <div class="ld-line-body">
+              <div class="ld-line-zh">${line.zh}</div>
+              <div class="ld-line-py bm-pinyin">${line.py}</div>
+              <div class="ld-line-ar">${line.ar}</div>
+            </div>
+            <button class="tts-btn rip" data-tts="${line.zh}" title="استمع">🔊</button>
           </div>`).join('')}
       </div>`;
-
+    container.querySelectorAll('.tts-btn').forEach(btn => {
+      btn.addEventListener('pointerdown', e => {
+        e.preventDefault(); e.stopPropagation();
+        _speakZh(btn.dataset.tts, btn);
+      });
+    });
     Progress.markDialogueRead?.(lessonId);
   },
 
@@ -967,12 +997,22 @@ const LessonDetail = {
     }
     list.innerHTML = sents.map(s => `
       <div class="ld-sent">
-        <div class="ld-sent-zh">${s.zh}</div>
-        <div class="ld-sent-py">${s.pinyin}</div>
-        <div class="ld-sent-ar">${s.ar}</div>
-        ${s.tip ? `<div class="ld-sent-tip">${s.tip}</div>` : ''}
+        <div class="ld-sent-top">
+          <div class="ld-sent-col">
+            <div class="ld-sent-zh">${s.zh}</div>
+            <div class="ld-sent-py bm-pinyin">${s.pinyin}</div>
+            <div class="ld-sent-ar">${s.ar}</div>
+            ${s.tip ? `<div class="ld-sent-tip">${s.tip}</div>` : ''}
+          </div>
+          <button class="tts-btn rip" data-tts="${s.zh}" title="استمع">🔊</button>
+        </div>
       </div>`).join('');
-
+    list.querySelectorAll('.tts-btn').forEach(btn => {
+      btn.addEventListener('pointerdown', e => {
+        e.preventDefault(); e.stopPropagation();
+        _speakZh(btn.dataset.tts, btn);
+      });
+    });
     Progress.updateSentencesDone?.(lessonId, sents.length);
   },
 };
@@ -994,7 +1034,52 @@ document.getElementById('ld-flashcard-btn').addEventListener('click', () => {
   if (lid) openFlashcardsForLesson(lid, part);
 });
 
-// ── openLesson: now opens Lesson Detail overlay first ────────
+// ── Lesson Intro — shows curriculum theory before lesson detail ─
+async function _showLessonIntro(lessonId, onContinue) {
+  const CE = window.BM?.Curriculum;
+  if (!CE) { onContinue(); return; }
+  const cur = await CE.loadCurriculum().catch(() => null);
+  if (!cur) { onContinue(); return; }
+  let introContent = null;
+  for (const unit of cur.units) {
+    for (const lesson of unit.lessons) {
+      const gi = cur.units.slice(0, cur.units.indexOf(unit))
+        .reduce((s, u) => s + u.lessons.length, 0) + unit.lessons.indexOf(lesson);
+      if (gi + 1 === lessonId) {
+        const intro = lesson.steps.find(s => s.type === 'intro');
+        if (intro) introContent = {
+          tipTitle: intro.title_ar ?? 'مقدمة الدرس',
+          title:    lesson.title_ar,
+          hook:     unit.hook_ar ?? '',
+          body:     intro.body_ar ?? '',
+        };
+        break;
+      }
+    }
+    if (introContent) break;
+  }
+  if (!introContent) { onContinue(); return; }
+  const ov = document.getElementById('overlay-lesson-intro');
+  if (!ov) { onContinue(); return; }
+  document.getElementById('li-title').textContent = introContent.tipTitle;
+  document.getElementById('li-sub').textContent   = introContent.title;
+  const md = t => t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/
+/g,'<br>');
+  document.getElementById('li-body').innerHTML = `
+    <div class="li-hook">${introContent.hook}</div>
+    <div class="li-body-text">${md(introContent.body)}</div>`;
+  const cb = document.getElementById('li-close');
+  const sb = document.getElementById('li-start-btn');
+  [cb, sb].forEach(b => {
+    const n = b.cloneNode(true); b.replaceWith(n);
+    n.addEventListener('pointerdown', e => {
+      e.preventDefault(); ov.classList.remove('open'); onContinue();
+    });
+  });
+  ov.classList.add('open');
+}
+
+// ── openLesson: shows intro then Lesson Detail ────────────────
 
 async function openLesson(lessonId) {
   if (!Array.isArray(ALL_WORDS) || ALL_WORDS.length === 0) {
@@ -1007,8 +1092,8 @@ async function openLesson(lessonId) {
   }
   if (!Array.isArray(ALL_WORDS)) { ALL_WORDS = []; }
 
-  // Open lesson detail — always starting at Part 1
-  await LessonDetail.open(lessonId, 1);
+  // Show curriculum intro if available, then open lesson detail
+  _showLessonIntro(lessonId, () => LessonDetail.open(lessonId, 1));
 }
 
 // Wire static lesson cards — pointerdown for instant mobile response
@@ -1262,10 +1347,17 @@ const StoryReader = {
     const container = document.getElementById('sr-content');
     container.innerHTML = this.paragraphs.map((p, i) => `
       <div class="sr-paragraph ${i === 0 ? 'current' : ''}" data-para="${i}">
+        <button class="tts-btn sr-tts rip" data-tts="${p.chinese}" title="استمع">🔊</button>
         <div class="sr-cn">${p.chinese}</div>
-        <div class="sr-py">${p.pinyin}</div>
+        <div class="sr-py bm-pinyin">${p.pinyin}</div>
         <div class="sr-ar">${p.translation}</div>
       </div>`).join('');
+    container.querySelectorAll('.tts-btn').forEach(btn => {
+      btn.addEventListener('pointerdown', e => {
+        e.preventDefault(); e.stopPropagation();
+        _speakZh(btn.dataset.tts, btn);
+      });
+    });
     this._updateNav();
   },
 
@@ -1615,6 +1707,15 @@ document.getElementById('topic-chips')?.addEventListener('click', e => {
 // ===========================================================
 // 14. PROFILE – RESET PROGRESS
 // ===========================================================
+// Final exam → 100-question test
+document.getElementById('final-exam-row')?.addEventListener('pointerdown', e => {
+  e.preventDefault();
+  Data.getTestQuestions(100).then(qs => {
+    if (!qs.length) { toast('⚠️ لا توجد أسئلة بعد'); return; }
+    Quiz.openWithQuestions(qs, 'الاختبار النهائي HSK 1 📝');
+  });
+});
+
 document.getElementById('reset-row').addEventListener('click', () => {
   if (confirm('Reset ALL progress? This cannot be undone.')) {
     Progress.__hardReset();
@@ -1627,28 +1728,10 @@ document.getElementById('reset-row').addEventListener('click', () => {
 });
 
 // ===========================================================
-// 15. SWIPE NAVIGATION
+// 15. SWIPE NAVIGATION — DISABLED (v1.7.0)
+// Swipe removed: navigation is strictly via the bottom nav bar.
+// Keyboard ArrowLeft/Right still works on desktop.
 // ===========================================================
-let swipeX = 0, swipeY = 0;
-document.addEventListener('touchstart', e => {
-  swipeX = e.changedTouches[0].screenX;
-  swipeY = e.changedTouches[0].screenY;
-}, { passive: true });
-document.addEventListener('touchend', e => {
-  const dx    = e.changedTouches[0].screenX - swipeX;
-  const dy    = e.changedTouches[0].screenY - swipeY;
-  const absDx = Math.abs(dx);
-  const absDy = Math.abs(dy);
-  // 65px threshold + 3:1 horizontal-to-vertical ratio = intentional horizontal swipe only
-  if (absDx > absDy * 1.5 && absDx > 65) {
-    if (document.querySelector('.overlay.open')) return;
-    const idx = VIEW_ORDER.indexOf(activeView);
-    // Natural swipe: finger slides RIGHT → reveal next tab (forward)
-    //               finger slides LEFT  → reveal prev tab (back)
-    if (dx > 0 && idx < VIEW_ORDER.length - 1) navigateTo(VIEW_ORDER[idx + 1]);
-    if (dx < 0 && idx > 0)                      navigateTo(VIEW_ORDER[idx - 1]);
-  }
-}, { passive: true });
 
 // ===========================================================
 // 16. KEYBOARD NAVIGATION
@@ -1875,7 +1958,7 @@ async function init() {
     window.speechSynthesis.onvoiceschanged = () => {};
   }
 
-  console.log('%c❄ Blue Mandarin v1.5.0 — Hossam Aldeen Hassan 2026',
+  console.log('%c❄ Blue Mandarin v1.7.0 — Hossam Aldeen Hassan 2026',
     'color:#64B5F6;font-size:12px;font-weight:bold');
 }
 
@@ -2120,7 +2203,7 @@ if (document.readyState === "loading") {
   init();
 }
 
-console.log('%c❄ Blue Mandarin v1.5.0 | Hossam Aldeen Hassan 2026 | HSK 1 Platform',
+console.log('%c❄ Blue Mandarin v1.7.0 | Hossam Aldeen Hassan 2026 | HSK 1 Platform',
   'color:#64B5F6;font-size:12px;font-weight:bold;');
 console.log('%cTones ✓  VocabPage ✓  Challenges ✓  TTS ✓  4-Type Quizzes ✓  Swipe Fixed ✓',
   'color:#26D97F;font-size:10px;');

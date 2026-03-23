@@ -20,6 +20,21 @@ const ChallengeEngine = (() => {
   let _challenges = null;   // full parsed challenges.json
   let _active = null;       // { lessonId, questions[], idx, score, startTime }
 
+  // ── Char→Pinyin lookup (for tile annotations) ─────────────────
+  let _charPy = null;
+  async function _loadCharPy() {
+    if (_charPy) return _charPy;
+    try {
+      const r = await fetch('./data/hsk1/char_pinyin.json?_v=' + Date.now());
+      _charPy = r.ok ? await r.json() : {};
+    } catch (_) { _charPy = {}; }
+    // Supplement from KG vocab
+    const kg = window.BM?.KnowledgeGraph?.vocab?.all ?? [];
+    kg.forEach(w => { if (!_charPy[w.cn]) _charPy[w.cn] = w.pinyin; });
+    return _charPy;
+  }
+  function _getPy(char) { return (_charPy ?? {})[char] ?? ''; }
+
   // ── Load ──────────────────────────────────────────────────────
   async function _load() {
     if (_challenges) return _challenges;
@@ -186,9 +201,15 @@ const ChallengeEngine = (() => {
               <span class="ch-stage-ph">اضغط الكلمات أدناه…</span>
             </div>
             <div class="ch-build-bank" id="ch-bank">
-              ${tiles.map((t, i) => `
-                <button class="ch-tile rip" data-i="${i}" data-cn="${t}">${t}</button>
-              `).join('')}
+              ${tiles.map((t, i) => {
+                const py = _getPy(t);
+                const T  = window.BM?.Tones;
+                const tc = T ? T.getCls(T.getTone(py)) : '';
+                return `<button class="ch-tile rip" data-i="${i}" data-cn="${t}">
+                  <span class="ch-tile-py ${tc}">${py}</span>
+                  <span class="ch-tile-cn">${t}</span>
+                </button>`;
+              }).join('')}
             </div>
             <div class="ch-explanation hidden" id="ch-exp"></div>
             <button class="cta-btn cta-primary rip ch-check-btn" id="ch-check">تحقق ✓</button>
@@ -357,6 +378,7 @@ const ChallengeEngine = (() => {
 
   // ── Public API ─────────────────────────────────────────────────
   async function open(lessonId) {
+    await _loadCharPy();   // ensure tile pinyin available
     const all = await _load();
     const ch  = all[lessonId];
     if (!ch) {
