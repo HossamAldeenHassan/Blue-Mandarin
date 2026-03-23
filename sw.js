@@ -1,16 +1,16 @@
 /**
  * ================================================================
- *  BLUE MANDARIN — Service Worker  (sw.js)  v1.7.0
+ *  BLUE MANDARIN — Service Worker  (sw.js)  v1.9.0
  *
  *  v1.5.0 changes:
- *    · Cache version bumped to bm-v1.7.0 → evicts all older caches
+ *    · Cache version bumped to bm-v1.9.0 → evicts all older caches
  *    · PWA install prompt fully blocked (no beforeinstallprompt handling)
  *    · Icon paths remain removed (add ./icons/ files when ready)
  *    · activate: clients.claim() for instant takeover
  * ================================================================
  */
 
-const CACHE_VERSION = 'bm-v1.7.0';          // ← bumped from v1.3.0
+const CACHE_VERSION = 'bm-v1.9.0';          // ← bumped to v1.9.0 — clears all old caches
 const SHELL_CACHE   = `${CACHE_VERSION}-shell`;
 const DATA_CACHE    = `${CACHE_VERSION}-data`;
 const DYNAMIC_CACHE = `${CACHE_VERSION}-dynamic`;
@@ -63,12 +63,12 @@ function isDataRequest(url) {
 
 // ── INSTALL ──────────────────────────────────────────────────────
 self.addEventListener('install', event => {
-  console.log('[SW v1.7.0] Installing…');
+  console.log('[SW v1.9.0] Installing…');
   event.waitUntil(
     caches.open(SHELL_CACHE)
       .then(cache => cache.addAll(SHELL_ASSETS))
       .then(() => {
-        console.log('[SW v1.7.0] Shell cached ✓ — calling skipWaiting()');
+        console.log('[SW v1.9.0] Shell cached ✓ — calling skipWaiting()');
         return self.skipWaiting();   // take over immediately
       })
       .catch(e => console.warn('[SW v3.0] Pre-cache failed (non-fatal):', e.message))
@@ -77,18 +77,18 @@ self.addEventListener('install', event => {
 
 // ── ACTIVATE — evict ALL old caches, claim clients immediately ────
 self.addEventListener('activate', event => {
-  console.log('[SW v1.7.0] Activating — evicting old caches…');
+  console.log('[SW v1.9.0] Activating — evicting old caches…');
   const valid = new Set([SHELL_CACHE, DATA_CACHE, DYNAMIC_CACHE]);
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
         keys.filter(k => !valid.has(k)).map(k => {
-          console.log('[SW v1.7.0] Evicting:', k);
+          console.log('[SW v1.9.0] Evicting:', k);
           return caches.delete(k);
         })
       ))
       .then(() => {
-        console.log('[SW v1.7.0] Active. Claiming all clients immediately.');
+        console.log('[SW v1.9.0] Active. Claiming all clients immediately.');
         return self.clients.claim();   // take over open tabs without reload
       })
   );

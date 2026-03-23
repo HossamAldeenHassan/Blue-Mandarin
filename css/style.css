@@ -170,8 +170,8 @@
       overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;
       /* Allow vertical scroll but disable pan-x to prevent accidental nav conflicts */
       touch-action:pan-y;
-      /* Extra padding ensures last content never hides under fixed nav bar */
-      padding-bottom:calc(var(--nav-h) + var(--safe-b) + 48px);
+      /* 100px extra — ensures last content is FULLY above the fixed nav bar */
+      padding-bottom:calc(var(--nav-h) + var(--safe-b) + 100px);
       opacity:0;transform:translateX(22px);pointer-events:none;will-change:opacity,transform;
       transition:opacity 280ms var(--ease-decel),transform 280ms var(--ease-decel);
     }
@@ -784,7 +784,7 @@
       transition:color var(--t-fast),border-color var(--t-fast);}
     .ld-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
     .ld-panel{display:none;flex:1;overflow-y:auto;padding:14px;-webkit-overflow-scrolling:touch;
-      padding-bottom:calc(var(--nav-h) + 20px);}
+      padding-bottom:calc(var(--nav-h) + 80px);}
     .ld-panel.active{display:block;}
 
     /* Vocab panel */
@@ -1628,3 +1628,36 @@
 
 /* Profile Shelly row emphasis */
 #open-shelly-row .sr-title { color: var(--accent); }
+
+/* ================================================================
+   TONE SHORTCUT CARD  (home page shortcut to lesson 0.2)
+================================================================ */
+.tone-shortcut-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(30,144,255,0.12), rgba(142,36,170,0.10));
+  border: 1px solid rgba(100,181,246,0.3);
+  border-radius: var(--r-lg);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-align: left;
+  transition: all var(--t-fast);
+}
+.tone-shortcut-card:active { transform: scale(0.97); }
+.ts-icon { font-size: 28px; flex-shrink: 0; }
+.ts-text  { flex: 1; }
+.ts-title { font-size: 13.5px; font-weight: 700; color: var(--accent); direction: rtl; }
+.ts-sub   { font-size: 11px; color: var(--text-3); direction: rtl; margin-top: 2px; }
+.ts-arrow { font-size: 20px; color: var(--text-4); flex-shrink: 0; }
+
+/* sec-head button variant (for Final Exam link) */
+.sec-head button.sec-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}

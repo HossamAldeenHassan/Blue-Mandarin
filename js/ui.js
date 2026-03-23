@@ -1737,6 +1737,14 @@ document.getElementById('home-final-exam-btn')?.addEventListener('pointerdown', 
   e.preventDefault();
   _launchFinalExam();
 });
+
+// Tone recognition shortcut → opens curriculum lesson 0.2 (النغمات الأربع)
+document.getElementById('home-tone-btn')?.addEventListener('pointerdown', e => {
+  e.preventDefault();
+  const CE = window.BM?.Curriculum;
+  if (CE) CE.openLesson('u0', 'l0_2');
+  else if (typeof toast === 'function') toast('⏳ جارٍ تحميل الدرس…');
+});
 // Final exam → available from home AND profile
 document.getElementById('final-exam-row')?.addEventListener('pointerdown', e => {
   e.preventDefault();
@@ -1988,7 +1996,7 @@ async function init() {
     window.speechSynthesis.onvoiceschanged = () => {};
   }
 
-  console.log('%c❄ Blue Mandarin v1.7.0 — Hossam Aldeen Hassan 2026',
+  console.log('%c❄ Blue Mandarin v1.9.0 — Hossam Aldeen Hassan 2026',
     'color:#64B5F6;font-size:12px;font-weight:bold');
 }
 
@@ -2293,7 +2301,7 @@ if (document.readyState === "loading") {
   init();
 }
 
-console.log('%c❄ Blue Mandarin v1.7.0 | Hossam Aldeen Hassan 2026 | HSK 1 Platform',
+console.log('%c❄ Blue Mandarin v1.9.0 | Hossam Aldeen Hassan 2026 | HSK 1 Platform',
   'color:#64B5F6;font-size:12px;font-weight:bold;');
 console.log('%cTones ✓  VocabPage ✓  Challenges ✓  TTS ✓  4-Type Quizzes ✓  Swipe Fixed ✓',
   'color:#26D97F;font-size:10px;');

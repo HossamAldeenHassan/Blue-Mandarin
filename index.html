@@ -28,7 +28,7 @@
 
 <canvas id="snow-canvas" aria-hidden="true"></canvas>
 
-<div id="app" role="application" data-bm-version="1.7.0">
+<div id="app" role="application" data-bm-version="1.9.0">
 
   <!-- SVG gradient definitions -->
   <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
@@ -103,19 +103,32 @@
         </div>
         <span class="challenge-arrow">›</span>
       </div>
+      <!-- ══ PRIMARY: Interactive Curriculum Lessons ══ -->
       <div class="sec-head">
-        <span class="sec-title">مراجعات</span>
-        <span class="sec-link rip" role="button" tabindex="0" onclick="window.BM?.VocabPage?.open()">عرض الكل →</span>
-      </div>
-      <!-- Curriculum interactive lessons section -->
-      <div class="sec-head" style="margin-top:4px">
         <span class="sec-title">الدروس التفاعلية</span>
-        <span class="sec-link rip" role="button" tabindex="0" id="home-final-exam-btn">📝 الاختبار النهائي</span>
+        <button class="sec-link rip" id="home-final-exam-btn">📝 الاختبار النهائي</button>
       </div>
+
+      <!-- Tone Recognition shortcut -->
+      <button class="tone-shortcut-card rip" id="home-tone-btn">
+        <span class="ts-icon">🎵</span>
+        <div class="ts-text">
+          <div class="ts-title">تعرف على النغمات الأربع</div>
+          <div class="ts-sub">الدرس 0.2 — أساس النطق الصحيح</div>
+        </div>
+        <span class="ts-arrow">›</span>
+      </button>
+
       <div id="curriculum-home" class="curriculum-home-list">
         <div class="skeleton" style="height:68px;border-radius:12px"></div>
         <div class="skeleton" style="height:68px;border-radius:12px;margin-top:8px"></div>
         <div class="skeleton" style="height:68px;border-radius:12px;margin-top:8px"></div>
+      </div>
+
+      <!-- ══ SECONDARY: Quick Vocabulary Review Path ══ -->
+      <div class="sec-head" style="margin-top:8px">
+        <span class="sec-title">مراجعات سريعة</span>
+        <span class="sec-link rip" role="button" tabindex="0" onclick="window.BM?.VocabPage?.open()">عرض الكل →</span>
       </div>
 
       <div id="home-path-container">
@@ -314,7 +327,7 @@
         </div>
       </div>
 
-      <div class="app-footer">Blue Mandarin v1.7.0 · HSK 1 (v3.0) ❄️<br>
+      <div class="app-footer">Blue Mandarin v1.9.0 · HSK 1 (v3.0) ❄️<br>
         <span>蓝色普通话</span><br>
         <span style="font-size:10px;opacity:0.6">Hossam Aldeen Hassan © 2026</span>
       </div>
