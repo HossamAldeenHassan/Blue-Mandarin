@@ -1,0 +1,473 @@
+{
+  "hsk_level": "1",
+  "hsk_version": "3.0",
+  "total_stories": 7,
+  "description": "قصص تعليمية مصنفة لثلاثة مستويات (مبتدئ، متوسط، مرتفع) باستخدام مفردات HSK1",
+  "stories_by_level": {
+    "beginner": [
+      {
+        "story_number": 1,
+        "title_zh": "小明的一天",
+        "title_ar": "يوم شياو مينغ",
+        "title_en": "Xiao Ming's Day",
+        "level": "مبتدئ",
+        "level_description": "مفردات أساسية، جمل قصيرة وبسيطة، تكرار عالي للكلمات",
+        "vocabulary_count": "~120 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "早上八点，小明起床了。",
+            "pinyin": "Zǎoshang bā diǎn, Xiǎo Míng qǐchuáng le.",
+            "translation": "الساعة الثامنة صباحاً، استيقظ شياو مينغ."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "他喝水，吃面包。妈妈做早饭。",
+            "pinyin": "Tā hē shuǐ, chī miànbāo. Māma zuò zǎofàn.",
+            "translation": "شرب ماء وأكل خبزاً. أمه أعدّت الإفطار."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "上午九点，小明学习汉语。",
+            "pinyin": "Shàngwǔ jiǔ diǎn, Xiǎo Míng xuéxí Hànyǔ.",
+            "translation": "الساعة التاسعة صباحاً، درس شياو مينغ اللغة الصينية."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "他看书，写汉字。",
+            "pinyin": "Tā kàn shū, xiě Hànzì.",
+            "translation": "قرأ كتاباً وكتب الحروف الصينية."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "中午十二点，小明吃米饭。",
+            "pinyin": "Zhōngwǔ shí'èr diǎn, Xiǎo Míng chī mǐfàn.",
+            "translation": "الساعة الثانية عشرة ظهراً، تناول شياو مينغ الأرز."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "下午，他看朋友。",
+            "pinyin": "Xiàwǔ, tā kàn péngyou.",
+            "translation": "بعد الظهر، زار صديقاً."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "晚上，小明看电视，睡觉。",
+            "pinyin": "Wǎnshang, Xiǎo Míng kàn diànshì, shuìjiào.",
+            "translation": "مساءً، شاهد التلفاز ونام."
+          }
+        ]
+      },
+      {
+        "story_number": 2,
+        "title_zh": "我的家",
+        "title_ar": "عائلتي",
+        "title_en": "My Family",
+        "level": "مبتدئ",
+        "level_description": "مفردات أساسية، جمل قصيرة وبسيطة، تكرار عالي للكلمات",
+        "vocabulary_count": "~130 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "我家有五口人：爸爸、妈妈、哥哥、妹妹和我。",
+            "pinyin": "Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, mèimei hé wǒ.",
+            "translation": "عائلتي تتكون من خمسة أفراد: أبي، أمي، أخي الأكبر، أختي الصغرى وأنا."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "爸爸是老师，妈妈是医生。",
+            "pinyin": "Bàba shì lǎoshī, māma shì yīshēng.",
+            "translation": "أبي معلم، أمي طبيبة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "哥哥二十岁，他是学生。",
+            "pinyin": "Gēge èrshí suì, tā shì xuésheng.",
+            "translation": "أخي عمره عشرون سنة، وهو طالب."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "妹妹八岁，她很小。",
+            "pinyin": "Mèimei bā suì, tā hěn xiǎo.",
+            "translation": "أختي عمرها ثماني سنوات، وهي صغيرة."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "我爱我的家。",
+            "pinyin": "Wǒ ài wǒ de jiā.",
+            "translation": "أنا أحب عائلتي."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "story_number": 3,
+        "title_zh": "果果不见了",
+        "title_ar": "غوو غوو مفقود",
+        "title_en": "Guo Guo Is Missing",
+        "level": "متوسط",
+        "level_description": "جمل أطول قليلاً، حوارات بسيطة، تسلسل أحداث",
+        "vocabulary_count": "~220 كلمة",
+        "new_words_introduced": 3,
+        "new_words_list": [
+          {"word": "不见", "pinyin": "bújiàn", "meaning": "مفقود، يختفي"},
+          {"word": "着急", "pinyin": "zháojí", "meaning": "قلق"},
+          {"word": "找", "pinyin": "zhǎo", "meaning": "يبحث عن"}
+        ],
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "果果五岁。他和爸爸、妈妈去北京玩。",
+            "pinyin": "Guǒguo wǔ suì. Tā hé bàba, māma qù Běijīng wán.",
+            "translation": "غوو غوو في الخامسة من عمره. ذهب مع أبيه وأمه إلى بكين للتنزه."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "北京很大，人很多。果果很高兴。",
+            "pinyin": "Běijīng hěn dà, rén hěn duō. Guǒguo hěn gāoxìng.",
+            "translation": "بكين كبيرة جداً والناس كثيرون. كان غوو غوو سعيداً جداً."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "在商店里，果果看玩具。",
+            "pinyin": "Zài shāngdiàn lǐ, Guǒguo kàn wánjù.",
+            "translation": "في المتجر، كان غوو غوو ينظر إلى الألعاب."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "他回头，爸爸、妈妈不见了！",
+            "pinyin": "Tā huítóu, bàba, māma bújiàn le!",
+            "translation": "عندما التفت، لم يجد أباه وأمه!"
+          },
+          {
+            "paragraph": 5,
+            "chinese": "果果很着急，他不会说汉语。",
+            "pinyin": "Guǒguo hěn zháojí, tā bú huì shuō Hànyǔ.",
+            "translation": "قلق غوو غوو كثيراً، فهو لا يتحدث الصينية."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "一个人问：'你叫什么名字？'果果说：'我叫果果。'",
+            "pinyin": "Yī gè rén wèn: \"Nǐ jiào shénme míngzi?\" Guǒguo shuō: \"Wǒ jiào Guǒguo.\"",
+            "translation": "سأله أحدهم: \"ما اسمك؟\" قال غوو غوو: \"اسمي غوو غوو.\""
+          },
+          {
+            "paragraph": 7,
+            "chinese": "那个人打电话。爸爸、妈妈来了！",
+            "pinyin": "Nà gè rén dǎ diànhuà. Bàba, māma lái le!",
+            "translation": "اتصل ذلك الشخص. جاء أبوه وأمه!"
+          },
+          {
+            "paragraph": 8,
+            "chinese": "果果笑了。",
+            "pinyin": "Guǒguo xiào le.",
+            "translation": "ابتسم غوو غوو."
+          }
+        ]
+      },
+      {
+        "story_number": 4,
+        "title_zh": "买水果",
+        "title_ar": "شراء الفاكهة",
+        "title_en": "Buying Fruit",
+        "level": "متوسط",
+        "level_description": "جمل أطول قليلاً، حوارات بسيطة، تسلسل أحداث",
+        "vocabulary_count": "~200 كلمة",
+        "new_words_introduced": 2,
+        "new_words_list": [
+          {"word": "斤", "pinyin": "jīn", "meaning": "وحدة وزن صينية (500 غرام)"},
+          {"word": "贵", "pinyin": "guì", "meaning": "غالي الثمن"}
+        ],
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "今天天气很好，妈妈和小明去商店。",
+            "pinyin": "Jīntiān tiānqì hěn hǎo, māma hé Xiǎo Míng qù shāngdiàn.",
+            "translation": "الطقس جميل اليوم، ذهبت الأم مع شياو مينغ إلى المتجر."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "商店里有很多水果：苹果、香蕉，还有水。",
+            "pinyin": "Shāngdiàn lǐ yǒu hěnduō shuǐguǒ: píngguǒ, xiāngjiāo, hái yǒu shuǐ.",
+            "translation": "في المتجر فواكه كثيرة: تفاح، موز، وماء أيضاً."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "小明说：'妈妈，我想吃苹果。'",
+            "pinyin": "Xiǎo Míng shuō: \"Māma, wǒ xiǎng chī píngguǒ.\"",
+            "translation": "قال شياو مينغ: \"أمي، أريد أن آكل تفاحاً.\""
+          },
+          {
+            "paragraph": 4,
+            "chinese": "妈妈问：'苹果多少钱一斤？'",
+            "pinyin": "Māma wèn: \"Píngguǒ duōshao qián yī jīn?\"",
+            "translation": "سألت الأم: \"بكم التفاح للجين الواحد؟\""
+          },
+          {
+            "paragraph": 5,
+            "chinese": "卖水果的人说：'五块钱一斤。'",
+            "pinyin": "Mài shuǐguǒ de rén shuō: \"Wǔ kuài qián yī jīn.\"",
+            "translation": "قال بائع الفاكهة: \"خمسة يوانات للجين.\""
+          },
+          {
+            "paragraph": 6,
+            "chinese": "妈妈说：'不贵，我要三斤。'",
+            "pinyin": "Māma shuō: \"Bù guì, wǒ yào sān jīn.\"",
+            "translation": "قالت الأم: \"ليس غالياً، أريد ثلاثة جين.\""
+          },
+          {
+            "paragraph": 7,
+            "chinese": "一共十五块钱。妈妈给钱。",
+            "pinyin": "Yīgòng shíwǔ kuài qián. Māma gěi qián.",
+            "translation": "المجموع خمسة عشر يواناً. دفعت الأم."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "小明和妈妈高兴地回家了。",
+            "pinyin": "Xiǎo Míng hé māma gāoxìng de huí jiā le.",
+            "translation": "عاد شياو مينغ وأمه إلى البيت مسرورين."
+          }
+        ]
+      },
+      {
+        "story_number": 5,
+        "title_zh": "我的好朋友",
+        "title_ar": "صديقي المفضل",
+        "title_en": "My Best Friend",
+        "level": "متوسط",
+        "level_description": "جمل أطول قليلاً، حوارات بسيطة، تسلسل أحداث",
+        "vocabulary_count": "~210 كلمة",
+        "new_words_introduced": 2,
+        "new_words_list": [
+          {"word": "一起", "pinyin": "yīqǐ", "meaning": "معاً"},
+          {"word": "运动", "pinyin": "yùndòng", "meaning": "رياضة، يمارس الرياضة"}
+        ],
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "我有两个好朋友，他们是王明和李华。",
+            "pinyin": "Wǒ yǒu liǎng gè hǎo péngyou, tāmen shì Wáng Míng hé Lǐ Huá.",
+            "translation": "لدي صديقان مقربان، هما وانغ مينغ ولي هوا."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "我们都在学校学习汉语。",
+            "pinyin": "Wǒmen dōu zài xuéxiào xuéxí Hànyǔ.",
+            "translation": "كلنا ندرس اللغة الصينية في المدرسة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "王明喜欢看书，他的书很多。",
+            "pinyin": "Wáng Míng xǐhuan kàn shū, tā de shū hěn duō.",
+            "translation": "وانغ مينغ يحب القراءة، وكتبه كثيرة."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "李华喜欢运动，他每天跑步。",
+            "pinyin": "Lǐ Huá xǐhuan yùndòng, tā měitiān pǎobù.",
+            "translation": "لي هوا يحب الرياضة، يركض كل يوم."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "星期六，我们一起去公园玩。",
+            "pinyin": "Xīngqīliù, wǒmen yīqǐ qù gōngyuán wán.",
+            "translation": "يوم السبت، نذهب معاً إلى الحديقة."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "公园很大，很漂亮。我们很高兴。",
+            "pinyin": "Gōngyuán hěn dà, hěn piàoliang. Wǒmen hěn gāoxìng.",
+            "translation": "الحديقة كبيرة وجميلة. نحن سعداء."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "story_number": 6,
+        "title_zh": "叶限——中国的灰姑娘",
+        "title_ar": "يي شيان - سندريلا الصين",
+        "title_en": "Ye Xian - The Chinese Cinderella",
+        "level": "مرتفع",
+        "level_description": "حبكة أكثر تعقيداً، شخصيات متعددة، أحداث متسلسلة، مشاعر متنوعة",
+        "vocabulary_count": "~340 كلمة",
+        "new_words_introduced": 5,
+        "new_words_list": [
+          {"word": "故事", "pinyin": "gùshi", "meaning": "قصة"},
+          {"word": "漂亮", "pinyin": "piàoliang", "meaning": "جميل"},
+          {"word": "鞋", "pinyin": "xié", "meaning": "حذاء"},
+          {"word": "金子", "pinyin": "jīnzi", "meaning": "ذهب"},
+          {"word": "找到", "pinyin": "zhǎodào", "meaning": "يجد"}
+        ],
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "这是中国的一个故事，叫《叶限》。",
+            "pinyin": "Zhè shì Zhōngguó de yī gè gùshi, jiào \"Yè Xiàn\".",
+            "translation": "هذه قصة صينية اسمها \"يي شيان\"."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "很久以前，有一个女孩叫叶限。她很漂亮，也很善良。",
+            "pinyin": "Hěn jiǔ yǐqián, yǒu yī gè nǚhái jiào Yè Xiàn. Tā hěn piàoliang, yě hěn shànliáng.",
+            "translation": "منذ زمن بعيد، كانت هناك فتاة تدعى يي شيان. كانت جميلة ولطيفة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "但是她的妈妈不在了，爸爸也去世了。",
+            "pinyin": "Dànshì tā de māma bù zài le, bàba yě qùshì le.",
+            "translation": "لكن أمها لم تعد موجودة، وتوفي أبوها أيضاً."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "叶限和后妈一起住。后妈对她很不好。",
+            "pinyin": "Yè Xiàn hé hòumā yīqǐ zhù. Hòumā duì tā hěn bù hǎo.",
+            "translation": "عاشت يي شيان مع زوجة أبيها. كانت زوجة الأب قاسية معها."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "有一天，叶限得到一条鱼。鱼很漂亮。",
+            "pinyin": "Yǒu yī tiān, Yè Xiàn dédào yī tiáo yú. Yú hěn piàoliang.",
+            "translation": "في أحد الأيام، حصلت يي شيان على سمكة. كانت السمكة جميلة."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "后妈知道后，把鱼杀了。叶限很难过。",
+            "pinyin": "Hòumā zhīdào hòu, bǎ yú shā le. Yè Xiàn hěn nánguò.",
+            "translation": "عندما علمت زوجة الأب، قتلت السمكة. حزنت يي شيان كثيراً."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "这时候，一个人来帮助叶限。",
+            "pinyin": "Zhè shíhou, yī gè rén lái bāngzhù Yè Xiàn.",
+            "translation": "في ذلك الوقت، جاء شخص لمساعدة يي شيان."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "他说：'你可以穿这件漂亮的衣服去跳舞。'",
+            "pinyin": "Tā shuō: \"Nǐ kěyǐ chuān zhè jiàn piàoliang de yīfu qù tiàowǔ.\"",
+            "translation": "قال: \"يمكنك ارتداء هذه الملابس الجميلة والذهاب للرقص.\""
+          },
+          {
+            "paragraph": 9,
+            "chinese": "但是，叶限必须在十二点前回家。",
+            "pinyin": "Dànshì, Yè Xiàn bìxū zài shí'èr diǎn qián huí jiā.",
+            "translation": "لكن يي شيان يجب أن تعود قبل الساعة الثانية عشرة."
+          },
+          {
+            "paragraph": 10,
+            "chinese": "在舞会上，大家都很喜欢叶限。",
+            "pinyin": "Zài wǔhuì shàng, dàjiā dōu hěn xǐhuan Yè Xiàn.",
+            "translation": "في الحفلة، أحب الجميع يي شيان."
+          },
+          {
+            "paragraph": 11,
+            "chinese": "叶限跑回家时，掉了一只鞋。鞋是金子做的。",
+            "pinyin": "Yè Xiàn pǎo huí jiā shí, diào le yī zhī xié. Xié shì jīnzi zuò de.",
+            "translation": "عندما ركضت يي شيان إلى المنزل، سقط حذاؤها. كان الحذاء مصنوعاً من الذهب."
+          },
+          {
+            "paragraph": 12,
+            "chinese": "一个人找到这只鞋，开始找叶限。",
+            "pinyin": "Yī gè rén zhǎodào zhè zhī xié, kāishǐ zhǎo Yè Xiàn.",
+            "translation": "وجد شخص هذا الحذاء، وبدأ يبحث عن يي شيان."
+          },
+          {
+            "paragraph": 13,
+            "chinese": "最后，他找到了叶限。他们在一起，很快乐。",
+            "pinyin": "Zuìhòu, tā zhǎodào le Yè Xiàn. Tāmen zài yīqǐ, hěn kuàilè.",
+            "translation": "أخيراً، وجد يي شيان. أصبحا معاً وعاشا سعيدين."
+          }
+        ]
+      },
+      {
+        "story_number": 7,
+        "title_zh": "精卫填海",
+        "title_ar": "جينغ وي تملأ البحر",
+        "title_en": "Jingwei Fills the Sea",
+        "level": "مرتفع",
+        "level_description": "حبكة أكثر تعقيداً، شخصيات متعددة، أحداث متسلسلة، مشاعر متنوعة",
+        "vocabulary_count": "~350 كلمة",
+        "new_words_introduced": 5,
+        "new_words_list": [
+          {"word": "海", "pinyin": "hǎi", "meaning": "بحر"},
+          {"word": "鸟", "pinyin": "niǎo", "meaning": "طائر"},
+          {"word": "石头", "pinyin": "shítou", "meaning": "حجر"},
+          {"word": "死", "pinyin": "sǐ", "meaning": "يموت"},
+          {"word": "变成", "pinyin": "biànchéng", "meaning": "يتحول إلى"}
+        ],
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "从前，有一个小女孩，她是炎帝的女儿。",
+            "pinyin": "Cóngqián, yǒu yī gè xiǎo nǚhái, tā shì Yándì de nǚ'ér.",
+            "translation": "قديماً، كانت هناك فتاة صغيرة، وهي ابنة الإله يان دي."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "她很喜欢看大海。",
+            "pinyin": "Tā hěn xǐhuan kàn dàhǎi.",
+            "translation": "كانت تحب النظر إلى البحر كثيراً."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "一天，她去海边玩。但是，大海很大，水很多。",
+            "pinyin": "Yī tiān, tā qù hǎibiān wán. Dànshì, dàhǎi hěn dà, shuǐ hěn duō.",
+            "translation": "في أحد الأيام، ذهبت لتلعب على شاطئ البحر. لكن البحر كان كبيراً والمياه كثيرة."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "一个大浪来了，小女孩掉进海里，死了。",
+            "pinyin": "Yī gè dà làng lái le, xiǎo nǚhái diào jìn hǎi lǐ, sǐ le.",
+            "translation": "جاءت موجة كبيرة، سقطت الفتاة في البحر وماتت."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "后来，她变成了一只小鸟，叫精卫。",
+            "pinyin": "Hòulái, tā biànchéng le yī zhī xiǎo niǎo, jiào Jīngwèi.",
+            "translation": "بعد ذلك، تحولت إلى طائر صغير اسمه جينغ وي."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "精卫很生气。她不想让别人也掉进海里。",
+            "pinyin": "Jīngwèi hěn shēngqì. Tā bù xiǎng ràng biérén yě diào jìn hǎi lǐ.",
+            "translation": "غضب جينغ وي كثيراً. لم ترد أن يقع الآخرون في البحر أيضاً."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "她每天从山上拿小石头和小树枝，扔到海里。",
+            "pinyin": "Tā měitiān cóng shān shàng ná xiǎo shítou hé xiǎo shùzhī, rēng dào hǎi lǐ.",
+            "translation": "كل يوم، كانت تأخذ حجارة صغيرة وأغصاناً من الجبل وترميها في البحر."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "一天又一天，一年又一年，精卫一直在填海。",
+            "pinyin": "Yī tiān yòu yī tiān, yī nián yòu yī nián, Jīngwèi yīzhí zài tián hǎi.",
+            "translation": "يوماً بعد يوم، وعاماً بعد عام، ظل جينغ وي يملأ البحر."
+          },
+          {
+            "paragraph": 9,
+            "chinese": "大海问她：'你为什么这样做？'",
+            "pinyin": "Dàhǎi wèn tā: \"Nǐ wèishéme zhèyàng zuò?\"",
+            "translation": "سأله البحر: \"لماذا تفعلين هذا؟\""
+          },
+          {
+            "paragraph": 10,
+            "chinese": "精卫说：'因为我要把你填平，不让别人再掉下去。'",
+            "pinyin": "Jīngwèi shuō: \"Yīnwèi wǒ yào bǎ nǐ tián píng, bù ràng biérén zài diào xiàqù.\"",
+            "translation": "قال جينغ وي: \"لأنني أريد ردمك حتى لا يقع الآخرون.\""
+          },
+          {
+            "paragraph": 11,
+            "chinese": "这个故事告诉我们：做什么事都要坚持。",
+            "pinyin": "Zhège gùshi gàosu wǒmen: zuò shénme shì dōu yào jiānchí.",
+            "translation": "هذه القصة تعلمنا: مهما فعلت، يجب أن تكون مثابراً."
+          }
+        ]
+      }
+    ]
+  }
+}

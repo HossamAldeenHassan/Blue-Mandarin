@@ -1,0 +1,1236 @@
+{
+  "_schema": "blue-mandarin-curriculum-v1",
+  "_note": "Curriculum-driven learning engine. vocab.json is Master Dictionary. This file controls sequencing and pedagogy.",
+  "course": {
+    "id": "hsk1-v3",
+    "name_ar": "المستوى الأول — نسخة 3.0",
+    "name_zh": "HSK 1 — Version 3.0",
+    "hsk_level": 1,
+    "total_units": 8,
+    "description_ar": "رحلة تعليمية خطوة بخطوة من الصفر إلى إتقان HSK 1 — 500 كلمة، 4 نغمات، ومحادثاتك الأولى الحقيقية."
+  },
+  "units": [
+    {
+      "id": "u0",
+      "number": 0,
+      "title_ar": "البداية: كيف تعمل الصينية؟",
+      "title_zh": "入门基础",
+      "icon": "🐉",
+      "color": "#1E90FF",
+      "hook_ar": "لا حفظ كلمات بعد! الدرس الأول يشرح كيف تُبنى اللغة — ثم كل شيء سيبدو منطقياً.",
+      "xp_reward": 30,
+      "lessons": [
+        {
+          "id": "l0_1",
+          "key": "0.1",
+          "title_ar": "ما هي اللغة الصينية؟",
+          "title_zh": "什么是中文？",
+          "subtitle_ar": "هانزي · بينيين · أول كلمة",
+          "vocab_refs": [],
+          "xp": 10,
+          "steps": [
+            {
+              "type": "intro",
+              "id": "s0_1_intro",
+              "title_ar": "🎉 أهلاً يا حسام!",
+              "body_ar": "الصينية المندرية لغة أكثر من مليار شخص. قد تبدو مخيفة — لكن سرّها الجميل:\n\n✦ لا تصريف (الفعل لا يتغير مع الضمائر)\n✦ لا تذكير/تأنيث\n✦ لا جمع منتظم\n\nفقط رتّب الكلمات الصحيحة وتكلّمت! 🚀"
+            },
+            {
+              "type": "teach_concept",
+              "id": "s0_1_hanzi",
+              "title_ar": "الهانزي — الرسم والمعنى",
+              "body_ar": "الصينية تُكتب بـالهانزي (汉字) — رموز تصويرية تحمل معنى مباشراً.",
+              "examples": [
+                {
+                  "zh": "人",
+                  "pinyin": "rén",
+                  "ar": "شخص",
+                  "note_ar": "يشبه إنساناً يمشي على قدمين"
+                },
+                {
+                  "zh": "山",
+                  "pinyin": "shān",
+                  "ar": "جبل",
+                  "note_ar": "ثلاثة قمم — شكل جبل حقيقي"
+                },
+                {
+                  "zh": "日",
+                  "pinyin": "rì",
+                  "ar": "شمس / يوم",
+                  "note_ar": "دائرة بخط داخلها — الشمس"
+                }
+              ]
+            },
+            {
+              "type": "teach_concept",
+              "id": "s0_1_pinyin",
+              "title_ar": "البينيين — دليل النطق",
+              "body_ar": "البينيين (拼音 Pīnyīn) هو نظام كتابة صوتية لاتينية يساعدك على نطق الهانزي.\n\nكل كلمة = هانزي (الشكل) + بينيين (النطق)\n\nمثال: 你好 = nǐ hǎo = مرحباً",
+              "visual": {
+                "cn": "你好",
+                "pinyin": "nǐ hǎo",
+                "ar": "مرحباً",
+                "breakdown": [
+                  {
+                    "cn": "你",
+                    "pinyin": "nǐ",
+                    "ar": "أنت"
+                  },
+                  {
+                    "cn": "好",
+                    "pinyin": "hǎo",
+                    "ar": "جيد"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "practice_mcq",
+              "id": "s0_1_mcq",
+              "title_ar": "تحقق من فهمك",
+              "questions": [
+                {
+                  "id": "q1",
+                  "prompt_ar": "ما وظيفة البينيين؟",
+                  "options_ar": [
+                    "نظام نحوي",
+                    "دليل نطق الهانزي بالحروف اللاتينية",
+                    "نوع من الهانزي المبسّط",
+                    "مجرد زخرفة"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ البينيين يجسّر الشكل (هانزي) والصوت — كالشكل في العربية تماماً."
+                },
+                {
+                  "id": "q2",
+                  "prompt_ar": "صحّ أم خطأ: الفعل في الصينية يتغير مع الضمائر؟",
+                  "options_ar": [
+                    "صحيح",
+                    "خطأ — الفعل ثابت دائماً"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ 我学, 你学, 他学 — نفس الفعل مع كل الضمائر. لا تصريف!"
+                }
+              ]
+            },
+            {
+              "type": "summary",
+              "id": "s0_1_summary",
+              "title_ar": "✅ الدرس 0.1 مكتمل",
+              "points_ar": [
+                "الهانزي رموز بصرية تحمل معنى مباشراً",
+                "البينيين = دليل النطق بالحروف اللاتينية",
+                "لا تصريف، لا تذكير/تأنيث، لا جمع منتظم"
+              ],
+              "new_words": [],
+              "xp_earned": 10
+            }
+          ]
+        },
+        {
+          "id": "l0_2",
+          "key": "0.2",
+          "title_ar": "النغمات الأربع",
+          "title_zh": "四声",
+          "subtitle_ar": "السر الأكبر في الصينية",
+          "vocab_refs": [],
+          "xp": 15,
+          "steps": [
+            {
+              "type": "intro",
+              "id": "s0_2_intro",
+              "title_ar": "🎵 لماذا النغمات مهمة جداً؟",
+              "body_ar": "في الصينية، نفس الصوت بنغمات مختلفة = معانٍ مختلفة تماماً!\n\nالمقطع 'ma' يمكن أن يعني:\nأم (mā) · شنب (má) · حصان (mǎ) · يشتم (mà)\n\nالنغمة ليست اختيارية — هي جزء أساسي من الكلمة."
+            },
+            {
+              "type": "teach_tones",
+              "id": "s0_2_tones",
+              "title_ar": "النغمات الأربع + المحايدة",
+              "tones": [
+                {
+                  "number": 1,
+                  "mark": "ā",
+                  "name_ar": "الأولى — المستوية",
+                  "description_ar": "صوت مرتفع ومستوٍ — كالطبيب يقول آآآه",
+                  "shape_ar": "——",
+                  "example_cn": "妈",
+                  "example_pinyin": "mā",
+                  "example_ar": "أم",
+                  "trick_ar": "شخص يغني نوتة طويلة بلا تغيير"
+                },
+                {
+                  "number": 2,
+                  "mark": "á",
+                  "name_ar": "الثانية — الصاعدة",
+                  "description_ar": "صوت يرتفع — كسؤال 'ماذا؟!'",
+                  "shape_ar": "/",
+                  "example_cn": "麻",
+                  "example_pinyin": "má",
+                  "example_ar": "شنب",
+                  "trick_ar": "شخص يقول 'ماذا؟!' بدهشة"
+                },
+                {
+                  "number": 3,
+                  "mark": "ǎ",
+                  "name_ar": "الثالثة — المنحنية",
+                  "description_ar": "تنخفض ثم ترتفع — كالتردد",
+                  "shape_ar": "∨",
+                  "example_cn": "马",
+                  "example_pinyin": "mǎ",
+                  "example_ar": "حصان",
+                  "trick_ar": "شخص يقول 'هممم...' بتفكير"
+                },
+                {
+                  "number": 4,
+                  "mark": "à",
+                  "name_ar": "الرابعة — الهابطة",
+                  "description_ar": "صوت هابط حازم — كالأمر أو الغضب",
+                  "shape_ar": "\\",
+                  "example_cn": "骂",
+                  "example_pinyin": "mà",
+                  "example_ar": "يشتم",
+                  "trick_ar": "شخص يصرخ: 'لا!'"
+                },
+                {
+                  "number": 0,
+                  "mark": "·",
+                  "name_ar": "المحايدة — الخفيفة",
+                  "description_ar": "صوت خفيف وسريع بدون علامة",
+                  "shape_ar": "·",
+                  "example_cn": "吗",
+                  "example_pinyin": "ma",
+                  "example_ar": "أداة السؤال",
+                  "trick_ar": "نهاية الجمل — خفيف جداً"
+                }
+              ]
+            },
+            {
+              "type": "practice_tones",
+              "id": "s0_2_practice",
+              "title_ar": "اختر النغمة الصحيحة",
+              "questions": [
+                {
+                  "id": "t1",
+                  "prompt_ar": "الشريط الأفقي (ā) يدل على النغمة:",
+                  "options_ar": [
+                    "الأولى — مستوية",
+                    "الثانية — صاعدة",
+                    "الثالثة — منحنية",
+                    "الرابعة — هابطة"
+                  ],
+                  "answer_index": 0,
+                  "explanation_ar": "✅ الشريط (ā) = نغمة أولى، مستوية وعالية."
+                },
+                {
+                  "id": "t2",
+                  "prompt_ar": "nǐ hǎo (你好) — ما نغمة كل مقطع؟",
+                  "options_ar": [
+                    "1 + 1",
+                    "3 + 3 (لكن الأولى تُلفظ كـ2)",
+                    "2 + 4",
+                    "4 + 2"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ كلاهما نغمة 3، لكن نغمتان ثالثتان متتاليتان: الأولى تُلفظ كنغمة ثانية — سر النطق الطبيعي!"
+                },
+                {
+                  "id": "t3",
+                  "prompt_ar": "أيّ هذه الكلمات تحمل نغمة رابعة (هابطة)؟",
+                  "options_ar": [
+                    "māma (妈妈)",
+                    "méiyǒu (没有)",
+                    "wǒ (我)",
+                    "zàijiàn (再见)"
+                  ],
+                  "answer_index": 3,
+                  "explanation_ar": "✅ zài (再) و jiàn (见) كلتاهما نغمة رابعة هابطة."
+                }
+              ]
+            },
+            {
+              "type": "practice_match",
+              "id": "s0_2_match",
+              "title_ar": "طابق النغمة بشكلها",
+              "pairs": [
+                {
+                  "left": "ā",
+                  "right_ar": "مستوٍ عالٍ ——"
+                },
+                {
+                  "left": "á",
+                  "right_ar": "صاعد /"
+                },
+                {
+                  "left": "ǎ",
+                  "right_ar": "منحنٍ ∨"
+                },
+                {
+                  "left": "à",
+                  "right_ar": "هابط \\"
+                }
+              ]
+            },
+            {
+              "type": "summary",
+              "id": "s0_2_summary",
+              "title_ar": "✅ النغمات الأربع — محفوظة!",
+              "points_ar": [
+                "ā (1): مستوية عالية ——",
+                "á (2): صاعدة كالسؤال /",
+                "ǎ (3): منحنية هابطة-صاعدة ∨",
+                "à (4): هابطة حازمة \\",
+                "a (0): خفيفة محايدة ·"
+              ],
+              "new_words": [],
+              "xp_earned": 15,
+              "badge_unlocked": {
+                "id": "tone_master_0",
+                "name_ar": "مبتدئ النغمات 🎵"
+              }
+            }
+          ]
+        },
+        {
+          "id": "l0_3",
+          "key": "0.3",
+          "title_ar": "الضمائر وبناء الجملة",
+          "title_zh": "代词 + SVO",
+          "subtitle_ar": "6 كلمات تفتح لك باب التحدث",
+          "vocab_refs": [
+            "我",
+            "你",
+            "他",
+            "她",
+            "是",
+            "好"
+          ],
+          "xp": 20,
+          "steps": [
+            {
+              "type": "intro",
+              "id": "s0_3_intro",
+              "title_ar": "🏗️ بناء الجملة الصينية",
+              "body_ar": "الصينية تتبع نفس ترتيب العربية الفصحى البسيطة:\n\nفاعل + فعل + مفعول (S + V + O)\n\nمثال: أنا (我) + أتعلم (学) + الصينية (汉语) = 我学汉语\n\nهيا نتعلم الضمائر أولاً!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s0_3_wo",
+              "master_dict_key": "我",
+              "cn": "我",
+              "pinyin": "wǒ",
+              "tone": 3,
+              "ar": "أنا",
+              "type_ar": "ضمير",
+              "breakdown_ar": "الهانزي يصوّر يداً تشير إلى النفس",
+              "example": {
+                "cn": "我是学生",
+                "pinyin": "Wǒ shì xuéshēng",
+                "ar": "أنا طالب"
+              },
+              "trick_ar": "شخص يشير إلى نفسه: أنا!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s0_3_ni",
+              "master_dict_key": "你",
+              "cn": "你",
+              "pinyin": "nǐ",
+              "tone": 3,
+              "ar": "أنت",
+              "type_ar": "ضمير",
+              "example": {
+                "cn": "你好！",
+                "pinyin": "Nǐ hǎo!",
+                "ar": "مرحباً! (أنت جيد!)"
+              },
+              "trick_ar": "شخص يشير نحوك: أنت!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s0_3_ta",
+              "master_dict_key": "他",
+              "cn": "他 / 她",
+              "pinyin": "tā / tā",
+              "tone": 1,
+              "ar": "هو / هي",
+              "type_ar": "ضمير",
+              "breakdown_ar": "他 (رمز الإنسان 人) = هو | 她 (رمز المرأة 女) = هي. النطق واحد: tā!",
+              "example": {
+                "cn": "他是老师，她是学生",
+                "pinyin": "Tā shì lǎoshī, tā shì xuéshēng",
+                "ar": "هو معلم، هي طالبة"
+              },
+              "trick_ar": "تا — هو وهي نفس الصوت! السياق يوضح المعنى."
+            },
+            {
+              "type": "teach_word",
+              "id": "s0_3_shi",
+              "master_dict_key": "是",
+              "cn": "是",
+              "pinyin": "shì",
+              "tone": 4,
+              "ar": "يكون",
+              "type_ar": "فعل",
+              "breakdown_ar": "فعل الكينونة — يربط الضمير بالاسم أو الوصف",
+              "example": {
+                "cn": "我是埃及人",
+                "pinyin": "Wǒ shì Āijírén",
+                "ar": "أنا مصري"
+              },
+              "trick_ar": "shì — نغمة رابعة حازمة: هذا هو الواقع!"
+            },
+            {
+              "type": "teach_concept",
+              "id": "s0_3_negation",
+              "title_ar": "النفي بـ 不 (bù)",
+              "body_ar": "لنفي أي فعل: ضع 不 قبله مباشرة",
+              "examples": [
+                {
+                  "cn": "我是学生",
+                  "pinyin": "Wǒ shì xuéshēng",
+                  "ar": "أنا طالب ✅"
+                },
+                {
+                  "cn": "我不是老师",
+                  "pinyin": "Wǒ bú shì lǎoshī",
+                  "ar": "أنا لست معلماً ❌"
+                }
+              ],
+              "note_ar": "💡 不 (bù) + نغمة رابعة = تتحول إلى bú. مثال: bú shì"
+            },
+            {
+              "type": "practice_build",
+              "id": "s0_3_build",
+              "title_ar": "🧩 ابنِ جملتك الأولى",
+              "instruction_ar": "رتّب: 'أنا لست معلماً'",
+              "target": {
+                "cn": "我不是老师",
+                "pinyin": "Wǒ bú shì lǎoshī",
+                "ar": "أنا لست معلماً"
+              },
+              "word_bank": [
+                {
+                  "cn": "我",
+                  "pinyin": "wǒ",
+                  "is_part": true
+                },
+                {
+                  "cn": "不",
+                  "pinyin": "bú",
+                  "is_part": true
+                },
+                {
+                  "cn": "是",
+                  "pinyin": "shì",
+                  "is_part": true
+                },
+                {
+                  "cn": "老师",
+                  "pinyin": "lǎoshī",
+                  "is_part": true
+                },
+                {
+                  "cn": "你",
+                  "pinyin": "nǐ",
+                  "is_part": false
+                },
+                {
+                  "cn": "好",
+                  "pinyin": "hǎo",
+                  "is_part": false
+                }
+              ]
+            },
+            {
+              "type": "practice_mcq",
+              "id": "s0_3_mcq",
+              "title_ar": "اختبار سريع",
+              "questions": [
+                {
+                  "id": "g1",
+                  "cn": "他___学生",
+                  "pinyin": "Tā ___ xuéshēng",
+                  "prompt_ar": "اختر الفعل الصحيح: 'هو ___ طالب'",
+                  "options_ar": [
+                    "不",
+                    "是",
+                    "我",
+                    "好"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ 他是学生 = هو طالب. 是 يربط الضمير بالوصف."
+                },
+                {
+                  "id": "g2",
+                  "prompt_ar": "ما الفرق بين 他 و 她؟",
+                  "options_ar": [
+                    "الأول مفرد والثاني جمع",
+                    "نفس النطق tā — الأول هو والثاني هي",
+                    "الأول اسم والثاني فعل",
+                    "لا فرق"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ كلاهما tā — الفرق في الكتابة: 他 (رمز الإنسان) للمذكر، 她 (رمز المرأة) للمؤنث."
+                }
+              ]
+            },
+            {
+              "type": "summary",
+              "id": "s0_3_summary",
+              "title_ar": "🎉 أتممت الوحدة 0! أنت جاهز للوحدة الأولى!",
+              "points_ar": [
+                "我 (wǒ) = أنا | 你 (nǐ) = أنت | 他/她 (tā) = هو/هي",
+                "是 (shì) = يكون | 不是 (bú shì) = ليس",
+                "الجملة: فاعل + فعل + مفعول (S+V+O)",
+                "النفي: 不 + فعل"
+              ],
+              "new_words": [
+                "我",
+                "你",
+                "他",
+                "她",
+                "是",
+                "好"
+              ],
+              "xp_earned": 20,
+              "badge_unlocked": {
+                "id": "foundation_complete",
+                "name_ar": "الأساس متين! 🏛️"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1",
+      "number": 1,
+      "title_ar": "التحيات والتعريف بالنفس",
+      "title_zh": "问候与自我介绍",
+      "icon": "👋",
+      "color": "#26D97F",
+      "hook_ar": "محادثتك الأولى الحقيقية بالصينية — تحية، اسم، جنسية. كل ما تحتاجه لتبدأ أي علاقة.",
+      "xp_reward": 60,
+      "lessons": [
+        {
+          "id": "l1_1",
+          "key": "1.1",
+          "title_ar": "كيف تُحيّي",
+          "title_zh": "打招呼",
+          "subtitle_ar": "4 تحيات أساسية",
+          "vocab_refs": [
+            "你",
+            "好",
+            "您",
+            "谢谢",
+            "再见",
+            "不客气"
+          ],
+          "xp": 15,
+          "steps": [
+            {
+              "type": "intro",
+              "id": "s1_1_intro",
+              "title_ar": "👋 أول كلمة تقولها لأي صيني",
+              "body_ar": "الجملة الأشهر في الصينية: 你好 (nǐ hǎo). حرفياً تعني 'أنت جيد' — طريقة أنيقة للقول: سعيد برؤيتك!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_1_nihao",
+              "cn": "你好",
+              "pinyin": "nǐ hǎo",
+              "tones": [
+                3,
+                3
+              ],
+              "ar": "مرحباً",
+              "type_ar": "تحية مركّبة",
+              "is_compound": true,
+              "components": [
+                {
+                  "cn": "你",
+                  "pinyin": "nǐ",
+                  "ar": "أنت",
+                  "master_dict_key": "你"
+                },
+                {
+                  "cn": "好",
+                  "pinyin": "hǎo",
+                  "ar": "جيد",
+                  "master_dict_key": "好"
+                }
+              ],
+              "tone_note_ar": "💡 نغمتان ثالثتان متتاليتان: الأولى تُلفظ كنغمة ثانية: ní hǎo",
+              "usage_ar": "في أي وقت ولأي شخص",
+              "example": {
+                "cn": "你好！",
+                "pinyin": "Nǐ hǎo!",
+                "ar": "مرحباً!"
+              }
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_1_ninhao",
+              "cn": "您好",
+              "pinyin": "nín hǎo",
+              "tones": [
+                2,
+                3
+              ],
+              "ar": "مرحباً (احترام)",
+              "type_ar": "تحية رسمية",
+              "is_compound": true,
+              "components": [
+                {
+                  "cn": "您",
+                  "pinyin": "nín",
+                  "ar": "أنت (تعظيم)",
+                  "master_dict_key": "您"
+                },
+                {
+                  "cn": "好",
+                  "pinyin": "hǎo",
+                  "ar": "جيد",
+                  "master_dict_key": "好"
+                }
+              ],
+              "usage_ar": "للأكبر سناً والمسؤولين",
+              "example": {
+                "cn": "老师，您好！",
+                "pinyin": "Lǎoshī, nín hǎo!",
+                "ar": "أستاذ، مرحباً!"
+              }
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_1_xiexie",
+              "master_dict_key": "谢谢",
+              "cn": "谢谢",
+              "pinyin": "xièxie",
+              "tones": [
+                4,
+                0
+              ],
+              "ar": "شكراً",
+              "type_ar": "تحية",
+              "usage_ar": "بعد أي مساعدة — الرد: 不客气 (عفواً)",
+              "example": {
+                "cn": "谢谢！不客气！",
+                "pinyin": "Xièxie! Bú kèqi!",
+                "ar": "شكراً! — عفواً!"
+              },
+              "trick_ar": "شيه-شيه — مضاعفة الكلمة تُضاعف الشكر!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_1_zaijian",
+              "master_dict_key": "再见",
+              "cn": "再见",
+              "pinyin": "zàijiàn",
+              "tones": [
+                4,
+                4
+              ],
+              "ar": "مع السلامة",
+              "type_ar": "تحية",
+              "breakdown_ar": "再 = مرة أخرى + 见 = يرى → نلتقي مرة أخرى",
+              "example": {
+                "cn": "再见！明天见！",
+                "pinyin": "Zàijiàn! Míngtiān jiàn!",
+                "ar": "مع السلامة! إلى اللقاء غداً!"
+              }
+            },
+            {
+              "type": "practice_mcq",
+              "id": "s1_1_mcq",
+              "title_ar": "اختبر نفسك",
+              "questions": [
+                {
+                  "id": "q1",
+                  "cn": "您好",
+                  "pinyin": "nín hǎo",
+                  "prompt_ar": "متى تستخدم 您好 بدلاً من 你好؟",
+                  "options_ar": [
+                    "مع الأصدقاء",
+                    "مع الأكبر سناً أو في المواقف الرسمية",
+                    "في الصباح فقط",
+                    "مع الأطفال"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ 您 (nín) = حضرتك — للاحترام والتعظيم"
+                },
+                {
+                  "id": "q2",
+                  "prompt_ar": "ما الرد الصحيح على 谢谢؟",
+                  "options_ar": [
+                    "再见",
+                    "你好",
+                    "不客气",
+                    "对不起"
+                  ],
+                  "answer_index": 2,
+                  "explanation_ar": "✅ 不客气 (bú kèqi) = عفواً / لا شكر على واجب"
+                }
+              ]
+            },
+            {
+              "type": "practice_match",
+              "id": "s1_1_match",
+              "title_ar": "🔗 طابق التحية بمعناها",
+              "pairs": [
+                {
+                  "cn": "你好",
+                  "pinyin": "nǐ hǎo",
+                  "ar": "مرحباً (عام)"
+                },
+                {
+                  "cn": "您好",
+                  "pinyin": "nín hǎo",
+                  "ar": "مرحباً (رسمي)"
+                },
+                {
+                  "cn": "谢谢",
+                  "pinyin": "xièxie",
+                  "ar": "شكراً"
+                },
+                {
+                  "cn": "再见",
+                  "pinyin": "zàijiàn",
+                  "ar": "مع السلامة"
+                }
+              ]
+            },
+            {
+              "type": "summary",
+              "id": "s1_1_summary",
+              "title_ar": "✅ الدرس 1.1 مكتمل!",
+              "points_ar": [
+                "你好 (nǐ hǎo) = مرحباً — للجميع",
+                "您好 (nín hǎo) = مرحباً — للاحترام",
+                "谢谢 (xièxie) = شكراً | 不客气 = عفواً",
+                "再见 (zàijiàn) = مع السلامة"
+              ],
+              "new_words": [
+                "你",
+                "好",
+                "您",
+                "谢谢",
+                "再见",
+                "不客气"
+              ],
+              "xp_earned": 15
+            }
+          ]
+        },
+        {
+          "id": "l1_2",
+          "key": "1.2",
+          "title_ar": "ما اسمك؟",
+          "title_zh": "你叫什么名字？",
+          "subtitle_ar": "5 كلمات للتعريف بنفسك",
+          "vocab_refs": [
+            "叫",
+            "名字",
+            "什么",
+            "吗",
+            "朋友"
+          ],
+          "xp": 20,
+          "steps": [
+            {
+              "type": "intro",
+              "id": "s1_2_intro",
+              "title_ar": "🗣️ تعلّم كيف تقول اسمك وتسأل عن اسم غيرك",
+              "body_ar": "بعد التحية، أول شيء في أي لقاء: التعريف بالاسم. ستتعلم هنا طريقتين — واحدة للتعريف بنفسك وواحدة للسؤال."
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_2_jiao",
+              "master_dict_key": "叫",
+              "cn": "叫",
+              "pinyin": "jiào",
+              "tone": 4,
+              "ar": "يُسمّى / اسمه",
+              "type_ar": "فعل",
+              "breakdown_ar": "الهانزي يجمع الفم (口) والطائر — الطائر يُنادى باسمه",
+              "usage_ar": "我叫... = اسمي...",
+              "example": {
+                "cn": "我叫حسام",
+                "pinyin": "Wǒ jiào Hùsāmù",
+                "ar": "اسمي حسام"
+              },
+              "trick_ar": "جياو — نغمة رابعة حازمة كإعلان الاسم بثقة!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_2_mingzi",
+              "master_dict_key": "名字",
+              "cn": "名字",
+              "pinyin": "míngzi",
+              "tones": [
+                2,
+                0
+              ],
+              "ar": "الاسم",
+              "type_ar": "اسم",
+              "breakdown_ar": "名 = اسم/شهرة + 字 = حرف → كلمة الشهرة",
+              "example": {
+                "cn": "你叫什么名字？",
+                "pinyin": "Nǐ jiào shénme míngzi?",
+                "ar": "ما اسمك؟"
+              }
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_2_shenme",
+              "master_dict_key": "什么",
+              "cn": "什么",
+              "pinyin": "shénme",
+              "tones": [
+                2,
+                0
+              ],
+              "ar": "ماذا؟",
+              "type_ar": "ضمير استفهام",
+              "usage_ar": "يحل محل المجهول — بدون تغيير الترتيب!",
+              "examples": [
+                {
+                  "cn": "你叫什么名字？",
+                  "pinyin": "Nǐ jiào shénme míngzi?",
+                  "ar": "ما اسمك؟"
+                },
+                {
+                  "cn": "这是什么？",
+                  "pinyin": "Zhè shì shénme?",
+                  "ar": "ما هذا؟"
+                }
+              ]
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_2_ma",
+              "master_dict_key": "吗",
+              "cn": "吗",
+              "pinyin": "ma",
+              "tone": 0,
+              "ar": "أداة تحويل الجملة لسؤال",
+              "type_ar": "أداة",
+              "usage_ar": "أضف 吗 في النهاية = سؤال نعم/لا",
+              "examples": [
+                {
+                  "cn": "你是学生。",
+                  "pinyin": "Nǐ shì xuéshēng.",
+                  "ar": "أنت طالب."
+                },
+                {
+                  "cn": "你是学生吗？",
+                  "pinyin": "Nǐ shì xuéshēng ma?",
+                  "ar": "هل أنت طالب؟"
+                }
+              ],
+              "trick_ar": "吗 (ma) — خفيف في النهاية = علامة سؤال!"
+            },
+            {
+              "type": "teach_concept",
+              "id": "s1_2_dialogue",
+              "title_ar": "💬 حوار التعارف الأول",
+              "dialogue": [
+                {
+                  "speaker": "A",
+                  "cn": "你好！我叫حسام，你叫什么名字？",
+                  "pinyin": "Nǐ hǎo! Wǒ jiào Hùsāmù, nǐ jiào shénme míngzi?",
+                  "ar": "مرحباً! اسمي حسام، ما اسمك؟"
+                },
+                {
+                  "speaker": "B",
+                  "cn": "你好！我叫李明。很高兴认识你！",
+                  "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Míng. Hěn gāoxìng rènshi nǐ!",
+                  "ar": "مرحباً! اسمي لي مينغ. سعيد بمعرفتك!"
+                },
+                {
+                  "speaker": "A",
+                  "cn": "我也是！",
+                  "pinyin": "Wǒ yě shì!",
+                  "ar": "وأنا أيضاً!"
+                }
+              ]
+            },
+            {
+              "type": "practice_build",
+              "id": "s1_2_build1",
+              "title_ar": "🧩 رتّب سؤال الاسم",
+              "instruction_ar": "رتّب: 'ما اسمك؟'",
+              "target": {
+                "cn": "你叫什么名字？",
+                "pinyin": "Nǐ jiào shénme míngzi?",
+                "ar": "ما اسمك؟"
+              },
+              "word_bank": [
+                {
+                  "cn": "你",
+                  "pinyin": "nǐ",
+                  "is_part": true
+                },
+                {
+                  "cn": "叫",
+                  "pinyin": "jiào",
+                  "is_part": true
+                },
+                {
+                  "cn": "什么",
+                  "pinyin": "shénme",
+                  "is_part": true
+                },
+                {
+                  "cn": "名字",
+                  "pinyin": "míngzi",
+                  "is_part": true
+                },
+                {
+                  "cn": "我",
+                  "pinyin": "wǒ",
+                  "is_part": false
+                },
+                {
+                  "cn": "好",
+                  "pinyin": "hǎo",
+                  "is_part": false
+                }
+              ]
+            },
+            {
+              "type": "practice_mcq",
+              "id": "s1_2_mcq",
+              "title_ar": "اختبار سريع",
+              "questions": [
+                {
+                  "id": "n1",
+                  "prompt_ar": "كيف تحوّل جملة إلى سؤال نعم/لا؟",
+                  "options_ar": [
+                    "تغيّر الترتيب",
+                    "تضيف 吗 في النهاية",
+                    "تضيف 不 في البداية",
+                    "تستخدم 什么"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ 吗 في النهاية = سؤال. لا حاجة لتغيير الترتيب!"
+                },
+                {
+                  "id": "n2",
+                  "prompt_ar": "كيف تقول 'اسمي حسام'؟",
+                  "options_ar": [
+                    "我是حسام",
+                    "我叫حسام",
+                    "我名字حسام",
+                    "叫我حسام"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ 我叫 + الاسم. 叫 يأتي الاسم بعده مباشرة."
+                }
+              ]
+            },
+            {
+              "type": "summary",
+              "id": "s1_2_summary",
+              "title_ar": "✅ الدرس 1.2 مكتمل!",
+              "points_ar": [
+                "我叫... = اسمي...",
+                "你叫什么名字？ = ما اسمك؟",
+                "吗 في النهاية = سؤال نعم/لا",
+                "什么 = ماذا؟ في مكان المجهول"
+              ],
+              "new_words": [
+                "叫",
+                "名字",
+                "什么",
+                "吗",
+                "朋友"
+              ],
+              "xp_earned": 20
+            }
+          ]
+        },
+        {
+          "id": "l1_3",
+          "key": "1.3",
+          "title_ar": "من أين أنت؟ — الجنسيات",
+          "title_zh": "你是哪国人？",
+          "subtitle_ar": "5 كلمات + أول جملة نفي حقيقية",
+          "vocab_refs": [
+            "哪",
+            "国",
+            "人",
+            "中国",
+            "汉语",
+            "学",
+            "说"
+          ],
+          "xp": 20,
+          "steps": [
+            {
+              "type": "intro",
+              "id": "s1_3_intro",
+              "title_ar": "🌍 السؤال الأول الذي سيسألك إياه أي صيني",
+              "body_ar": "عندما يرى الصينيون شخصاً أجنبياً، أول سؤال: 你是哪国人؟ — من أي بلد أنت؟\n\nهيا نتعلم الإجابة بثقة وفخر!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_3_na",
+              "master_dict_key": "哪",
+              "cn": "哪",
+              "pinyin": "nǎ",
+              "tone": 3,
+              "ar": "أيّ؟",
+              "type_ar": "ضمير استفهام",
+              "usage_ar": "يسبق الاسم مباشرة",
+              "examples": [
+                {
+                  "cn": "哪国",
+                  "pinyin": "nǎ guó",
+                  "ar": "أي دولة؟"
+                },
+                {
+                  "cn": "哪里",
+                  "pinyin": "nǎlǐ",
+                  "ar": "أين؟"
+                }
+              ]
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_3_guo",
+              "master_dict_key": "国",
+              "cn": "国",
+              "pinyin": "guó",
+              "tone": 2,
+              "ar": "دولة / بلد",
+              "type_ar": "اسم",
+              "breakdown_ar": "أرض (土) محاطة بحدود (囗) — مملكة/دولة",
+              "compounds": [
+                {
+                  "cn": "中国",
+                  "pinyin": "Zhōngguó",
+                  "ar": "الصين"
+                },
+                {
+                  "cn": "美国",
+                  "pinyin": "Měiguó",
+                  "ar": "أمريكا"
+                },
+                {
+                  "cn": "英国",
+                  "pinyin": "Yīngguó",
+                  "ar": "بريطانيا"
+                }
+              ],
+              "note_ar": "💡 معظم أسماء الدول تنتهي بـ 国 — لكن مصر 埃及 (Āijí) استثناء!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_3_ren",
+              "master_dict_key": "人",
+              "cn": "人",
+              "pinyin": "rén",
+              "tone": 2,
+              "ar": "شخص / إنسان",
+              "type_ar": "اسم",
+              "breakdown_ar": "أبسط وأجمل هانزي — يشبه شخصاً يمشي على قدمين",
+              "usage_ar": "اسم الدولة + 人 = الجنسية",
+              "examples": [
+                {
+                  "cn": "中国人",
+                  "pinyin": "Zhōngguórén",
+                  "ar": "صيني"
+                },
+                {
+                  "cn": "埃及人",
+                  "pinyin": "Āijírén",
+                  "ar": "مصري"
+                },
+                {
+                  "cn": "日本人",
+                  "pinyin": "Rìběnrén",
+                  "ar": "ياباني"
+                }
+              ],
+              "note_ar": "💡 埃及 (مصر) كلمة مضافة للمنهج — مهمة خصيصاً لحسام!"
+            },
+            {
+              "type": "teach_word",
+              "id": "s1_3_zhongguo",
+              "master_dict_key": "中国",
+              "cn": "中国",
+              "pinyin": "Zhōngguó",
+              "tones": [
+                1,
+                2
+              ],
+              "ar": "الصين",
+              "type_ar": "اسم علم",
+              "breakdown_ar": "中 = وسط + 国 = دولة → الدولة الوسطى",
+              "example": {
+                "cn": "我不是中国人，我是埃及人！",
+                "pinyin": "Wǒ bú shì Zhōngguórén, wǒ shì Āijírén!",
+                "ar": "أنا لست صينياً، أنا مصري!"
+              },
+              "trick_ar": "زهونغ قوو — الدولة في وسط الكون!"
+            },
+            {
+              "type": "teach_concept",
+              "id": "s1_3_dialogue",
+              "title_ar": "💬 حوار: التعرف على الجنسية",
+              "dialogue": [
+                {
+                  "speaker": "A",
+                  "cn": "你是哪国人？",
+                  "pinyin": "Nǐ shì nǎ guó rén?",
+                  "ar": "من أي بلد أنت؟"
+                },
+                {
+                  "speaker": "B",
+                  "cn": "我是埃及人。你呢？",
+                  "pinyin": "Wǒ shì Āijírén. Nǐ ne?",
+                  "ar": "أنا مصري. وأنت؟"
+                },
+                {
+                  "speaker": "A",
+                  "cn": "我是中国人。你会说汉语吗？",
+                  "pinyin": "Wǒ shì Zhōngguórén. Nǐ huì shuō Hànyǔ ma?",
+                  "ar": "أنا صيني. هل تتكلم الصينية؟"
+                },
+                {
+                  "speaker": "B",
+                  "cn": "我在学汉语！",
+                  "pinyin": "Wǒ zài xué Hànyǔ!",
+                  "ar": "أنا أتعلم الصينية!"
+                }
+              ],
+              "note_ar": "💡 你呢 (nǐ ne)؟ = وأنت؟ — أنيقة وقصيرة!"
+            },
+            {
+              "type": "practice_build",
+              "id": "s1_3_build",
+              "title_ar": "🧩 قل جنسيتك",
+              "instruction_ar": "رتّب: 'أنا مصري وأتعلم الصينية'",
+              "target": {
+                "cn": "我是埃及人，我学汉语",
+                "pinyin": "Wǒ shì Āijírén, wǒ xué Hànyǔ",
+                "ar": "أنا مصري وأتعلم الصينية"
+              },
+              "word_bank": [
+                {
+                  "cn": "我",
+                  "pinyin": "wǒ",
+                  "is_part": true
+                },
+                {
+                  "cn": "是",
+                  "pinyin": "shì",
+                  "is_part": true
+                },
+                {
+                  "cn": "埃及人",
+                  "pinyin": "Āijírén",
+                  "is_part": true
+                },
+                {
+                  "cn": "我",
+                  "pinyin": "wǒ",
+                  "is_part": true
+                },
+                {
+                  "cn": "学",
+                  "pinyin": "xué",
+                  "is_part": true
+                },
+                {
+                  "cn": "汉语",
+                  "pinyin": "Hànyǔ",
+                  "is_part": true
+                },
+                {
+                  "cn": "你",
+                  "pinyin": "nǐ",
+                  "is_part": false
+                },
+                {
+                  "cn": "叫",
+                  "pinyin": "jiào",
+                  "is_part": false
+                }
+              ]
+            },
+            {
+              "type": "practice_mcq",
+              "id": "s1_3_mcq",
+              "title_ar": "اختبار الجنسيات",
+              "questions": [
+                {
+                  "id": "j1",
+                  "prompt_ar": "كيف تقول 'من أي بلد أنت؟'",
+                  "options_ar": [
+                    "你是哪里人？",
+                    "你是哪国人？",
+                    "你叫什么名字？",
+                    "你好吗？"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ 你是哪国人？ = أنت + يكون + أيّ + دولة + شخص؟"
+                },
+                {
+                  "id": "j2",
+                  "prompt_ar": "كيف تقول 'صيني'؟",
+                  "options_ar": [
+                    "中国",
+                    "中国人",
+                    "国人",
+                    "人中国"
+                  ],
+                  "answer_index": 1,
+                  "explanation_ar": "✅ اسم الدولة + 人 = الجنسية. 中国 + 人 = 中国人"
+                },
+                {
+                  "id": "j3",
+                  "prompt_ar": "ماذا تعني 中国 حرفياً؟",
+                  "options_ar": [
+                    "البلد الكبير",
+                    "البلد القديم",
+                    "البلد الوسطى/المركزي",
+                    "البلد الجميل"
+                  ],
+                  "answer_index": 2,
+                  "explanation_ar": "✅ 中 = وسط + 国 = دولة → الدولة المركزية"
+                }
+              ]
+            },
+            {
+              "type": "summary",
+              "id": "s1_3_summary",
+              "title_ar": "🏆 أتممت الوحدة 1! يمكنك الآن التحدث بالصينية!",
+              "points_ar": [
+                "你是哪国人？ = من أي بلد أنت؟",
+                "我是埃及人 = أنا مصري",
+                "اسم الدولة + 人 = الجنسية",
+                "我学汉语 = أنا أتعلم الصينية",
+                "你呢؟ = وأنت؟"
+              ],
+              "new_words": [
+                "哪",
+                "国",
+                "人",
+                "中国",
+                "汉语",
+                "学"
+              ],
+              "xp_earned": 20,
+              "badge_unlocked": {
+                "id": "greeter_1",
+                "name_ar": "صانع العلاقات 🤝"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

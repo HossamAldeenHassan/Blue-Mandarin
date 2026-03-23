@@ -1,0 +1,389 @@
+{
+  "hsk_level": "3",
+  "hsk_version": "3.0",
+  "total_stories": 7,
+  "description": "اختبارات قصيرة (3-5 أسئلة) لكل قصة من قصص HSK3 المصنفة لقياس فهم القراءة",
+  "quizzes": [
+    {
+      "story_number": 1,
+      "title_zh": "新工作",
+      "title_ar": "الوظيفة الجديدة",
+      "level": "مبتدئ",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "李明是做什么工作的？",
+          "question_ar": "ما هو عمل لي مينغ؟",
+          "options": [
+            {"id": "A", "text_zh": "医生", "text_ar": "طبيب"},
+            {"id": "B", "text_zh": "工程师", "text_ar": "مهندس"},
+            {"id": "C", "text_zh": "老师", "text_ar": "معلم"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة تقول: '李明今年二十八岁，是一名工程师。' أي أنه مهندس."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "李明的新公司工资很低。",
+          "question_ar": "راتب شركة لي مينغ الجديدة منخفض.",
+          "correct_answer": false,
+          "explanation_ar": "القصة تقول: '公司的工资很高' أي الراتب مرتفع، ليس منخفضاً."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question_zh": "李明每天几点到达公司？",
+          "question_ar": "في أي ساعة يصل لي مينغ إلى الشركة يومياً؟",
+          "options": [
+            {"id": "A", "text_zh": "七点", "text_ar": "السابعة"},
+            {"id": "B", "text_zh": "八点", "text_ar": "الثامنة"},
+            {"id": "C", "text_zh": "九点", "text_ar": "التاسعة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '他每天早上八点到达公司' أي يصل الساعة الثامنة صباحاً."
+        },
+        {
+          "id": 4,
+          "type": "open",
+          "question_zh": "下班以后李明做什么？",
+          "question_ar": "ماذا يفعل لي مينغ بعد انتهاء الدوام؟",
+          "expected_answer_zh": "坚持学习新的技术。",
+          "expected_answer_ar": "يواظب على تعلم التقنيات الجديدة.",
+          "explanation_ar": "القصة: '下班以后，他坚持学习新的技术，不断进步。'"
+        }
+      ]
+    },
+    {
+      "story_number": 2,
+      "title_zh": "健康饮食",
+      "title_ar": "الأكل الصحي",
+      "level": "مبتدئ",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "王芳是什么职业？",
+          "question_ar": "ما هي مهنة وانغ فانغ؟",
+          "options": [
+            {"id": "A", "text_zh": "医生", "text_ar": "طبيبة"},
+            {"id": "B", "text_zh": "营养师", "text_ar": "أخصائية تغذية"},
+            {"id": "C", "text_zh": "厨师", "text_ar": "طاهية"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '王芳是一位营养师' أي إنها أخصائية تغذية."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "王芳认为啤酒对健康有好处。",
+          "question_ar": "ترى وانغ فانغ أن البيرة مفيدة للصحة.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '甜的食品和啤酒会影响健康' أي أن البيرة تضر بالصحة."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question_zh": "王芳建议大家多喝什么？",
+          "question_ar": "ماذا تنصح وانغ فانغ الجميع بشرب المزيد منه؟",
+          "options": [
+            {"id": "A", "text_zh": "可乐", "text_ar": "كولا"},
+            {"id": "B", "text_zh": "红酒", "text_ar": "نبيذ أحمر"},
+            {"id": "C", "text_zh": "绿茶", "text_ar": "شاي أخضر"}
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '最好多喝绿茶' أي ينصح بشرب الشاي الأخضر أكثر."
+        },
+        {
+          "id": 4,
+          "type": "open",
+          "question_zh": "根据王芳，幸福生活的基础是什么？",
+          "question_ar": "وفق وانغ فانغ، ما هو أساس الحياة السعيدة؟",
+          "expected_answer_zh": "好的生活习惯。",
+          "expected_answer_ar": "العادات الحياتية الجيدة.",
+          "explanation_ar": "القصة: '好的生活习惯是幸福生活的基础。'"
+        }
+      ]
+    },
+    {
+      "story_number": 3,
+      "title_zh": "留学的梦想",
+      "title_ar": "حلم الدراسة في الخارج",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "张伟从小有什么梦想？",
+          "question_ar": "ما هو حلم تشانغ وي منذ صغره؟",
+          "options": [
+            {"id": "A", "text_zh": "成为医生", "text_ar": "أن يصبح طبيباً"},
+            {"id": "B", "text_zh": "去国外留学", "text_ar": "الدراسة في الخارج"},
+            {"id": "C", "text_zh": "开公司", "text_ar": "تأسيس شركة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '张伟从小就有一个梦想：去国外留学' أي حلمه كان الدراسة في الخارج."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "张伟到了国外以后，语言没有困难。",
+          "question_ar": "بعد وصول تشانغ وي للخارج، لم تكن اللغة صعبة عليه.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '语言是最大的困难' أي كانت اللغة أكبر صعوبة."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question_zh": "张伟在国外交了什么朋友？",
+          "question_ar": "من تعرّف عليه تشانغ وي في الخارج؟",
+          "options": [
+            {"id": "A", "text_zh": "只有中国朋友", "text_ar": "أصدقاء صينيون فقط"},
+            {"id": "B", "text_zh": "来自不同国家的朋友", "text_ar": "أصدقاء من دول مختلفة"},
+            {"id": "C", "text_zh": "没有交到朋友", "text_ar": "لم يتعرف على أحد"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '他认识了来自不同国家的朋友' أي أصدقاء من دول مختلفة."
+        },
+        {
+          "id": 4,
+          "type": "open",
+          "question_zh": "张伟在国外待了多长时间？",
+          "question_ar": "كم من الوقت مكث تشانغ وي في الخارج؟",
+          "expected_answer_zh": "两年。",
+          "expected_answer_ar": "عامين.",
+          "explanation_ar": "القصة: '两年以后，张伟顺利完成了学业' أي مكث عامين."
+        },
+        {
+          "id": 5,
+          "type": "true_false",
+          "question_zh": "张伟没有完成学业就回国了。",
+          "question_ar": "عاد تشانغ وي إلى بلاده قبل إنهاء دراسته.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '张伟顺利完成了学业' أي أنهى دراسته بنجاح ثم عاد."
+        }
+      ]
+    },
+    {
+      "story_number": 4,
+      "title_zh": "环保行动",
+      "title_ar": "العمل من أجل البيئة",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "小红是什么身份？",
+          "question_ar": "ما هي هوية شياو هونغ؟",
+          "options": [
+            {"id": "A", "text_zh": "工程师", "text_ar": "مهندسة"},
+            {"id": "B", "text_zh": "大学生", "text_ar": "طالبة جامعية"},
+            {"id": "C", "text_zh": "记者", "text_ar": "صحفية"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '小红是一名大学生' أي طالبة جامعية."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "他们每个周末去公园收集垃圾。",
+          "question_ar": "يذهبون كل نهاية أسبوع إلى الحديقة لجمع القمامة.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '他们每个周末去公园和河边，把垃圾收集起来'."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question_zh": "小红用什么方法宣传环保？",
+          "question_ar": "ما الوسيلة التي استخدمتها شياو هونغ لنشر الوعي البيئي؟",
+          "options": [
+            {"id": "A", "text_zh": "报纸", "text_ar": "الصحيفة"},
+            {"id": "B", "text_zh": "互联网", "text_ar": "الإنترنت"},
+            {"id": "C", "text_zh": "电视", "text_ar": "التلفاز"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '小红还利用互联网宣传环保知识'."
+        },
+        {
+          "id": 4,
+          "type": "open",
+          "question_zh": "政府对小红他们的行动有什么反应？",
+          "question_ar": "كيف تعاملت الحكومة مع نشاط شياو هونغ ومجموعتها؟",
+          "expected_answer_zh": "给予了支持和帮助。",
+          "expected_answer_ar": "قدمت لهم الدعم والمساعدة.",
+          "explanation_ar": "القصة: '政府也注意到了他们的行动，给予了支持和帮助。'"
+        }
+      ]
+    },
+    {
+      "story_number": 5,
+      "title_zh": "京剧的魅力",
+      "title_ar": "سحر أوبرا بكين",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "京剧大约有多少年的历史？",
+          "question_ar": "كم يبلغ عمر أوبرا بكين تقريباً؟",
+          "options": [
+            {"id": "A", "text_zh": "一百多年", "text_ar": "أكثر من مئة عام"},
+            {"id": "B", "text_zh": "两百多年", "text_ar": "أكثر من مئتي عام"},
+            {"id": "C", "text_zh": "三百多年", "text_ar": "أكثر من ثلاثمئة عام"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '有两百多年的历史' أي أكثر من مئتي عام."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "京剧只有音乐，没有武术和舞蹈。",
+          "question_ar": "أوبرا بكين تضم الموسيقى فقط، دون فنون قتالية أو رقص.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '京剧结合了音乐、武术、舞蹈和故事' أي تجمع عناصر متعددة."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "京剧的脸谱有什么作用？",
+          "question_ar": "ما وظيفة المكياج (الوجه) في أوبرا بكين؟",
+          "expected_answer_zh": "让观众一眼看出角色是好人还是坏人。",
+          "expected_answer_ar": "يساعد المشاهدين على التعرف للوهلة الأولى إن كانت الشخصية طيبة أم شريرة.",
+          "explanation_ar": "القصة: '观众一眼就能看出他是好人还是坏人'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "安娜看了京剧以后有什么感受？",
+          "question_ar": "ما الذي شعرت به آنا بعد مشاهدة أوبرا بكين؟",
+          "options": [
+            {"id": "A", "text_zh": "觉得很无聊", "text_ar": "شعرت بالملل"},
+            {"id": "B", "text_zh": "觉得非常精彩", "text_ar": "أحست بها رائعة للغاية"},
+            {"id": "C", "text_zh": "看不懂，很困惑", "text_ar": "لم تفهم وشعرت بالحيرة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '觉得非常精彩' أي أنها وجدتها رائعة جداً."
+        }
+      ]
+    },
+    {
+      "story_number": 6,
+      "title_zh": "长城的传说",
+      "title_ar": "أسطورة سور الصين العظيم",
+      "level": "مرتفع",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "长城是为什么建造的？",
+          "question_ar": "لماذا بُني سور الصين العظيم؟",
+          "options": [
+            {"id": "A", "text_zh": "为了发展旅游业", "text_ar": "لتطوير السياحة"},
+            {"id": "B", "text_zh": "为了保护国家不受外敌入侵", "text_ar": "لحماية البلاد من الغزاة"},
+            {"id": "C", "text_zh": "为了展示中国的力量", "text_ar": "لإظهار قوة الصين"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '为了保护国家不受外敌入侵，皇帝下令建造这道巨大的城墙'."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "传说中，那位妻子的丈夫还活着。",
+          "question_ar": "في الأسطورة، كان زوج تلك المرأة لا يزال حياً.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '却得知丈夫已经去世，被埋在城墙里' أي كان الزوج قد مات."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "那位妻子的眼泪为什么很重要？",
+          "question_ar": "لماذا كانت دموع تلك الزوجة مهمة في الأسطورة؟",
+          "expected_answer_zh": "因为她的眼泪感动了上天，长城的一部分因此倒塌了。",
+          "expected_answer_ar": "لأن دموعها أثّرت في السماء فانهار جزء من السور.",
+          "explanation_ar": "القصة: '感动了上天，长城的一部分因此倒塌'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "这个传说主要反映了什么？",
+          "question_ar": "ماذا يعكس هذا الأسطورة بشكل رئيسي؟",
+          "options": [
+            {"id": "A", "text_zh": "建筑技术的进步", "text_ar": "التطور في تقنيات البناء"},
+            {"id": "B", "text_zh": "古代人民的牺牲和对家人的感情", "text_ar": "تضحيات الشعب القديم ومشاعره تجاه أحبائه"},
+            {"id": "C", "text_zh": "皇帝的权力", "text_ar": "سلطة الإمبراطور"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '反映了中国古代人民建造长城时付出的巨大牺牲，也体现了他们对家人深刻的感情'."
+        },
+        {
+          "id": 5,
+          "type": "true_false",
+          "question_zh": "今天，长城每年吸引数百万游客参观。",
+          "question_ar": "اليوم يجذب السور ملايين السياح سنوياً.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '每年吸引数百万来自各地的游客前往参观'."
+        }
+      ]
+    },
+    {
+      "story_number": 7,
+      "title_zh": "功夫的哲学",
+      "title_ar": "فلسفة الكونغ فو",
+      "level": "مرتفع",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "很多人认为功夫是什么？",
+          "question_ar": "ماذا يعتقد كثيرون عن الكونغ فو؟",
+          "options": [
+            {"id": "A", "text_zh": "一种艺术", "text_ar": "نوع من الفنون"},
+            {"id": "B", "text_zh": "一种武术", "text_ar": "نوع من فنون القتال"},
+            {"id": "C", "text_zh": "一种哲学", "text_ar": "نوع من الفلسفة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '很多人认为，功夫只是一种武术' لكن الحقيقة أعمق من ذلك."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "功夫大师只需要有力量和技术，不需要道德。",
+          "question_ar": "يحتاج سيد الكونغ فو إلى القوة والمهارة فقط، دون أخلاق.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: 'بل يمتلكون أيضاً الفضيلة الرفيعة' أي الأخلاق العالية ضرورية أيضاً."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "功夫老师说的'真正的强大'是什么？",
+          "question_ar": "ما معنى 'القوة الحقيقية' الذي قاله أستاذ الكونغ فو؟",
+          "expected_answer_zh": "不是打败别人，而是战胜自己。",
+          "expected_answer_ar": "ليست في هزيمة الآخرين، بل في الانتصار على النفس.",
+          "explanation_ar": "القصة: '真正的强大，不是打败别人，而是战胜自己'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "根据故事，练习功夫最重要的精神是什么？",
+          "question_ar": "وفق القصة، ما أهم روح في تمرين الكونغ فو؟",
+          "options": [
+            {"id": "A", "text_zh": "速度和力量", "text_ar": "السرعة والقوة"},
+            {"id": "B", "text_zh": "坚持、谦逊、自我完善", "text_ar": "المثابرة والتواضع والارتقاء بالذات"},
+            {"id": "C", "text_zh": "打败对手", "text_ar": "هزيمة الخصم"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '功夫的精神——坚持、谦逊、自我完善'."
+        },
+        {
+          "id": 5,
+          "type": "true_false",
+          "question_zh": "今天，功夫只在中国流行，外国人不感兴趣。",
+          "question_ar": "اليوم، الكونغ فو شائع في الصين فقط، ولا يهتم به الأجانب.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '越来越多的外国人开始学习和了解这门艺术' أي أن الأجانب يتزايد اهتمامهم به."
+        }
+      ]
+    }
+  ]
+}

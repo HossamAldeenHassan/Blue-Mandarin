@@ -1,0 +1,440 @@
+{
+  "hsk_level": "2",
+  "hsk_version": "3.0",
+  "total_stories": 7,
+  "description": "قصص تعليمية (7 قصص) لمستوى HSK2 v3.0 مصنفة حسب الصعوبة لتطوير مهارة القراءة",
+  "stories_by_level": {
+    "beginner": [
+      {
+        "story_number": 1,
+        "title_zh": "李明的新工作",
+        "title_ar": "وظيفة لي مينغ الجديدة",
+        "title_en": "Li Ming's New Job",
+        "level": "مبتدئ",
+        "level_description": "مفردات HSK2 الأساسية، جمل مستوى مبتدئ مع تراكيب بسيطة",
+        "vocabulary_count": "~160 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "李明大学毕业了。他找到了一份新工作。",
+            "pinyin": "Lǐ Míng dàxué bìyè le. Tā zhǎodào le yī fèn xīn gōngzuò.",
+            "translation": "تخرّج لي مينغ من الجامعة. حصل على وظيفة جديدة."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "他在一家大公司工作。办公室在城市中心。",
+            "pinyin": "Tā zài yī jiā dà gōngsī gōngzuò. Bàngōngshì zài chéngshì zhōngxīn.",
+            "translation": "يعمل في شركة كبيرة. مكتبه في وسط المدينة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "每天早上八点，李明坐地铁去公司。路上大概要三十分钟。",
+            "pinyin": "Měitiān zǎoshang bā diǎn, Lǐ Míng zuò dìtiě qù gōngsī. Lù shàng dàgài yào sānshí fēnzhōng.",
+            "translation": "كل صباح في الثامنة، يأخذ لي مينغ المترو إلى الشركة. يستغرق الطريق ثلاثين دقيقة تقريباً."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "李明的工作是做市场广告。他每天都很忙，但他很喜欢这份工作。",
+            "pinyin": "Lǐ Míng de gōngzuò shì zuò shìchǎng guǎnggào. Tā měitiān dōu hěn máng, dàn tā hěn xǐhuān zhè fèn gōngzuò.",
+            "translation": "عمل لي مينغ هو إعداد إعلانات تسويقية. إنه مشغول كل يوم، لكنه يحب هذا العمل."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "经理对他说：'你的工作做得不错，继续努力！'李明很高兴。",
+            "pinyin": "Jīnglǐ duì tā shuō: 'Nǐ de gōngzuò zuò de búcuò, jìxù nǔlì!' Lǐ Míng hěn gāoxìng.",
+            "translation": "قال له المدير: 'عملك جيد، استمر في الاجتهاد!' سعد لي مينغ كثيراً."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "下班后，他有时候和同事一起去饭馆吃饭，有时候回家做饭。",
+            "pinyin": "Xià bān hòu, tā yǒushíhou hé tóngshì yìqǐ qù fànguǎn chīfàn, yǒushíhou huíjiā zuòfàn.",
+            "translation": "بعد العمل، يذهب أحياناً مع زملائه إلى مطعم، وأحياناً يرجع إلى البيت ليطبخ."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "李明觉得，虽然工作很累，但生活很充实。他对未来充满信心。",
+            "pinyin": "Lǐ Míng juéde, suīrán gōngzuò hěn lèi, dàn shēnghuó hěn chōngshí. Tā duì wèilái chōngmǎn xìnxīn.",
+            "translation": "يشعر لي مينغ أنه رغم تعب العمل، حياته غنية ومثمرة. وهو متفائل بالمستقبل."
+          }
+        ]
+      },
+      {
+        "story_number": 2,
+        "title_zh": "一家人的周末",
+        "title_ar": "عطلة نهاية الأسبوع لعائلة",
+        "title_en": "A Family's Weekend",
+        "level": "مبتدئ",
+        "level_description": "مفردات العائلة والأنشطة اليومية، جمل بسيطة",
+        "vocabulary_count": "~170 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "今天是星期六。王强一家人都不上班，不上学。",
+            "pinyin": "Jīntiān shì xīngqīliù. Wáng Qiáng yījiārén dōu bù shàngbān, bù shàngxué.",
+            "translation": "اليوم السبت. عائلة وانغ تشيانغ كلها لا تذهب إلى العمل ولا إلى المدرسة."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "早上，妈妈做了很多早饭：包子、鸡蛋、豆浆。大家一起吃早饭，聊天儿。",
+            "pinyin": "Zǎoshang, māma zuò le hěn duō zǎofàn: bāozi, jīdàn, dòujiāng. Dàjiā yìqǐ chī zǎofàn, liáotiānr.",
+            "translation": "في الصباح، أعدّت الأم كثيراً من الإفطار: محشيات وبيض وحليب الصويا. تناولوا الإفطار معاً وتحدثوا."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "饭后，爸爸说：'今天天气好，我们去公园走走吧！'孩子们都很高兴。",
+            "pinyin": "Fànhòu, bàba shuō: 'Jīntiān tiānqì hǎo, wǒmen qù gōngyuán zǒuzou ba!' Háizimen dōu hěn gāoxìng.",
+            "translation": "بعد الأكل، قال الأب: 'الطقس جميل اليوم، دعنا نذهب للتنزه في الحديقة!' فرح الأطفال كثيراً."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "公园里有很多人。孩子们在草地上跑步、玩球。爸爸妈妈在树下坐着聊天。",
+            "pinyin": "Gōngyuán lǐ yǒu hěn duō rén. Háizimen zài cǎodì shàng pǎobù, wán qiú. Bàba māma zài shù xià zuòzhe liáotiān.",
+            "translation": "في الحديقة ناس كثيرون. الأطفال يركضون ويلعبون الكرة في المرج. الأب والأم يجلسان تحت الشجرة يتحدثان."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "中午，大家去一家饺子馆吃午饭。饺子很好吃，大家都吃得很饱。",
+            "pinyin": "Zhōngwǔ, dàjiā qù yī jiā jiǎoziguǎn chī wǔfàn. Jiǎozi hěn hǎochī, dàjiā dōu chī de hěn bǎo.",
+            "translation": "في الظهر، ذهبوا جميعاً إلى مطعم الزلابية لتناول الغداء. الزلابية لذيذة، وشبع الجميع."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "下午，妈妈去超市买东西，爸爸在家休息，孩子们看电视。",
+            "pinyin": "Xiàwǔ, māma qù chāoshì mǎi dōngxi, bàba zài jiā xiūxi, háizimen kàn diànshì.",
+            "translation": "بعد الظهر، ذهبت الأم إلى السوبرماركت للتسوق، استراح الأب في البيت، وشاهد الأطفال التلفاز."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "晚上，一家人一边看电视，一边吃水果。孩子们问爸爸：'下个周末我们去哪里？'",
+            "pinyin": "Wǎnshang, yījiārén yībiān kàn diànshì, yībiān chī shuǐguǒ. Háizimen wèn bàba: 'Xià gè zhōumò wǒmen qù nǎlǐ?'",
+            "translation": "مساءً، يشاهد الجميع التلفاز ويأكلون الفاكهة في آنٍ واحد. سأل الأطفال أباهم: 'إلى أين نذهب نهاية الأسبوع القادم؟'"
+          },
+          {
+            "paragraph": 8,
+            "chinese": "爸爸笑着说：'我们去海边！'孩子们高兴地跳了起来。",
+            "pinyin": "Bàba xiào zhe shuō: 'Wǒmen qù hǎibiān!' Háizimen gāoxìng de tiào le qǐlái.",
+            "translation": "ضحك الأب وقال: 'نذهب إلى الشاطئ!' قفز الأطفال فرحاً."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "story_number": 3,
+        "title_zh": "第一次去上海",
+        "title_ar": "أول زيارة لشنغهاي",
+        "title_en": "First Trip to Shanghai",
+        "level": "متوسط",
+        "level_description": "مفردات السفر والمدينة، جمل مركبة مع روابط بسيطة",
+        "vocabulary_count": "~190 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "马丽第一次去上海出差。她很兴奋，因为她从来没去过那么大的城市。",
+            "pinyin": "Mǎ Lì dì yī cì qù Shànghǎi chūchāi. Tā hěn xīngfèn, yīnwèi tā cónglái méi qùguò nàme dà de chéngshì.",
+            "translation": "زارت ما لي شنغهاي في مهمة عمل للمرة الأولى. كانت متحمسة لأنها لم تزر مدينة بهذا الحجم قط."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "她坐高铁去上海。高铁又快又舒服，从北京到上海只要五个小时。",
+            "pinyin": "Tā zuò gāotiě qù Shànghǎi. Gāotiě yòu kuài yòu shūfu, cóng Běijīng dào Shànghǎi zhǐ yào wǔ gè xiǎoshí.",
+            "translation": "ركبت القطار السريع إلى شنغهاي. القطار السريع سريع ومريح، يستغرق من بكين إلى شنغهاي خمس ساعات فقط."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "到了上海，她先坐地铁去酒店，然后把行李放下，出去走走。",
+            "pinyin": "Dào le Shànghǎi, tā xiān zuò dìtiě qù jiǔdiàn, ránhòu bǎ xíngli fàng xià, chūqù zǒuzou.",
+            "translation": "حين وصلت إلى شنغهاي، ركبت المترو أولاً إلى الفندق، ثم أنزلت حقائبها وخرجت للتجوّل."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "上海的街道上人很多。马丽看见很多高楼大厦，还有很多漂亮的商店。",
+            "pinyin": "Shànghǎi de jiēdào shàng rén hěn duō. Mǎ Lì kànjiàn hěn duō gāolóu dàshà, hái yǒu hěn duō piàoliang de shāngdiàn.",
+            "translation": "شوارع شنغهاي مزدحمة بالناس. رأت ما لي ناطحات سحاب كثيرة ومحلات جميلة."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "晚上，她去外滩看夜景。外滩的灯光非常漂亮，让她忍不住拍了很多照片。",
+            "pinyin": "Wǎnshang, tā qù Wàitān kàn yèjǐng. Wàitān de dēngguāng fēicháng piàoliang, ràng tā rěn bu zhù pāi le hěn duō zhàopiàn.",
+            "translation": "في المساء، ذهبت إلى الواجهة البحرية (وايتان) لمشاهدة المنظر الليلي. الأضواء هناك جميلة جداً، فلم تستطع مقاومة التقاط الكثير من الصور."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "第二天，她参加了公司的会议。会议结束后，同事带她去一家有名的上海菜馆吃饭。",
+            "pinyin": "Dì èr tiān, tā cānjiā le gōngsī de huìyì. Huìyì jiéshù hòu, tóngshì dài tā qù yī jiā yǒumíng de Shànghǎi càiguǎn chīfàn.",
+            "translation": "في اليوم الثاني، حضرت اجتماع الشركة. بعد الاجتماع، أخذها زملاؤها إلى مطعم شنغهاي مشهور."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "上海菜比北京菜甜一点儿，马丽觉得很好吃。她喝了一杯当地的饮料，感觉非常满足。",
+            "pinyin": "Shànghǎi cài bǐ Běijīng cài tián yīdiǎnr, Mǎ Lì juéde hěn hǎochī. Tā hē le yī bēi dāngdì de yǐnliào, gǎnjué fēicháng mǎnzú.",
+            "translation": "طعام شنغهاي أحلى قليلاً من طعام بكين، وجده لذيذاً. شربت مشروباً محلياً وشعرت بالرضا التام."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "回北京前，她在机场给家人买了一些上海特产。她心里想：'下次一定要带家人一起来！'",
+            "pinyin": "Huí Běijīng qián, tā zài jīchǎng gěi jiārén mǎi le yìxiē Shànghǎi tèchǎn. Tā xīnlǐ xiǎng: 'Xià cì yīdìng yào dài jiārén yìqǐ lái!'",
+            "translation": "قبل العودة إلى بكين، اشترت بعض المنتجات المحلية الشنغهائية لعائلتها من المطار. فكرت في نفسها: 'في المرة القادمة يجب أن أحضر عائلتي معي!'"
+          }
+        ]
+      },
+      {
+        "story_number": 4,
+        "title_zh": "在超市购物",
+        "title_ar": "التسوق في السوبرماركت",
+        "title_en": "Shopping at the Supermarket",
+        "level": "متوسط",
+        "level_description": "مفردات التسوق والأرقام والمقارنة، جمل مع 比 و 把",
+        "vocabulary_count": "~200 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "周末，张静和她的爱人一起去超市买东西。他们要买一个星期的食物。",
+            "pinyin": "Zhōumò, Zhāng Jìng hé tā de àirén yìqǐ qù chāoshì mǎi dōngxi. Tāmen yào mǎi yī gè xīngqī de shíwù.",
+            "translation": "في نهاية الأسبوع، ذهبت تشانغ جينغ مع زوجها إلى السوبرماركت. يريدان شراء طعام لأسبوع كامل."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "超市里人很多，顾客来来往往。张静拿着购物车，边走边看。",
+            "pinyin": "Chāoshì lǐ rén hěn duō, gùkè láilái wǎngwǎng. Zhāng Jìng ná zhe gòuwùchē, biān zǒu biān kàn.",
+            "translation": "السوبرماركت مكتظ بالمتسوقين. تمشي تشانغ جينغ مدفوعةً بعربة التسوق وتتطلع إلى البضاعة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "她先去蔬菜区买蔬菜。西红柿比黄瓜贵一点儿，但是她很喜欢西红柿，所以买了两斤。",
+            "pinyin": "Tā xiān qù shūcài qū mǎi shūcài. Xīhóngshì bǐ huángguā guì yīdiǎnr, dànshì tā hěn xǐhuān xīhóngshì, suǒyǐ mǎi le liǎng jīn.",
+            "translation": "ذهبت أولاً إلى قسم الخضار. الطماطم أغلى قليلاً من الخيار، لكنها تحب الطماطم كثيراً فاشترت جينين."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "爱人在水果区拿了很多苹果，张静说：'够了，不要买太多！'",
+            "pinyin": "Àirén zài shuǐguǒ qū ná le hěn duō píngguǒ, Zhāng Jìng shuō: 'Gòu le, bú yào mǎi tài duō!'",
+            "translation": "أخذ زوجها تفاحاً كثيراً من قسم الفاكهة، فقالت تشانغ جينغ: 'كفاية، لا تشترِ الكثير!'"
+          },
+          {
+            "paragraph": 5,
+            "chinese": "他们还买了牛奶、鸡蛋、面条和一些调味品。爱人把东西都放进了购物车。",
+            "pinyin": "Tāmen hái mǎi le niúnǎi, jīdàn, miàntiáo hé yìxiē tiáowèipǐn. Àirén bǎ dōngxi dōu fàng jìn le gòuwùchē.",
+            "translation": "اشتروا أيضاً حليباً وبيضاً ومعكرونة وبعض التوابل. وضع زوجها كل الأشياء في عربة التسوق."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "到了收银台，张静发现钱包里的现金不够，就用信用卡付了款。",
+            "pinyin": "Dào le shōuyíntái, Zhāng Jìng fāxiàn qiánbāo lǐ de xiànjīn bú gòu, jiù yòng xìnyòngkǎ fù le kuǎn.",
+            "translation": "عند الصندوق، اكتشفت تشانغ جينغ أن النقد في محفظتها غير كافٍ، فدفعت بالبطاقة الائتمانية."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "回到家，两个人一起把东西放进冰箱。爱人说：'下次我们先列个购物清单吧，这样不会忘记买什么。'",
+            "pinyin": "Huídào jiā, liǎng gè rén yìqǐ bǎ dōngxi fàng jìn bīngxiāng. Àirén shuō: 'Xià cì wǒmen xiān liè gè gòuwù qīngdān ba, zhèyàng bú huì wàngjì mǎi shénme.'",
+            "translation": "عادا إلى البيت، ووضعا الأشياء معاً في الثلاجة. قال زوجها: 'في المرة القادمة دعنا نكتب قائمة تسوق أولاً حتى لا ننسى شيئاً.'"
+          },
+          {
+            "paragraph": 8,
+            "chinese": "张静点点头，笑着说：'好主意！下次一定这样做。'",
+            "pinyin": "Zhāng Jìng diǎndiǎntóu, xiào zhe shuō: 'Hǎo zhúyì! Xià cì yīdìng zhèyàng zuò.'",
+            "translation": "أومأت تشانغ جينغ وقالت بابتسامة: 'فكرة رائعة! في المرة القادمة سنفعل ذلك بالتأكيد.'"
+          }
+        ]
+      },
+      {
+        "story_number": 5,
+        "title_zh": "生病了",
+        "title_ar": "المرض",
+        "title_en": "Getting Sick",
+        "level": "متوسط",
+        "level_description": "مفردات الصحة والمستشفى، جمل مركبة مع 虽然...但是",
+        "vocabulary_count": "~210 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "陈华今天早上起床后，感觉头很疼，身体也很难受。",
+            "pinyin": "Chén Huá jīntiān zǎoshang qǐchuáng hòu, gǎnjué tóu hěn téng, shēntǐ yě hěn nánshòu.",
+            "translation": "بعد استيقاظ تشن هوا هذا الصباح، شعر بألم شديد في رأسه وانزعاج في جسمه."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "他用体温表量了体温，发现发烧了，三十八度五。他决定去医院看医生。",
+            "pinyin": "Tā yòng tǐwēnbiǎo liáng le tǐwēn, fāxiàn fāshāo le, sānshíbā dù wǔ. Tā juédìng qù yīyuàn kàn yīshēng.",
+            "translation": "قاس حرارته بالميزان الحراري فوجد أن لديه حمى، ثمانية وثلاثون درجة ونصف. قرر الذهاب إلى المستشفى."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "虽然他不喜欢去医院，但是他知道身体重要，不能不去。他叫了一辆出租车。",
+            "pinyin": "Suīrán tā bù xǐhuān qù yīyuàn, dànshì tā zhīdào shēntǐ zhòngyào, bù néng bú qù. Tā jiào le yī liàng chūzūchē.",
+            "translation": "رغم أنه لا يحب الذهاب إلى المستشفى، إلا أنه يعرف أن الصحة مهمة ولا يمكنه الامتناع. استدعى سيارة أجرة."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "到了医院，护士让他先挂号，然后等候医生。等了大概二十分钟，医生叫他进去了。",
+            "pinyin": "Dào le yīyuàn, hùshi ràng tā xiān guàhào, ránhòu děnghòu yīshēng. Děng le dàgài èrshí fēnzhōng, yīshēng jiào tā jìnqù le.",
+            "translation": "حين وصل إلى المستشفى، طلبت منه الممرضة أن يسجل أولاً ثم ينتظر الطبيب. بعد انتظار عشرين دقيقة تقريباً، ناداه الطبيب للدخول."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "医生检查了他的嗓子和肺，说：'你感冒了，需要多休息，多喝水。'",
+            "pinyin": "Yīshēng jiǎnchá le tā de sǎngzi hé fèi, shuō: 'Nǐ gǎnmào le, xūyào duō xiūxi, duō hē shuǐ.'",
+            "translation": "فحص الطبيب حلقه ورئتيه وقال: 'أنت مصاب بالزكام، تحتاج إلى راحة أكثر وشرب كثير من الماء.'"
+          },
+          {
+            "paragraph": 6,
+            "chinese": "医生给他开了药：感冒药和退烧药，一天两次，每次两片。",
+            "pinyin": "Yīshēng gěi tā kāi le yào: gǎnmàoyào hé tuìshāoyào, yī tiān liǎng cì, měi cì liǎng piàn.",
+            "translation": "وصف له الطبيب دواء: دواء الزكام ودواء الحمى، مرتين يومياً، قرصين في كل مرة."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "陈华去药店取了药，然后坐公交车回家。他把手机关了机，好好睡觉。",
+            "pinyin": "Chén Huá qù yàodiàn qǔ le yào, ránhòu zuò gōngjiāochē huíjiā. Tā bǎ shǒujī guān le jī, hǎohǎo shuìjiào.",
+            "translation": "أحضر تشن هوا الدواء من الصيدلية، ثم ركب الحافلة إلى البيت. أغلق هاتفه ونام نوماً عميقاً."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "三天后，他的病好了。他打电话给经理说：'对不起，这几天我生病了，明天我可以回去上班了。'",
+            "pinyin": "Sān tiān hòu, tā de bìng hǎo le. Tā dǎ diànhuà gěi jīnglǐ shuō: 'Duìbuqǐ, zhè jǐ tiān wǒ shēngbìng le, míngtiān wǒ kěyǐ huíqù shàngbān le.'",
+            "translation": "بعد ثلاثة أيام، تعافى. اتصل بمديره وقال: 'آسف، كنت مريضاً هذه الأيام، يمكنني العودة إلى العمل غداً.'"
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "story_number": 6,
+        "title_zh": "孟姜女哭长城",
+        "title_ar": "مينغ جيانغ نوو تبكي على سور الصين",
+        "title_en": "Meng Jiangnü Cries at the Great Wall",
+        "level": "مرتفع",
+        "level_description": "أسلوب أدبي كلاسيكي، مفردات HSK2 متقدمة، قصة فولكلورية صينية",
+        "vocabulary_count": "~240 كلمة",
+        "new_words_introduced": 2,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "很久以前，有一个美丽的姑娘叫孟姜女。她和她的丈夫范喜良刚结婚不久，非常幸福。",
+            "pinyin": "Hěn jiǔ yǐqián, yǒu yī gè měilì de gūniang jiào Mèng Jiāngnǚ. Tā hé tā de zhàngfu Fàn Xīliáng gāng jiéhūn bù jiǔ, fēicháng xìngfú.",
+            "translation": "منذ زمن بعيد، كانت هناك فتاة جميلة اسمها مينغ جيانغ نوو. كانت هي وزوجها فان شيليانغ قد تزوجا منذ وقت قصير وكانا سعيدين جداً."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "但是，皇帝派士兵把范喜良带走了，去修长城。孟姜女一个人在家，每天等待，非常想念丈夫。",
+            "pinyin": "Dànshì, huángdì pài shìbīng bǎ Fàn Xīliáng dài zǒu le, qù xiū Chángchéng. Mèng Jiāngnǚ yī gè rén zài jiā, měitiān děngdài, fēicháng xiǎngniàn zhàngfu.",
+            "translation": "لكن الإمبراطور أرسل جنوداً أخذوا فان شيليانغ لبناء سور الصين العظيم. بقيت مينغ جيانغ نوو وحدها في البيت، تنتظر يومياً وتشتاق لزوجها بشدة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "冬天来了，天气越来越冷。孟姜女想：'丈夫在外面修长城，一定很冷。我要给他送棉衣去。'",
+            "pinyin": "Dōngtiān lái le, tiānqì yuèlái yuè lěng. Mèng Jiāngnǚ xiǎng: 'Zhàngfu zài wàimiàn xiū Chángchéng, yīdìng hěn lěng. Wǒ yào gěi tā sòng miányī qù.'",
+            "translation": "جاء الشتاء، وازداد الطقس برودةً. فكرت مينغ جيانغ نوو: 'زوجي يبني السور في الخارج، لا بد أنه يعاني من البرد. سأحمل له ملابس شتوية.'"
+          },
+          {
+            "paragraph": 4,
+            "chinese": "她走了很远很远的路，终于到了长城脚下。但是，士兵告诉她一个坏消息：范喜良已经去世了，被埋在长城里面了。",
+            "pinyin": "Tā zǒu le hěn yuǎn hěn yuǎn de lù, zhōngyú dào le Chángchéng jiǎoxià. Dànshì, shìbīng gàosù tā yī gè huài xiāoxi: Fàn Xīliáng yǐjīng qùshì le, bèi mái zài Chángchéng lǐmiàn le.",
+            "translation": "قطعت مسافة طويلة جداً، وأخيراً وصلت إلى أسفل سور الصين. لكن أخبرها الجنود بخبر سيء: فان شيليانغ توفي بالفعل ودُفن داخل سور الصين."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "孟姜女非常伤心，她哭了三天三夜。她的哭声太大了，连长城都被哭倒了一段。",
+            "pinyin": "Mèng Jiāngnǚ fēicháng shāngxīn, tā kū le sān tiān sān yè. Tā de kūshēng tài dà le, lián Chángchéng dōu bèi kū dǎo le yī duàn.",
+            "translation": "حزنت مينغ جيانغ نوو حزناً شديداً وبكت ثلاثة أيام وثلاث ليالٍ. كان صوت بكائها مدوياً لدرجة أن جزءاً من سور الصين انهار."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "长城倒了以后，她终于找到了丈夫的骨头，把它们收集起来，带回了家乡，安葬在那里。",
+            "pinyin": "Chángchéng dǎo le yǐhòu, tā zhōngyú zhǎodào le zhàngfu de gǔtou, bǎ tāmen shōují qǐlái, dài huí le jiāxiāng, āngzàng zài nàlǐ.",
+            "translation": "بعد انهيار السور، وجدت أخيراً عظام زوجها، جمعتها وعادت بها إلى مسقط رأسها ودفنتها هناك."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "中国人说，孟姜女的故事告诉我们：爱情和家人比什么都重要。一个人的力量，只要有爱，就可以感动天地。",
+            "pinyin": "Zhōngguórén shuō, Mèng Jiāngnǚ de gùshi gàosù wǒmen: àiqíng hé jiārén bǐ shénme dōu zhòngyào. Yī gè rén de lìliàng, zhǐyào yǒu ài, jiù kěyǐ gǎndòng tiāndì.",
+            "translation": "يقول الصينيون إن قصة مينغ جيانغ نوو تعلّمنا: الحب والعائلة أهم من كل شيء. طالما كان هناك حب، فإن قوة الإنسان الواحد تستطيع تحريك السماء والأرض."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "这个故事在中国流传了两千多年，至今还有人在讲它。它提醒我们不要忘记历史，也不要忘记爱。",
+            "pinyin": "Zhège gùshi zài Zhōngguó liúchuán le liǎng qiān duō nián, zhìjīn hái yǒu rén zài jiǎng tā. Tā tíxǐng wǒmen bú yào wàngjì lìshǐ, yě bú yào wàngjì ài.",
+            "translation": "تتداول هذه القصة في الصين منذ أكثر من ألفي عام، ولا يزال الناس يرووها حتى اليوم. تذكّرنا بأن لا ننسى التاريخ ولا ننسى الحب."
+          }
+        ]
+      },
+      {
+        "story_number": 7,
+        "title_zh": "两个朋友和一个梦想",
+        "title_ar": "صديقان وحلم",
+        "title_en": "Two Friends and a Dream",
+        "level": "مرتفع",
+        "level_description": "قصة حديثة معاصرة، تراكيب قواعدية HSK2 متقدمة، موضوع الطموح والصداقة",
+        "vocabulary_count": "~250 كلمة",
+        "new_words_introduced": 1,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "小林和小海是从小一起长大的好朋友。他们的梦想都是成为画家。",
+            "pinyin": "Xiǎo Lín hé Xiǎo Hǎi shì cóng xiǎo yìqǐ zhǎngdà de hǎo péngyou. Tāmen de mèngxiǎng dōu shì chéngwéi huàjiā.",
+            "translation": "شياو لين وشياو هاي صديقان نشآ معاً منذ الصغر. حلم كليهما أن يصبحا رسّامين."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "高中毕业后，小林的父母希望他找一份稳定的工作，不赞成他去学画画。小海的家庭比较开放，父母支持他的梦想。",
+            "pinyin": "Gāozhōng bìyè hòu, Xiǎo Lín de fùmǔ xīwàng tā zhǎo yī fèn wěndìng de gōngzuò, bù zànchéng tā qù xué huà huà. Xiǎo Hǎi de jiātíng bǐjiào kāifàng, fùmǔ zhīchí tā de mèngxiǎng.",
+            "translation": "بعد التخرج من الثانوية، أراد والدا شياو لين أن يجد وظيفة مستقرة ولم يوافقا على دراسته للرسم. أما عائلة شياو هاي فكانت أكثر انفتاحاً، ودعم والداه حلمه."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "小海报名参加了美术学院。小林虽然不舍得放弃梦想，但是为了父母，他去找了一份办公室的工作。",
+            "pinyin": "Xiǎo Hǎi bàomíng cānjiā le měishù xuéyuàn. Xiǎo Lín suīrán bù shěde fàngqì mèngxiǎng, dànshì wèi le fùmǔ, tā qù zhǎo le yī fèn bàngōngshì de gōngzuò.",
+            "translation": "سجّل شياو هاي في أكاديمية الفنون الجميلة. أما شياو لين فرغم أنه لم يرد التخلي عن حلمه، إلا أنه من أجل والديه، بحث عن وظيفة مكتبية."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "五年过去了。小海越来越有名，他的画在很多展览上展出，受到大家的好评。",
+            "pinyin": "Wǔ nián guòqù le. Xiǎo Hǎi yuèlái yuè yǒumíng, tā de huà zài hěn duō zhǎnlǎn shàng zhǎnchū, shòudào dàjiā de hǎopíng.",
+            "translation": "مرّت خمس سنوات. أصبح شياو هاي أكثر شهرةً، وعُرضت لوحاته في كثير من المعارض وحظيت بإعجاب الجميع."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "小林在办公室工作，收入不错，生活稳定。但他心里一直有遗憾，他觉得自己的生活缺少了什么。",
+            "pinyin": "Xiǎo Lín zài bàngōngshì gōngzuò, shōurù búcuò, shēnghuó wěndìng. Dàn tā xīnlǐ yīzhí yǒu yíhàn, tā juéde zìjǐ de shēnghuó quēshǎo le shénme.",
+            "translation": "عمل شياو لين في المكتب، دخله جيد وحياته مستقرة. لكن كان في قلبه أسف دائم، ويشعر أن شيئاً ما ينقص حياته."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "一天，小海打电话给小林说：'我要举办一个画展，你来帮我写说明文字，好吗？你的文字写得比我好多了。'",
+            "pinyin": "Yī tiān, Xiǎo Hǎi dǎ diànhuà gěi Xiǎo Lín shuō: 'Wǒ yào jǔbàn yī gè huàzhǎn, nǐ lái bāng wǒ xiě shuōmíng wénzì, hǎo ma? Nǐ de wénzì xiě de bǐ wǒ hǎo duō le.'",
+            "translation": "ذات يوم، اتصل شياو هاي بشياو لين قائلاً: 'سأُقيم معرض لوحات، هل تساعدني في كتابة النصوص التوضيحية؟ كتابتك أفضل بكثير من كتابتي.'"
+          },
+          {
+            "paragraph": 7,
+            "chinese": "小林同意了。他帮小海写了每幅画的介绍，还为画展准备了一篇文章，发表在报纸上。",
+            "pinyin": "Xiǎo Lín tóngyì le. Tā bāng Xiǎo Hǎi xiě le měi fú huà de jièshào, hái wèi huàzhǎn zhǔnbèi le yī piān wénzhāng, fābiǎo zài bàozhǐ shàng.",
+            "translation": "وافق شياو لين. ساعد شياو هاي في كتابة وصف كل لوحة، وأعدّ مقالاً للمعرض نُشر في الصحيفة."
+          },
+          {
+            "paragraph": 8,
+            "chinese": "画展非常成功。不但吸引了很多参观者，而且有记者来采访小海。记者问小海：'你的成功是靠什么？'",
+            "pinyin": "Huàzhǎn fēicháng chénggōng. Bùdàn xīyǐn le hěn duō cānguānzhě, érqiě yǒu jìzhě lái cǎifǎng Xiǎo Hǎi. Jìzhě wèn Xiǎo Hǎi: 'Nǐ de chénggōng shì kào shénme?'",
+            "translation": "نجح المعرض نجاحاً باهراً. فلم يستقطب الكثير من الزوار فحسب، بل جاء صحفي لمقابلة شياو هاي. سأله الصحفي: 'على ماذا يرتكز نجاحك؟'"
+          },
+          {
+            "paragraph": 9,
+            "chinese": "小海指着小林说：'离不开朋友的帮助！还有，只要你对一件事充满热情，就一定能做到。'",
+            "pinyin": "Xiǎo Hǎi zhǐ zhe Xiǎo Lín shuō: 'Lí bu kāi péngyou de bāngzhù! Hái yǒu, zhǐyào nǐ duì yī jiàn shì chōngmǎn rèqíng, jiù yīdìng néng zuòdào.'",
+            "translation": "أشار شياو هاي إلى شياو لين وقال: 'لا يمكن الاستغناء عن مساعدة الأصدقاء! وأيضاً، طالما أنت متحمس لشيء ما، ستستطيع تحقيقه بالتأكيد.'"
+          },
+          {
+            "paragraph": 10,
+            "chinese": "那天晚上，小林想了很多。他决定：下班后，他要开始重新学画画。虽然已经晚了一些，但是开始总比不开始好。",
+            "pinyin": "Nà tiān wǎnshang, Xiǎo Lín xiǎng le hěn duō. Tā juédìng: xià bān hòu, tā yào kāishǐ chóngxīn xué huà huà. Suīrán yǐjīng wǎn le yīxiē, dànshì kāishǐ zǒng bǐ bù kāishǐ hǎo.",
+            "translation": "في تلك الليلة، فكّر شياو لين كثيراً. قرر: سيبدأ في تعلم الرسم مجدداً بعد العمل. وإن كان قد تأخر بعض الشيء، فإن البدء دائماً أفضل من عدم البدء."
+          }
+        ]
+      }
+    ]
+  }
+}

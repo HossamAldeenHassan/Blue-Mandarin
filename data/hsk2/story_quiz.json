@@ -1,0 +1,608 @@
+{
+  "hsk_level": "2",
+  "hsk_version": "3.0",
+  "total_stories": 7,
+  "description": "اختبارات قصيرة (3-5 أسئلة) لكل قصة من قصص HSK2 المصنفة لقياس فهم القراءة",
+  "quizzes": [
+    {
+      "story_number": 1,
+      "title_zh": "李明的新工作",
+      "title_ar": "وظيفة لي مينغ الجديدة",
+      "level": "مبتدئ",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "李明在哪里工作？",
+          "question_ar": "أين يعمل لي مينغ؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "学校",
+              "text_ar": "مدرسة"
+            },
+            {
+              "id": "B",
+              "text_zh": "医院",
+              "text_ar": "مستشفى"
+            },
+            {
+              "id": "C",
+              "text_zh": "大公司",
+              "text_ar": "شركة كبيرة"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '他在一家大公司工作' — إنه يعمل في شركة كبيرة."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question_zh": "李明每天怎么去公司？",
+          "question_ar": "كيف يذهب لي مينغ إلى الشركة يومياً؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "坐公共汽车",
+              "text_ar": "بالحافلة"
+            },
+            {
+              "id": "B",
+              "text_zh": "坐地铁",
+              "text_ar": "بالمترو"
+            },
+            {
+              "id": "C",
+              "text_zh": "骑自行车",
+              "text_ar": "بالدراجة"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '每天早上八点，李明坐地铁去公司' — يذهب بالمترو."
+        },
+        {
+          "id": 3,
+          "type": "true_false",
+          "question_zh": "李明不喜欢他的工作。",
+          "question_ar": "لي مينغ لا يحب عمله.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '他很喜欢这份工作' — إنه يحب عمله كثيراً."
+        },
+        {
+          "id": 4,
+          "type": "open",
+          "question_zh": "经理对李明说什么？",
+          "question_ar": "ماذا قال المدير للي مينغ؟",
+          "expected_answer_zh": "你的工作做得不错，继续努力！",
+          "expected_answer_ar": "عملك جيد، استمر في الاجتهاد!",
+          "explanation_ar": "القصة: '经理对他说：你的工作做得不错，继续努力！'"
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question_zh": "去公司的路上需要多长时间？",
+          "question_ar": "كم يستغرق الطريق إلى الشركة؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "十分钟",
+              "text_ar": "10 دقائق"
+            },
+            {
+              "id": "B",
+              "text_zh": "二十分钟",
+              "text_ar": "20 دقيقة"
+            },
+            {
+              "id": "C",
+              "text_zh": "三十分钟",
+              "text_ar": "30 دقيقة"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '路上大概要三十分钟' — الطريق يستغرق ثلاثين دقيقة تقريباً."
+        }
+      ]
+    },
+    {
+      "story_number": 2,
+      "title_zh": "一家人的周末",
+      "title_ar": "عطلة نهاية الأسبوع لعائلة",
+      "level": "مبتدئ",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "一家人午饭去哪里吃？",
+          "question_ar": "أين تناولت العائلة الغداء؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "在家",
+              "text_ar": "في البيت"
+            },
+            {
+              "id": "B",
+              "text_zh": "饺子馆",
+              "text_ar": "مطعم الزلابية"
+            },
+            {
+              "id": "C",
+              "text_zh": "超市",
+              "text_ar": "السوبرماركت"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '中午，大家去一家饺子馆吃午饭' — ذهبوا إلى مطعم الزلابية."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "下午孩子们去超市。",
+          "question_ar": "ذهب الأطفال إلى السوبرماركت بعد الظهر.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '妈妈去超市买东西，孩子们看电视' — الأم من ذهبت للسوبرماركت، وبقي الأطفال في البيت."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "爸爸说下个周末去哪里？",
+          "question_ar": "إلى أين قال الأب إنهم سيذهبون نهاية الأسبوع القادم؟",
+          "expected_answer_zh": "去海边。",
+          "expected_answer_ar": "إلى الشاطئ.",
+          "explanation_ar": "القصة: '爸爸笑着说：我们去海边！' — قال إنهم سيذهبون إلى الشاطئ."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "早上妈妈做了什么早饭？",
+          "question_ar": "ماذا أعدّت الأم على الإفطار؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "米饭和汤",
+              "text_ar": "أرز وشوربة"
+            },
+            {
+              "id": "B",
+              "text_zh": "包子、鸡蛋、豆浆",
+              "text_ar": "محشيات وبيض وحليب صويا"
+            },
+            {
+              "id": "C",
+              "text_zh": "面条",
+              "text_ar": "شعيرية"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '妈妈做了很多早饭：包子、鸡蛋、豆浆' — أعدّت المحشيات والبيض وحليب الصويا."
+        }
+      ]
+    },
+    {
+      "story_number": 3,
+      "title_zh": "第一次去上海",
+      "title_ar": "أول زيارة لشنغهاي",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "马丽怎么去上海的？",
+          "question_ar": "كيف ذهبت ما لي إلى شنغهاي؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "坐飞机",
+              "text_ar": "بالطائرة"
+            },
+            {
+              "id": "B",
+              "text_zh": "坐高铁",
+              "text_ar": "بالقطار السريع"
+            },
+            {
+              "id": "C",
+              "text_zh": "开车",
+              "text_ar": "بالسيارة"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '她坐高铁去上海' — ركبت القطار السريع."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "这是马丽第一次去上海。",
+          "question_ar": "كانت هذه أول زيارة لما لي لشنغهاي.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '马丽第一次去上海出差' — كانت هذه أول مرة."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "马丽晚上去了哪里？",
+          "question_ar": "إلى أين ذهبت ما لي في المساء؟",
+          "expected_answer_zh": "去外滩看夜景。",
+          "expected_answer_ar": "ذهبت إلى الواجهة البحرية (وايتان) لمشاهدة المنظر الليلي.",
+          "explanation_ar": "القصة: '晚上，她去外滩看夜景。'"
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "上海菜和北京菜比，有什么不同？",
+          "question_ar": "ما الفرق بين طعام شنغهاي وطعام بكين؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "上海菜比北京菜辣",
+              "text_ar": "طعام شنغهاي أحر من طعام بكين"
+            },
+            {
+              "id": "B",
+              "text_zh": "上海菜比北京菜甜一点儿",
+              "text_ar": "طعام شنغهاي أحلى قليلاً من طعام بكين"
+            },
+            {
+              "id": "C",
+              "text_zh": "两个一样",
+              "text_ar": "كلاهما متشابه"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '上海菜比北京菜甜一点儿' — طعام شنغهاي أحلى قليلاً."
+        },
+        {
+          "id": 5,
+          "type": "true_false",
+          "question_zh": "马丽在机场给家人买了礼物。",
+          "question_ar": "اشترت ما لي هدايا لعائلتها في المطار.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '她在机场给家人买了一些上海特产' — اشترت منتجات محلية."
+        }
+      ]
+    },
+    {
+      "story_number": 4,
+      "title_zh": "在超市购物",
+      "title_ar": "التسوق في السوبرماركت",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "张静买了多少斤西红柿？",
+          "question_ar": "كم جيناً من الطماطم اشترت تشانغ جينغ؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "一斤",
+              "text_ar": "1 جين"
+            },
+            {
+              "id": "B",
+              "text_zh": "两斤",
+              "text_ar": "2 جين"
+            },
+            {
+              "id": "C",
+              "text_zh": "三斤",
+              "text_ar": "3 جين"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '她很喜欢西红柿，所以买了两斤' — اشترت جينين."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "西红柿比黄瓜便宜。",
+          "question_ar": "الطماطم أرخص من الخيار.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '西红柿比黄瓜贵一点儿' — الطماطم أغلى قليلاً من الخيار."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "张静怎么付款的？为什么？",
+          "question_ar": "كيف دفعت تشانغ جينغ؟ ولماذا؟",
+          "expected_answer_zh": "用信用卡，因为现金不够。",
+          "expected_answer_ar": "دفعت بالبطاقة الائتمانية لأن النقد لم يكنِ كافياً.",
+          "explanation_ar": "القصة: '张静发现钱包里的现金不够，就用信用卡付了款。'"
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "爱人建议以后怎么购物？",
+          "question_ar": "ماذا اقترح زوجها للتسوق في المرات القادمة؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "带更多现金",
+              "text_ar": "حمل نقود أكثر"
+            },
+            {
+              "id": "B",
+              "text_zh": "先列购物清单",
+              "text_ar": "كتابة قائمة التسوق أولاً"
+            },
+            {
+              "id": "C",
+              "text_zh": "去更近的超市",
+              "text_ar": "الذهاب إلى سوبرماركت أقرب"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '下次我们先列个购物清单吧' — اقترح كتابة قائمة التسوق مسبقاً."
+        }
+      ]
+    },
+    {
+      "story_number": 5,
+      "title_zh": "生病了",
+      "title_ar": "المرض",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "陈华的体温是多少？",
+          "question_ar": "كم كانت درجة حرارة تشن هوا؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "三十七度",
+              "text_ar": "37 درجة"
+            },
+            {
+              "id": "B",
+              "text_zh": "三十八度",
+              "text_ar": "38 درجة"
+            },
+            {
+              "id": "C",
+              "text_zh": "三十八度五",
+              "text_ar": "38.5 درجة"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '发现发烧了，三十八度五' — درجة الحرارة كانت 38.5."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "陈华喜欢去医院。",
+          "question_ar": "تشن هوا يحب الذهاب إلى المستشفى.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '虽然他不喜欢去医院，但是他知道身体重要' — لا يحب الذهاب إلى المستشفى."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "医生说陈华得了什么病？要怎么做？",
+          "question_ar": "ماذا قال الطبيب عن مرض تشن هوا؟ وماذا يجب فعله؟",
+          "expected_answer_zh": "感冒了，需要多休息，多喝水。",
+          "expected_answer_ar": "مصاب بالزكام، يحتاج إلى الراحة وشرب كثير من الماء.",
+          "explanation_ar": "القصة: '你感冒了，需要多休息，多喝水。'"
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "医生开的药要怎么吃？",
+          "question_ar": "كيف يجب تناول الدواء الذي وصفه الطبيب؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "一天一次，每次一片",
+              "text_ar": "مرة واحدة يومياً، قرص واحد"
+            },
+            {
+              "id": "B",
+              "text_zh": "一天两次，每次两片",
+              "text_ar": "مرتان يومياً، قرصان في كل مرة"
+            },
+            {
+              "id": "C",
+              "text_zh": "一天三次，每次一片",
+              "text_ar": "ثلاث مرات يومياً، قرص واحد"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '一天两次，每次两片' — مرتان في اليوم، قرصان في كل مرة."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question_zh": "陈华几天后好了？",
+          "question_ar": "بعد كم يوم تعافى تشن هوا؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "一天",
+              "text_ar": "يوم واحد"
+            },
+            {
+              "id": "B",
+              "text_zh": "两天",
+              "text_ar": "يومان"
+            },
+            {
+              "id": "C",
+              "text_zh": "三天",
+              "text_ar": "ثلاثة أيام"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '三天后，他的病好了' — تعافى بعد ثلاثة أيام."
+        }
+      ]
+    },
+    {
+      "story_number": 6,
+      "title_zh": "孟姜女哭长城",
+      "title_ar": "مينغ جيانغ نوو تبكي على سور الصين",
+      "level": "مرتفع",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "孟姜女为什么去长城？",
+          "question_ar": "لماذا ذهبت مينغ جيانغ نوو إلى سور الصين؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "她想参观长城",
+              "text_ar": "أرادت زيارة السور"
+            },
+            {
+              "id": "B",
+              "text_zh": "她想给丈夫送棉衣",
+              "text_ar": "أرادت إيصال ملابس شتوية لزوجها"
+            },
+            {
+              "id": "C",
+              "text_zh": "她被皇帝叫去了",
+              "text_ar": "استدعاها الإمبراطور"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '我要给他送棉衣去' — ذهبت لتوصيل الملابس الشتوية لزوجها."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "孟姜女的丈夫在长城工作。",
+          "question_ar": "كان زوج مينغ جيانغ نوو يعمل في سور الصين.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '皇帝派士兵把范喜良带走了，去修长城' — أُخذ لبناء سور الصين."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "当孟姜女到达长城时，她得到了什么坏消息？",
+          "question_ar": "ما الخبر السيء الذي علمته مينغ جيانغ نوو حين وصلت إلى السور؟",
+          "expected_answer_zh": "丈夫已经去世了，被埋在长城里面了。",
+          "expected_answer_ar": "توفي زوجها ودُفن داخل سور الصين.",
+          "explanation_ar": "القصة: '范喜良已经去世了，被埋在长城里面了。'"
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "孟姜女哭了多长时间？",
+          "question_ar": "كم بكت مينغ جيانغ نوو؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "一天一夜",
+              "text_ar": "يوم وليلة"
+            },
+            {
+              "id": "B",
+              "text_zh": "两天两夜",
+              "text_ar": "يومان وليلتان"
+            },
+            {
+              "id": "C",
+              "text_zh": "三天三夜",
+              "text_ar": "ثلاثة أيام وثلاث ليالٍ"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '她哭了三天三夜' — بكت ثلاثة أيام وثلاث ليالٍ."
+        },
+        {
+          "id": 5,
+          "type": "true_false",
+          "question_zh": "孟姜女的哭声让长城的一段倒了。",
+          "question_ar": "جعل بكاء مينغ جيانغ نوو جزءاً من السور ينهار.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '长城都被哭倒了一段' — انهار جزء من السور بسبب بكائها."
+        }
+      ]
+    },
+    {
+      "story_number": 7,
+      "title_zh": "两个朋友和一个梦想",
+      "title_ar": "صديقان وحلم",
+      "level": "مرتفع",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "小林和小海的共同梦想是什么？",
+          "question_ar": "ما الحلم المشترك لشياو لين وشياو هاي؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "成为作家",
+              "text_ar": "أن يصبحا كاتبَين"
+            },
+            {
+              "id": "B",
+              "text_zh": "成为画家",
+              "text_ar": "أن يصبحا رسّامَين"
+            },
+            {
+              "id": "C",
+              "text_zh": "成为医生",
+              "text_ar": "أن يصبحا طبيبَين"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '他们的梦想都是成为画家' — حلما بأن يصبحا رسّامَين."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "小林的父母支持他学画画。",
+          "question_ar": "دعم والدا شياو لين حلمه في الرسم.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '小林的父母...不赞成他去学画画' — لم يوافقا على ذلك."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "小海请小林帮他做什么？",
+          "question_ar": "ماذا طلب شياو هاي من شياو لين أن يساعده؟",
+          "expected_answer_zh": "帮他写画展每幅画的说明文字。",
+          "expected_answer_ar": "مساعدته في كتابة النصوص التوضيحية لكل لوحة في المعرض.",
+          "explanation_ar": "القصة: '你来帮我写说明文字，好吗？'"
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "记者采访小海时，小海指出了谁的功劳？",
+          "question_ar": "حين قابل الصحفي شياو هاي، من أشار إلى فضله؟",
+          "options": [
+            {
+              "id": "A",
+              "text_zh": "他的父母",
+              "text_ar": "والداه"
+            },
+            {
+              "id": "B",
+              "text_zh": "他的老师",
+              "text_ar": "معلمه"
+            },
+            {
+              "id": "C",
+              "text_zh": "他的朋友小林",
+              "text_ar": "صديقه شياو لين"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '小海指着小林说：离不开朋友的帮助！' — أشار إلى صديقه."
+        },
+        {
+          "id": 5,
+          "type": "open",
+          "question_zh": "画展之后，小林做了什么决定？",
+          "question_ar": "ما القرار الذي اتخذه شياو لين بعد المعرض؟",
+          "expected_answer_zh": "他决定下班后重新学画画。",
+          "expected_answer_ar": "قرر تعلم الرسم مجدداً بعد العمل.",
+          "explanation_ar": "القصة: '他决定：下班后，他要开始重新学画画。'"
+        }
+      ]
+    }
+  ]
+}

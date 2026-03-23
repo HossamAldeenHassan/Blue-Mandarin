@@ -1,0 +1,347 @@
+{
+  "hsk_level": "1",
+  "hsk_version": "3.0",
+  "total_stories": 7,
+  "description": "اختبارات قصيرة (3-5 أسئلة) لكل قصة من قصص HSK1 المصنفة لقياس فهم القراءة",
+  "quizzes": [
+    {
+      "story_number": 1,
+      "title_zh": "小明的一天",
+      "title_ar": "يوم شياو مينغ",
+      "level": "مبتدئ",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "小明早上几点起床？",
+          "question_ar": "في أي ساعة استيقظ شياو مينغ صباحاً؟",
+          "options": [
+            {"id": "A", "text_zh": "七点", "text_ar": "السابعة"},
+            {"id": "B", "text_zh": "八点", "text_ar": "الثامنة"},
+            {"id": "C", "text_zh": "九点", "text_ar": "التاسعة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "ذكرت القصة: '早上八点،小明起床了' أي في الساعة الثامنة."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "小明上午学习汉语。",
+          "question_ar": "شياو مينغ درس اللغة الصينية في الصباح.",
+          "correct_answer": true,
+          "explanation_ar": "القصة تقول: '上午九点،小明学习汉语'."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "小明晚上做什么？",
+          "question_ar": "ماذا يفعل شياو مينغ في المساء؟",
+          "expected_answer_zh": "看电视，睡觉。",
+          "expected_answer_ar": "يشاهد التلفاز وينام.",
+          "explanation_ar": "القصة: '晚上،小明看电视،睡觉。'"
+        }
+      ]
+    },
+    {
+      "story_number": 2,
+      "title_zh": "我的家",
+      "title_ar": "عائلتي",
+      "level": "مبتدئ",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "作者家里有几口人？",
+          "question_ar": "كم عدد أفراد عائلة الكاتب؟",
+          "options": [
+            {"id": "A", "text_zh": "四口人", "text_ar": "أربعة"},
+            {"id": "B", "text_zh": "五口人", "text_ar": "خمسة"},
+            {"id": "C", "text_zh": "六口人", "text_ar": "ستة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '我家有五口人：爸爸、妈妈、哥哥、妹妹和我。'"
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "妈妈是老师。",
+          "question_ar": "الأم معلمة.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '妈妈是医生' (الأم طبيبة)."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "哥哥多少岁？",
+          "question_ar": "كم عمر الأخ الأكبر؟",
+          "expected_answer_zh": "二十岁。",
+          "expected_answer_ar": "عشرون سنة.",
+          "explanation_ar": "القصة: '哥哥二十岁'."
+        }
+      ]
+    },
+    {
+      "story_number": 3,
+      "title_zh": "果果不见了",
+      "title_ar": "غوو غوو مفقود",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "果果几岁？",
+          "question_ar": "كم عمر غوو غوو؟",
+          "options": [
+            {"id": "A", "text_zh": "四岁", "text_ar": "4 سنوات"},
+            {"id": "B", "text_zh": "五岁", "text_ar": "5 سنوات"},
+            {"id": "C", "text_zh": "六岁", "text_ar": "6 سنوات"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '果果五岁'."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "果果会汉语。",
+          "question_ar": "غوو غوو يتحدث الصينية.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '他不会说汉语'."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "果果为什么着急？",
+          "question_ar": "لماذا كان غوو غوو قلقاً؟",
+          "expected_answer_zh": "因为爸爸、妈妈不见了。",
+          "expected_answer_ar": "لأن أباه وأمه اختفيا.",
+          "explanation_ar": "القصة: '他回头，爸爸、妈妈不见了！果果很着急'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "谁帮助果果？",
+          "question_ar": "من ساعد غوو غوو؟",
+          "options": [
+            {"id": "A", "text_zh": "一个人", "text_ar": "شخص ما"},
+            {"id": "B", "text_zh": "老师", "text_ar": "المعلم"},
+            {"id": "C", "text_zh": "朋友", "text_ar": "صديق"}
+          ],
+          "correct_answer": "A",
+          "explanation_ar": "القصة: '一个人问：...那个人打电话'."
+        }
+      ]
+    },
+    {
+      "story_number": 4,
+      "title_zh": "买水果",
+      "title_ar": "شراء الفاكهة",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "小明和妈妈买了什么水果？",
+          "question_ar": "أي فاكهة اشترى شياو مينغ وأمه؟",
+          "options": [
+            {"id": "A", "text_zh": "香蕉", "text_ar": "موز"},
+            {"id": "B", "text_zh": "苹果", "text_ar": "تفاح"},
+            {"id": "C", "text_zh": "西瓜", "text_ar": "بطيخ"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '小明说：妈妈，我想吃苹果。' ثم اشتروا التفاح."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "苹果很贵。",
+          "question_ar": "التفاح كان غالياً.",
+          "correct_answer": false,
+          "explanation_ar": "القصة: '妈妈说：不贵' أي ليس غالياً."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "苹果多少钱一斤？",
+          "question_ar": "بكم سعر التفاح للجين؟",
+          "expected_answer_zh": "五块钱一斤。",
+          "expected_answer_ar": "خمسة يوانات للجين.",
+          "explanation_ar": "القصة: '五块钱一斤'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "妈妈买了几斤苹果？",
+          "question_ar": "كم جيناً من التفاح اشترت الأم؟",
+          "options": [
+            {"id": "A", "text_zh": "两斤", "text_ar": "2 جين"},
+            {"id": "B", "text_zh": "三斤", "text_ar": "3 جين"},
+            {"id": "C", "text_zh": "五斤", "text_ar": "5 جين"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '我要三斤'."
+        }
+      ]
+    },
+    {
+      "story_number": 5,
+      "title_zh": "我的好朋友",
+      "title_ar": "صديقي المفضل",
+      "level": "متوسط",
+      "questions": [
+        {
+          "id": 1,
+          "type": "open",
+          "question_zh": "作者有几个好朋友？",
+          "question_ar": "كم صديقاً مقرباً للكاتب؟",
+          "expected_answer_zh": "两个。",
+          "expected_answer_ar": "اثنان.",
+          "explanation_ar": "القصة: '我有两个好朋友'."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question_zh": "王明喜欢做什么？",
+          "question_ar": "ماذا يحب وانغ مينغ أن يفعل؟",
+          "options": [
+            {"id": "A", "text_zh": "运动", "text_ar": "الرياضة"},
+            {"id": "B", "text_zh": "看书", "text_ar": "القراءة"},
+            {"id": "C", "text_zh": "跑步", "text_ar": "الركض"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '王明喜欢看书'."
+        },
+        {
+          "id": 3,
+          "type": "true_false",
+          "question_zh": "李华每天跑步。",
+          "question_ar": "لي هوا يركض كل يوم.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '李华喜欢运动，他每天跑步'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "星期六他们去哪里玩？",
+          "question_ar": "أين ذهبوا للعب يوم السبت؟",
+          "options": [
+            {"id": "A", "text_zh": "学校", "text_ar": "المدرسة"},
+            {"id": "B", "text_zh": "商店", "text_ar": "المتجر"},
+            {"id": "C", "text_zh": "公园", "text_ar": "الحديقة"}
+          ],
+          "correct_answer": "C",
+          "explanation_ar": "القصة: '星期六،我们一起去公园玩'."
+        }
+      ]
+    },
+    {
+      "story_number": 6,
+      "title_zh": "叶限——中国的灰姑娘",
+      "title_ar": "يي شيان - سندريلا الصين",
+      "level": "مرتفع",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "叶限和谁一起住？",
+          "question_ar": "مع من عاشت يي شيان؟",
+          "options": [
+            {"id": "A", "text_zh": "爸爸", "text_ar": "أبيها"},
+            {"id": "B", "text_zh": "后妈", "text_ar": "زوجة أبيها"},
+            {"id": "C", "text_zh": "朋友", "text_ar": "صديقة"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '叶限和后妈一起住'."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "叶限的鱼被后妈杀了。",
+          "question_ar": "قُتلت سمكة يي شيان على يد زوجة أبيها.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '后妈知道后，把鱼杀了'."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "叶限在舞会上掉了什么？",
+          "question_ar": "ماذا أسقطت يي شيان في الحفلة؟",
+          "expected_answer_zh": "一只鞋。",
+          "expected_answer_ar": "حذاءً.",
+          "explanation_ar": "القصة: '叶限跑回家时，掉了一只鞋'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "鞋是什么做的？",
+          "question_ar": "مم كان الحذاء مصنوعاً؟",
+          "options": [
+            {"id": "A", "text_zh": "金子", "text_ar": "ذهب"},
+            {"id": "B", "text_zh": "银子", "text_ar": "فضة"},
+            {"id": "C", "text_zh": "木头", "text_ar": "خشب"}
+          ],
+          "correct_answer": "A",
+          "explanation_ar": "القصة: '鞋是金子做的'."
+        },
+        {
+          "id": 5,
+          "type": "true_false",
+          "question_zh": "最后叶限和帮助她的人在一起了。",
+          "question_ar": "في النهاية، بقيت يي شيان مع الشخص الذي ساعدها.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '他们在一起，很快乐'."
+        }
+      ]
+    },
+    {
+      "story_number": 7,
+      "title_zh": "精卫填海",
+      "title_ar": "جينغ وي تملأ البحر",
+      "level": "مرتفع",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question_zh": "小女孩是谁的女儿？",
+          "question_ar": "ابنة من كانت الفتاة الصغيرة؟",
+          "options": [
+            {"id": "A", "text_zh": "黄帝", "text_ar": "الإله الأصفر"},
+            {"id": "B", "text_zh": "炎帝", "text_ar": "الإله يان"},
+            {"id": "C", "text_zh": "玉帝", "text_ar": "إمبراطور اليشم"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '她是炎帝的女儿'."
+        },
+        {
+          "id": 2,
+          "type": "true_false",
+          "question_zh": "小女孩变成了一只鸟。",
+          "question_ar": "الفتاة الصغيرة تحولت إلى طائر.",
+          "correct_answer": true,
+          "explanation_ar": "القصة: '她变成了一只小鸟'."
+        },
+        {
+          "id": 3,
+          "type": "open",
+          "question_zh": "精卫每天从山上拿什么扔到海里？",
+          "question_ar": "ماذا كان جينغ وي يأخذ يومياً من الجبل ويرمي في البحر؟",
+          "expected_answer_zh": "小石头和小树枝。",
+          "expected_answer_ar": "حجارة صغيرة وأغصاناً.",
+          "explanation_ar": "القصة: '每天从山上拿小石头和小树枝，扔到海里'."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question_zh": "精卫为什么要填海？",
+          "question_ar": "لماذا أراد جينغ وي ملء البحر؟",
+          "options": [
+            {"id": "A", "text_zh": "因为她喜欢石头", "text_ar": "لأنها تحب الحجارة"},
+            {"id": "B", "text_zh": "因为不想让别人掉进海里", "text_ar": "لأنها لا تريد أن يقع الآخرون في البحر"},
+            {"id": "C", "text_zh": "因为大海很漂亮", "text_ar": "لأن البحر جميل"}
+          ],
+          "correct_answer": "B",
+          "explanation_ar": "القصة: '不想让别人也掉进海里'."
+        }
+      ]
+    }
+  ]
+}

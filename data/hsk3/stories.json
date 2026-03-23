@@ -1,0 +1,392 @@
+{
+  "hsk_level": "3",
+  "hsk_version": "3.0",
+  "total_stories": 7,
+  "description": "قصص تعليمية مصنفة لثلاثة مستويات (مبتدئ، متوسط، مرتفع) باستخدام مفردات HSK3",
+  "stories_by_level": {
+    "beginner": [
+      {
+        "story_number": 1,
+        "title_zh": "新工作",
+        "title_ar": "الوظيفة الجديدة",
+        "title_en": "The New Job",
+        "level": "مبتدئ",
+        "level_description": "مفردات HSK3 الأساسية، جمل مباشرة، موضوع مألوف عن العمل والحياة اليومية",
+        "vocabulary_count": "~150 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "李明今年二十八岁，是一名工程师。",
+            "pinyin": "Lǐ Míng jīnnián èrshíbā suì, shì yī míng gōngchéngshī.",
+            "translation": "لي مينغ يبلغ من العمر ثمانية وعشرين عاماً هذا العام، وهو مهندس."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "上个月，他找到了一份新工作，在一家大公司里工作。",
+            "pinyin": "Shàng gè yuè, tā zhǎodào le yī fèn xīn gōngzuò, zài yī jiā dà gōngsī lǐ gōngzuò.",
+            "translation": "الشهر الماضي، وجد وظيفة جديدة، يعمل في شركة كبيرة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "公司的工资很高，工作环境也很好。",
+            "pinyin": "Gōngsī de gōngzī hěn gāo, gōngzuò huánjìng yě hěn hǎo.",
+            "translation": "راتب الشركة مرتفع، وبيئة العمل أيضاً جيدة."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "他每天早上八点到达公司，认真完成自己的任务。",
+            "pinyin": "Tā měitiān zǎoshang bā diǎn dàodá gōngsī, rènzhēn wánchéng zìjǐ de rènwu.",
+            "translation": "يصل إلى الشركة كل يوم الساعة الثامنة صباحاً، ويؤدي مهامه باجتهاد."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "同事们都很友好，大家互相帮助，共同合作。",
+            "pinyin": "Tóngshìmen dōu hěn yǒuhǎo, dàjiā hùxiāng bāngzhù, gòngtóng hézuò.",
+            "translation": "الزملاء جميعهم ودودون، يساعد بعضهم بعضاً ويتعاونون معاً."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "下班以后，他坚持学习新的技术，不断进步。",
+            "pinyin": "Xiàbān yǐhòu, tā jiānchí xuéxí xīn de jìshù, búduàn jìnbù.",
+            "translation": "بعد انتهاء الدوام، يواظب على تعلم التقنيات الجديدة، ويتقدم باستمرار."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "李明相信，只要努力工作，一定能够取得成功。",
+            "pinyin": "Lǐ Míng xiāngxìn, zhǐyào nǔlì gōngzuò, yīdìng nénggòu qǔdé chénggōng.",
+            "translation": "يؤمن لي مينغ بأنه طالما يعمل بجد، فبإمكانه تحقيق النجاح."
+          }
+        ]
+      },
+      {
+        "story_number": 2,
+        "title_zh": "健康饮食",
+        "title_ar": "الأكل الصحي",
+        "title_en": "Healthy Eating",
+        "level": "مبتدئ",
+        "level_description": "مفردات HSK3 المتعلقة بالصحة والطعام، أسلوب وصفي بسيط",
+        "vocabulary_count": "~140 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "王芳是一位营养师，她非常注意健康饮食。",
+            "pinyin": "Wáng Fāng shì yī wèi yíngyǎngshī, tā fēicháng zhùyì jiànkāng yǐnshí.",
+            "translation": "وانغ فانغ أخصائية تغذية، وهي تهتم جداً بالتغذية الصحية."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "她每天早上喝一杯果汁，吃蔬菜和水果。",
+            "pinyin": "Tā měitiān zǎoshang hē yī bēi guǒzhī, chī shūcài hé shuǐguǒ.",
+            "translation": "تشرب كل يوم كوباً من عصير الفاكهة، وتأكل الخضراوات والفواكه."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "中午她喜欢吃白菜汤和米饭，不吃太多肉。",
+            "pinyin": "Zhōngwǔ tā xǐhuān chī báicài tāng hé mǐfàn, bù chī tài duō ròu.",
+            "translation": "في الغداء تحب أكل حساء الملفوف والأرز، ولا تأكل الكثير من اللحوم."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "她告诉大家，甜的食品和啤酒会影响健康。",
+            "pinyin": "Tā gàosu dàjiā, tián de shípǐn hé píjiǔ huì yǐngxiǎng jiànkāng.",
+            "translation": "تخبر الجميع بأن الأطعمة الحلوة والبيرة تؤثر على الصحة."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "最好多喝绿茶，少喝红酒和可乐。",
+            "pinyin": "Zuìhǎo duō hē lǜchá, shǎo hē hóngjiǔ hé kělè.",
+            "translation": "من الأفضل شرب الشاي الأخضر أكثر، وتقليل شرب النبيذ الأحمر والكولا."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "她还建议大家每天散步或者跑步，保持健康。",
+            "pinyin": "Tā hái jiànyì dàjiā měitiān sànbù huòzhě pǎobù, bǎochí jiànkāng.",
+            "translation": "توصي أيضاً الجميع بالمشي أو الجري يومياً للحفاظ على الصحة."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "王芳认为，好的生活习惯是幸福生活的基础。",
+            "pinyin": "Wáng Fāng rènwéi, hǎo de shēnghuó xíguàn shì xìngfú shēnghuó de jīchǔ.",
+            "translation": "ترى وانغ فانغ أن العادات الحياتية الجيدة هي أساس الحياة السعيدة."
+          }
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "story_number": 3,
+        "title_zh": "留学的梦想",
+        "title_ar": "حلم الدراسة في الخارج",
+        "title_en": "The Dream of Studying Abroad",
+        "level": "متوسط",
+        "level_description": "جمل أطول، مفردات HSK3 متنوعة، موضوع الطموح والتعليم",
+        "vocabulary_count": "~200 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "张伟从小就有一个梦想：去国外留学，了解不同的文化。",
+            "pinyin": "Zhāng Wěi cóngxiǎo jiù yǒu yī gè mèngxiǎng: qù guówài liúxué, liǎojiě bùtóng de wénhuà.",
+            "translation": "كان لدى تشانغ وي منذ صغره حلم: الدراسة في الخارج لفهم الثقافات المختلفة."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "他在大学里认真学习，成绩优秀，同时还积极参加各种活动。",
+            "pinyin": "Tā zài dàxué lǐ rènzhēn xuéxí, chéngjì yōuxiù, tóngshí hái jījí cānjiā gè zhǒng huódòng.",
+            "translation": "درس باجتهاد في الجامعة وحصل على نتائج ممتازة، كما شارك بنشاط في مختلف الأنشطة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "他申请了奖学金，经过多次考验，终于得到了机会。",
+            "pinyin": "Tā shēnqǐng le jiǎngxuéjīn, jīngguò duō cì kǎoyàn, zhōngyú dédào le jīhuì.",
+            "translation": "تقدم بطلب للحصول على منحة دراسية، ومن خلال اختبارات عديدة حصل في النهاية على الفرصة."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "到了国外以后，他发现生活和想象中不太一样，语言是最大的困难。",
+            "pinyin": "Dàole guówài yǐhòu, tā fāxiàn shēnghuó hé xiǎngxiàng zhōng bù tài yīyàng, yǔyán shì zuì dà de kùnnán.",
+            "translation": "بعد وصوله للخارج، اكتشف أن الحياة لا تطابق تخيلاته تماماً، وكانت اللغة أكبر صعوبة."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "但是他没有放弃，而是坚持练习，慢慢地适应了当地的生活。",
+            "pinyin": "Dànshì tā méiyǒu fàngqì, érshì jiānchí liànxí, mànmàn de shìyìng le dāngdì de shēnghuó.",
+            "translation": "لكنه لم يستسلم، بل واظب على التدريب وتأقلم تدريجياً مع حياة البلد المضيف."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "他认识了来自不同国家的朋友，大家交流各自的文化和经验。",
+            "pinyin": "Tā rènshí le lái zì bùtóng guójiā de péngyou, dàjiā jiāoliú gèzì de wénhuà hé jīngyàn.",
+            "translation": "تعرّف على أصدقاء من دول مختلفة، وتبادل الجميع ثقافاتهم وتجاربهم."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "两年以后，张伟顺利完成了学业，带着丰富的经历回到了故乡。",
+            "pinyin": "Liǎng nián yǐhòu, Zhāng Wěi shùnlì wánchéng le xuéyè, dàizhe fēngfù de jīnglì huídào le gùxiāng.",
+            "translation": "بعد عامين، أنهى تشانغ وي دراسته بنجاح وعاد إلى وطنه حاملاً تجارب ثرية."
+          }
+        ]
+      },
+      {
+        "story_number": 4,
+        "title_zh": "环保行动",
+        "title_ar": "العمل من أجل البيئة",
+        "title_en": "Environmental Action",
+        "level": "متوسط",
+        "level_description": "موضوع البيئة والمسؤولية الاجتماعية، مفردات HSK3 متعددة المجالات",
+        "vocabulary_count": "~210 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "近年来，环境污染越来越严重，很多人开始关注环保问题。",
+            "pinyin": "Jìn nián lái, huánjìng wūrǎn yuèlái yuè yánzhòng, hěn duō rén kāishǐ guānzhù huánbǎo wèntí.",
+            "translation": "في السنوات الأخيرة، باتت تلوث البيئة أشد خطورة، وبدأ كثير من الناس يهتمون بقضايا البيئة."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "小红是一名大学生，她决定组织一个环保志愿者团体。",
+            "pinyin": "Xiǎo Hóng shì yī míng dàxuéshēng, tā juédìng zǔzhī yī gè huánbǎo zhìyuànzhě tuántǐ.",
+            "translation": "شياو هونغ طالبة جامعية قررت تأسيس مجموعة متطوعين للبيئة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "他们每个周末去公园和河边，把垃圾收集起来，保护当地环境。",
+            "pinyin": "Tāmen měi gè zhōumò qù gōngyuán hé hé biān, bǎ lājī shōují qǐlái, bǎohù dāngdì huánjìng.",
+            "translation": "كل عطلة نهاية أسبوع يذهبون إلى الحديقة وضفاف الأنهار لجمع القمامة وحماية البيئة المحلية."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "小红还利用互联网宣传环保知识，引起了很多人的关注。",
+            "pinyin": "Xiǎo Hóng hái lìyòng hùliánwǎng xuānchuán huánbǎo zhīshì, yǐnqǐ le hěn duō rén de guānzhù.",
+            "translation": "استخدمت شياو هونغ الإنترنت لنشر الوعي البيئي، واستقطبت اهتمام كثير من الناس."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "政府也注意到了他们的行动，给予了支持和帮助。",
+            "pinyin": "Zhèngfǔ yě zhùyì dào le tāmen de xíngdòng, jǐyǔ le zhīchí hé bāngzhù.",
+            "translation": "لاحظت الحكومة أيضاً نشاطهم وقدمت لهم الدعم والمساعدة."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "如果每个人都能为环保做一点贡献，我们的世界就会更加美好。",
+            "pinyin": "Rúguǒ měi gè rén dōu néng wèi huánbǎo zuò yīdiǎn gòngxiàn, wǒmen de shìjiè jiù huì gèngjiā měihǎo.",
+            "translation": "إذا استطاع كل شخص تقديم مساهمة صغيرة للبيئة، فإن عالمنا سيصبح أجمل بكثير."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "小红相信，只要大家共同努力，一定能保护好我们的地球。",
+            "pinyin": "Xiǎo Hóng xiāngxìn, zhǐyào dàjiā gòngtóng nǔlì, yīdìng néng bǎohù hǎo wǒmen de dìqiú.",
+            "translation": "تؤمن شياو هونغ بأنه ما دام الجميع يتعاونون، فبإمكانهم بالتأكيد حماية كوكبنا."
+          }
+        ]
+      },
+      {
+        "story_number": 5,
+        "title_zh": "京剧的魅力",
+        "title_ar": "سحر أوبرا بكين",
+        "title_en": "The Charm of Beijing Opera",
+        "level": "متوسط",
+        "level_description": "موضوع الثقافة والفن الصيني، مفردات HSK3 متعلقة بالفنون والتراث",
+        "vocabulary_count": "~220 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "京剧是中国传统艺术的代表，有两百多年的历史。",
+            "pinyin": "Jīngjù shì Zhōngguó chuántǒng yìshù de dàibiǎo, yǒu liǎng bǎi duō nián de lìshǐ.",
+            "translation": "أوبرا بكين هي رمز الفن التقليدي الصيني، ولها تاريخ يمتد لأكثر من مئتي عام."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "外国朋友安娜第一次看京剧表演，觉得非常精彩。",
+            "pinyin": "Wàiguó péngyou Ānnà dì yī cì kàn Jīngjù biǎoyǎn, juéde fēicháng jīngcǎi.",
+            "translation": "شاهدت الصديقة الأجنبية آنا أوبرا بكين لأول مرة وأحست بها رائعة للغاية."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "演员们穿着精美的服装，动作生动，歌声动人。",
+            "pinyin": "Yǎnyuánmen chuānzhe jīngměi de fúzhuāng, dòngzuò shēngdòng, gēshēng dòngrén.",
+            "translation": "كان الممثلون يرتدون ملابس أنيقة، وحركاتهم حيّة، وأصوات غنائهم مؤثرة."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "她的中国朋友告诉她，京剧结合了音乐、武术、舞蹈和故事。",
+            "pinyin": "Tā de Zhōngguó péngyou gàosu tā, Jīngjù jiéhé le yīnyuè, wǔshù, wǔdǎo hé gùshi.",
+            "translation": "أخبرها صديقها الصيني أن أوبرا بكين تجمع الموسيقى والفنون القتالية والرقص والقصص."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "每个角色都有固定的脸谱，观众一眼就能看出他是好人还是坏人。",
+            "pinyin": "Měi gè juésè dōu yǒu gùdìng de liǎnpǔ, guānzhòng yī yǎn jiù néng kànchū tā shì hǎorén háishi huàirén.",
+            "translation": "لكل شخصية مكياج محدد، يستطيع المشاهدون للوهلة الأولى أن يعرفوا إن كانت شخصية طيبة أم شريرة."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "安娜深刻地感受到了中国文化的魅力，决定进一步了解和学习。",
+            "pinyin": "Ānnà shēnkè de gǎnshòu dào le Zhōngguó wénhuà de mèilì, juédìng jìn yí bù liǎojiě hé xuéxí.",
+            "translation": "شعرت آنا بعمق بسحر الثقافة الصينية، وقررت التعمق أكثر في تعلمها."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "她认为，艺术是沟通不同文化的最好方式之一。",
+            "pinyin": "Tā rènwéi, yìshù shì gōutōng bùtóng wénhuà de zuì hǎo fāngshì zhī yī.",
+            "translation": "ترى أن الفن هو من أفضل الوسائل للتواصل بين الثقافات المختلفة."
+          }
+        ]
+      }
+    ],
+    "advanced": [
+      {
+        "story_number": 6,
+        "title_zh": "长城的传说",
+        "title_ar": "أسطورة سور الصين العظيم",
+        "title_en": "Legend of the Great Wall",
+        "level": "مرتفع",
+        "level_description": "نص تاريخي وأسطوري، مفردات HSK3 متقدمة، جمل مركبة",
+        "vocabulary_count": "~260 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "长城是中国最著名的历史建筑之一，有着悠久的历史和动人的传说。",
+            "pinyin": "Chángchéng shì Zhōngguó zuì zhùmíng de lìshǐ jiànzhù zhī yī, yǒuzhe yōujiǔ de lìshǐ hé dòngrén de chuánshuō.",
+            "translation": "سور الصين العظيم هو من أشهر المنشآت التاريخية في الصين، يحمل تاريخاً عريقاً وأساطير مؤثرة."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "古代，为了保护国家不受外敌入侵，皇帝下令建造这道巨大的城墙。",
+            "pinyin": "Gǔdài, wèile bǎohù guójiā bú shòu wàidí rùqīn, huángdì xiàlìng jiànzào zhè dào jùdà de chéngqiáng.",
+            "translation": "في القديم، لحماية البلاد من الغزاة، أصدر الإمبراطور أمراً ببناء هذا السور الضخم."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "成千上万的工人被派来建造长城，工程非常艰难，许多人因此失去了生命。",
+            "pinyin": "Chéng qiān shàng wàn de gōngrén bèi pài lái jiànzào Chángchéng, gōngchéng fēicháng jiānnán, xǔduō rén yīncǐ shīqù le shēngmìng.",
+            "translation": "آلاف العمال أُرسلوا لبناء السور، وكان المشروع شاقاً للغاية، وفقد كثيرون أرواحهم جراءه."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "据说，有一位妻子长途跋涉来寻找她的丈夫，却得知丈夫已经去世，被埋在城墙里。",
+            "pinyin": "Jùshuō, yǒu yī wèi qīzi chángtú báshè lái xúnzhǎo tā de zhàngfu, què dézhī zhàngfu yǐjīng qùshì, bèi mái zài chéngqiáng lǐ.",
+            "translation": "تقول الأسطورة إن إحدى الزوجات قطعت مسافة طويلة بحثاً عن زوجها، لكنها علمت أنه مات ودُفن داخل الجدار."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "她痛苦地哭泣，眼泪不断流下，感动了上天，长城的一部分因此倒塌。",
+            "pinyin": "Tā tòngkǔ de kūqì, yǎnlèi búduàn liú xià, gǎndòng le shàngtiān, Chángchéng de yī bùfen yīncǐ dǎotā.",
+            "translation": "بكت بحزن شديد، ودموعها لم تنقطع، وأثّرت في السماء، فانهار جزء من السور."
+          },
+          {
+            "paragraph": 6,
+            "chinese": "这个传说反映了中国古代人民建造长城时付出的巨大牺牲，也体现了他们对家人深刻的感情。",
+            "pinyin": "Zhège chuánshuō fǎnyìng le Zhōngguó gǔdài rénmín jiànzào Chángchéng shí fùchū de jùdà xīshēng, yě tǐxiàn le tāmen duì jiārén shēnkè de gǎnqíng.",
+            "translation": "تعكس هذه الأسطورة التضحيات الجسيمة التي قدمها الشعب الصيني القديم في بناء السور، وتجسّد أيضاً عمق مشاعرهم تجاه أحبائهم."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "今天，长城已成为中华民族精神的象征，每年吸引数百万来自各地的游客前往参观。",
+            "pinyin": "Jīntiān, Chángchéng yǐ chéngwéi Zhōnghuá Mínzú jīngshén de xiàngzhēng, měinián xīyǐn shù bǎi wàn lái zì gè dì de yóukè qiánwǎng cānguān.",
+            "translation": "اليوم أصبح السور رمزاً للروح الصينية، يجذب كل عام ملايين السياح من شتى أرجاء العالم."
+          }
+        ]
+      },
+      {
+        "story_number": 7,
+        "title_zh": "功夫的哲学",
+        "title_ar": "فلسفة الكونغ فو",
+        "title_en": "The Philosophy of Kung Fu",
+        "level": "مرتفع",
+        "level_description": "موضوع فلسفي وثقافي عميق، مفردات HSK3 متقدمة، حجج ووجهات نظر متعددة",
+        "vocabulary_count": "~270 كلمة",
+        "new_words_introduced": 0,
+        "story": [
+          {
+            "paragraph": 1,
+            "chinese": "很多人认为，功夫只是一种武术，其实不然。功夫是一种文化，一种哲学。",
+            "pinyin": "Hěn duō rén rènwéi, gōngfu zhǐshì yī zhǒng wǔshù, qíshí bù rán. Gōngfu shì yī zhǒng wénhuà, yī zhǒng zhéxué.",
+            "translation": "يعتقد كثيرون أن الكونغ فو مجرد فن قتالي، لكن الحقيقة ليست كذلك. الكونغ فو ثقافة وفلسفة."
+          },
+          {
+            "paragraph": 2,
+            "chinese": "在中国历史上，功夫大师不仅拥有强大的力量和精湛的技术，还具有高尚的道德品质。",
+            "pinyin": "Zài Zhōngguó lìshǐ shàng, gōngfu dàshī bùjǐn yōngyǒu qiángdà de lìliàng hé jīngzhàn de jìshù, hái jùyǒu gāoshàng de dàodé pǐnzhì.",
+            "translation": "في تاريخ الصين، لم يكن أساتذة الكونغ فو يمتلكون قوة هائلة ومهارة بارعة فحسب، بل كانوا أيضاً يتحلّون بالفضيلة الرفيعة."
+          },
+          {
+            "paragraph": 3,
+            "chinese": "练习功夫需要坚强的意志和坚持不懈的精神。失败是必然的，但决不能放弃。",
+            "pinyin": "Liànxí gōngfu xūyào jiānqiáng de yìzhì hé jiānchí bùxiè de jīngshén. Shībài shì bìrán de, dàn juébù néng fàngqì.",
+            "translation": "تمرين الكونغ فو يستلزم إرادة صلبة وروح المثابرة. الفشل أمر لا مفر منه، لكن لا يجوز الاستسلام أبداً."
+          },
+          {
+            "paragraph": 4,
+            "chinese": "功夫还教导人们要保持谦逊，越是高手，越要尊重他人。",
+            "pinyin": "Gōngfu hái jiàodǎo rénmen yào bǎochí qiānxùn, yuè shì gāoshǒu, yuè yào zūnzhòng tārén.",
+            "translation": "يعلّم الكونغ فو الناس أيضاً التواضع؛ فكلما كان الشخص أكثر خبرة، كلما وجب عليه احترام الآخرين أكثر."
+          },
+          {
+            "paragraph": 5,
+            "chinese": "一位功夫老师曾经说过：'真正的强大，不是打败别人，而是战胜自己。'",
+            "pinyin": "Yī wèi gōngfu lǎoshī céngjīng shuō guò: 'Zhēnzhèng de qiángdà, bú shì dǎbài biérén, érshì zhànshèng zìjǐ.'",
+            "translation": "قال أحد أساتذة الكونغ فو ذات مرة: 'القوة الحقيقية ليست في هزيمة الآخرين، بل في الانتصار على النفس.'"
+          },
+          {
+            "paragraph": 6,
+            "chinese": "如今，功夫武术已经传播到全球各地，越来越多的外国人开始学习和了解这门艺术。",
+            "pinyin": "Rújīn, gōngfu wǔshù yǐjīng chuánbō dào quánqiú gè dì, yuèlái yuè duō de wàiguórén kāishǐ xuéxí hé liǎojiě zhè mén yìshù.",
+            "translation": "اليوم انتشر فن الكونغ فو في أرجاء العالم، وبدأ متزايد من الأجانب في تعلم هذا الفن والتعرف عليه."
+          },
+          {
+            "paragraph": 7,
+            "chinese": "功夫的精神——坚持、谦逊、自我完善——对任何人、在任何时代都有重要的意义。",
+            "pinyin": "Gōngfu de jīngshén——jiānchí, qiānxùn, zìwǒ wánshàn——duì rènhé rén, zài rènhé shídài dōu yǒu zhòngyào de yìyì.",
+            "translation": "إن روح الكونغ فو —المثابرة والتواضع والارتقاء بالذات— ذات معنى بالغ لأي شخص في أي عصر."
+          }
+        ]
+      }
+    ]
+  }
+}
