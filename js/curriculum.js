@@ -117,17 +117,19 @@ const CurriculumEngine = (() => {
       </div>
       <div class="ce-body" id="ce-body"></div>
       <div class="ce-footer" id="ce-footer">
-        <button class="cta-btn cta-primary rip" id="ce-next">التالي ›</button>
+        <!-- populated by _addNextBtn / _addCheckBtn each step -->
       </div>`;
     document.body.appendChild(ov);
 
     document.getElementById('ce-close').addEventListener('click', _closeLesson);
-    document.getElementById('ce-next').addEventListener('click',  _nextStep);
     return ov;
   }
 
   function _openOverlay() {
     const ov = _getOrCreateOverlay();
+    // Reset footer to empty for each new lesson
+    const footer = document.getElementById('ce-footer');
+    if (footer) footer.innerHTML = '';
     ov.classList.add('open');
     document.getElementById('ce-close').focus();
   }
@@ -182,15 +184,30 @@ const CurriculumEngine = (() => {
     }
   }
 
-  function _finishLesson() {
-    const xp  = _activeLesson.xp ?? 0;
-    const bid  = _activeLesson.steps
-      .filter(s => s.type === 'summary')
-      .flatMap(s => s.badge_unlocked ? [s.badge_unlocked] : [])[0];
+  // ── Helper: find the lesson that comes directly after the current one ─
+  function _findNextLesson() {
+    if (!_activeUnit || !_activeLesson || !_curriculum) return null;
+    const lidx = _activeUnit.lessons.indexOf(_activeLesson);
+    // Next lesson in same unit?
+    if (lidx >= 0 && lidx < _activeUnit.lessons.length - 1) {
+      return { unitId: _activeUnit.id, lessonId: _activeUnit.lessons[lidx + 1].id };
+    }
+    // First lesson of next unit?
+    const uidx = _curriculum.units.indexOf(_activeUnit);
+    if (uidx >= 0 && uidx < _curriculum.units.length - 1) {
+      const nextUnit = _curriculum.units[uidx + 1];
+      if (nextUnit.lessons.length > 0) {
+        return { unitId: nextUnit.id, lessonId: nextUnit.lessons[0].id };
+      }
+    }
+    return null; // reached end of curriculum
+  }
 
+  function _finishLesson() {
+    const xp = _activeLesson.xp ?? 0;
     _markLessonComplete(_activeUnit.id, _activeLesson.id, xp);
 
-    // Award XP via ProgressManager if available
+    // Award XP via ProgressManager
     if (window.BM?.ProgressManager) {
       window.BM.ProgressManager.saveTestAttempt({
         score:   _stepResults.filter(r => r).length,
@@ -199,9 +216,26 @@ const CurriculumEngine = (() => {
         answers: [],
       });
     }
-
-    // Navigate to final summary step (already rendered by _renderStep)
     _saveProgress(_activeUnit.id, _activeLesson.id, _stepIdx);
+
+    // Find next lesson — update footer button to navigate there
+    const next = _findNextLesson();
+    const footer = document.getElementById('ce-footer');
+    if (footer) {
+      footer.innerHTML = '';
+      const btn = document.createElement('button');
+      btn.className = 'cta-btn cta-primary rip';
+      btn.textContent = next ? 'إلى الدرس التالي ›' : '✓ إغلاق';
+      btn.addEventListener('pointerdown', e => {
+        e.preventDefault();
+        _closeLesson();
+        if (next) {
+          // Small delay so close animation plays first
+          setTimeout(() => openLesson(next.unitId, next.lessonId), 320);
+        }
+      });
+      footer.appendChild(btn);
+    }
   }
 
   // ── 6. Step router ────────────────────────────────────────────
@@ -703,13 +737,22 @@ const CurriculumEngine = (() => {
 
   // ── 9. Footer button helpers ─────────────────────────────────
   function _addNextBtn(footer, label = 'التالي ›') {
-    footer.innerHTML = `<button class="cta-btn cta-primary rip" id="ce-next-btn">${label}</button>`;
-    document.getElementById('ce-next-btn').addEventListener('click', _nextStep);
+    footer.innerHTML = '';
+    const btn = document.createElement('button');
+    btn.className = 'cta-btn cta-primary rip';
+    btn.textContent = label;
+    // Use direct reference — avoids getElementById race and duplicate-ID issues
+    btn.addEventListener('pointerdown', e => { e.preventDefault(); _nextStep(); });
+    footer.appendChild(btn);
   }
 
   function _addCheckBtn(footer, onCheck) {
-    footer.innerHTML = `<button class="cta-btn cta-primary rip" id="ce-check-btn">تحقق ✓</button>`;
-    document.getElementById('ce-check-btn').addEventListener('click', onCheck);
+    footer.innerHTML = '';
+    const btn = document.createElement('button');
+    btn.className = 'cta-btn cta-primary rip';
+    btn.textContent = 'تحقق ✓';
+    btn.addEventListener('pointerdown', e => { e.preventDefault(); onCheck(); });
+    footer.appendChild(btn);
   }
 
   // ── 10. Unit overview ─────────────────────────────────────────
